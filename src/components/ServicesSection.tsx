@@ -235,6 +235,44 @@ const categories = [
       },
     ],
   },
+  {
+    index: 10,
+    name: "Export Consulting Services",
+    tagline:
+      "Strategic export intelligence and market-entry support to grow your business across borders.",
+    services: [
+      {
+        title: "Export Market Scan",
+        description:
+          "Targeted analysis of demand in your chosen export market — covering competitor overview, import statistics, and identification of potential distributor profiles.",
+        price: "£900",
+      },
+      {
+        title: "Export Market Entry Strategy",
+        description:
+          "Full market analysis with pricing benchmark, distributor model selection, and a clear go-to-market roadmap to launch successfully in a new market.",
+        price: "£1,800",
+      },
+      {
+        title: "Export Expansion Blueprint",
+        description:
+          "Multi-country expansion strategy covering distributor network design, logistics and pricing structure, and a 12-month export roadmap for sustainable international growth.",
+        price: "£3,500",
+      },
+      {
+        title: "Distributor Finder Package",
+        description:
+          "Identification of qualified potential distributors in your target market, including a curated outreach list, contact intelligence, and a warm introduction strategy.",
+        price: "£2,500",
+      },
+      {
+        title: "Export Sales System Setup",
+        description:
+          "End-to-end export sales process design — including a distributor pipeline system, outreach templates, and a CRM export workflow to convert distributor leads at scale.",
+        price: "£4,000",
+      },
+    ],
+  },
 ];
 
 export default function ServicesSection() {
