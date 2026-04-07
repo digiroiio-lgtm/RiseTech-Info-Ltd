@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import TrustSection from "@/components/TrustSection";
@@ -26,7 +27,13 @@ export default function Home() {
             © {new Date().getFullYear()} RiseTech Information Ltd
           </p>
           <p className="text-xs">
-            Strategic Advisory · Market Intelligence · Growth Architecture
+            Strategic Advisory · Market Intelligence · Growth Architecture ·{" "}
+            <Link
+              href="/marketplace"
+              className="hover:text-neutral-400 transition-colors duration-200"
+            >
+              Advisory Marketplace
+            </Link>
           </p>
         </div>
       </footer>
