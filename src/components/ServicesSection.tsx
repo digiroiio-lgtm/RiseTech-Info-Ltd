@@ -305,6 +305,168 @@ const categories = [
       },
     ],
   },
+  {
+    index: 12,
+    name: "Due Diligence Services",
+    tagline:
+      "Rigorous market and competitive intelligence reports for investors and venture capital firms evaluating opportunities.",
+    services: [
+      {
+        title: "Startup Due Diligence Report",
+        description:
+          "Comprehensive due diligence on a startup's market position, competitive landscape, unit economics, and investment risk. Designed to support investor decision-making with evidence-based analysis.",
+        price: "£4,000",
+      },
+      {
+        title: "Market Due Diligence",
+        description:
+          "In-depth validation of a target market — covering market size, growth dynamics, customer segmentation, and demand signals to underpin investment or entry decisions.",
+        price: "£4,500",
+      },
+      {
+        title: "Competitive Due Diligence",
+        description:
+          "Detailed competitive intelligence report mapping key players, their positioning, capabilities, and strategic vulnerabilities to assess a target's competitive moat.",
+        price: "£3,500",
+      },
+      {
+        title: "Investment Opportunity Brief",
+        description:
+          "Concise investment brief covering market validation, competitor overview, unit economics, and key risk factors — structured for VC and PE review.",
+        price: "£2,500",
+      },
+    ],
+  },
+  {
+    index: 13,
+    name: "Strategic Advisory Retainers",
+    tagline:
+      "Ongoing strategic counsel for founders, leadership teams, and boards navigating growth and critical decisions.",
+    services: [
+      {
+        title: "Startup Strategic Advisory",
+        description:
+          "Monthly strategic advisory for early-stage founders. Covers monthly strategy sessions, decision advisory, growth planning, and board-level strategic thinking.",
+        price: "£5,000 / month",
+      },
+      {
+        title: "Growth Strategy Advisory",
+        description:
+          "Dedicated monthly advisory engagement for scaling companies. Includes structured strategy calls, growth planning frameworks, and ongoing decision support.",
+        price: "£7,000 / month",
+      },
+      {
+        title: "Executive Strategic Advisory",
+        description:
+          "Senior-level strategic advisory for executives and leadership teams. Provides board-level thinking, high-stakes decision support, and executive growth strategy.",
+        price: "£10,000 / month",
+      },
+    ],
+  },
+  {
+    index: 14,
+    name: "M&A Intelligence",
+    tagline:
+      "Acquisition targeting and market consolidation intelligence for scale-ups and investment teams.",
+    services: [
+      {
+        title: "Acquisition Target Analysis",
+        description:
+          "Identification and analysis of strategic acquisition targets — covering company profiles, financials, competitive positioning, and fit assessment.",
+        price: "£4,000",
+      },
+      {
+        title: "Market Consolidation Map",
+        description:
+          "Strategic overview of consolidation dynamics within a sector — mapping acquisition activity, fragmentation opportunities, and platform-building potential.",
+        price: "£3,500",
+      },
+      {
+        title: "Strategic Acquisition Brief",
+        description:
+          "End-to-end acquisition intelligence brief covering target identification, competitor buyout opportunities, and a strategic rationale for consolidation plays.",
+        price: "£5,000",
+      },
+    ],
+  },
+  {
+    index: 15,
+    name: "Corporate Strategy Packages",
+    tagline:
+      "Enterprise-grade strategy engagements for established businesses pursuing growth, transformation, or new markets.",
+    services: [
+      {
+        title: "Corporate Growth Strategy",
+        description:
+          "Structured growth strategy for established companies — covering revenue expansion levers, market positioning, and a sequenced roadmap for the next phase of scale.",
+        price: "£8,000",
+      },
+      {
+        title: "New Market Strategy",
+        description:
+          "Strategic blueprint for entering a new market segment or geography — including market sizing, competitive landscape, entry model design, and go-to-market roadmap.",
+        price: "£9,000",
+      },
+      {
+        title: "Digital Transformation Blueprint",
+        description:
+          "Comprehensive digital transformation strategy covering technology adoption priorities, process redesign, and a phased implementation roadmap aligned to business objectives.",
+        price: "£12,000",
+      },
+    ],
+  },
+  {
+    index: 16,
+    name: "Founder Personal Brand Services",
+    tagline:
+      "Authority-building strategies that position founders as credible voices in their industry.",
+    services: [
+      {
+        title: "Founder Personal Brand Strategy",
+        description:
+          "A complete personal brand strategy for founders — covering narrative positioning, target audience definition, content pillars, and a channel-specific growth plan.",
+        price: "£1,500",
+      },
+      {
+        title: "LinkedIn Authority System",
+        description:
+          "A structured LinkedIn growth system to build audience, establish authority, and drive inbound opportunities — including profile optimisation, content strategy, and an engagement framework.",
+        price: "£1,200",
+      },
+      {
+        title: "Founder Thought Leadership Plan",
+        description:
+          "A 90-day thought leadership roadmap for founders — covering topic strategy, content formats, publishing cadence, and PR and speaking opportunity targeting.",
+        price: "£1,800",
+      },
+    ],
+  },
+  {
+    index: 17,
+    name: "AI Strategy Consulting",
+    tagline:
+      "Strategic AI adoption and workflow architecture for businesses ready to embed intelligence into their operations.",
+    services: [
+      {
+        title: "AI Adoption Strategy",
+        description:
+          "A prioritised AI adoption roadmap tailored to your business — identifying highest-impact use cases, build vs buy decisions, and a phased implementation plan.",
+        price: "£3,000",
+      },
+      {
+        title: "AI Workflow Architecture",
+        description:
+          "Design of AI-powered workflows to automate and accelerate core business processes — covering tool selection, integration architecture, and workflow blueprints.",
+        price: "£3,500",
+      },
+      {
+        title: "AI Business Transformation Plan",
+        description:
+          "A comprehensive AI transformation strategy covering organisational readiness, technology adoption across functions, and a multi-phase roadmap to become an AI-native business.",
+        price: "£7,000",
+      },
+    ],
+  },
 ];
 
 export default function ServicesSection() {
