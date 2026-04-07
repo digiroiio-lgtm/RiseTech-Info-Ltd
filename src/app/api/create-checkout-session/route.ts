@@ -1,15 +1,10 @@
 import Stripe from "stripe";
 
-const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
-if (!stripeSecretKey) {
-  throw new Error("STRIPE_SECRET_KEY environment variable is not set");
-}
-
-const stripe = new Stripe(stripeSecretKey);
-
 export async function POST(request: Request) {
+  const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
   const domain = process.env.DOMAIN;
-  if (!domain) {
+
+  if (!stripeSecretKey || !domain) {
     return Response.json(
       { error: "Server configuration error" },
       { status: 500 }
@@ -23,6 +18,7 @@ export async function POST(request: Request) {
   }
 
   try {
+    const stripe = new Stripe(stripeSecretKey);
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
       line_items: [
