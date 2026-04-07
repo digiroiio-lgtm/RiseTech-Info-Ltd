@@ -1,4 +1,30 @@
+"use client";
+
+import { useState } from "react";
+
 export default function FeaturedService() {
+  const [loading, setLoading] = useState(false);
+
+  async function handlePurchase() {
+    if (loading) return;
+    setLoading(true);
+    try {
+      const res = await fetch("/api/create-checkout-session", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: "Programmatic SEO Plan", amount: 100000 }),
+      });
+      if (!res.ok) throw new Error("Failed to create checkout session");
+      const data = await res.json();
+      if (data.url) {
+        window.location.href = data.url;
+      }
+    } catch {
+      alert("Something went wrong. Please try again.");
+      setLoading(false);
+    }
+  }
+
   return (
     <section className="bg-neutral-950 text-white py-24 lg:py-32">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
@@ -31,12 +57,14 @@ export default function FeaturedService() {
             </ul>
             <div className="flex items-center gap-6">
               <span className="text-3xl font-light text-white">£1,000</span>
-              <a
-                href="#contact"
-                className="inline-flex items-center px-7 py-3.5 border border-white text-white text-sm font-medium tracking-wide hover:bg-white hover:text-neutral-900 transition-all duration-200"
+              <button
+                onClick={handlePurchase}
+                disabled={loading}
+                aria-label="Buy Programmatic SEO Plan"
+                className="inline-flex items-center px-7 py-3.5 border border-white text-white text-sm font-medium tracking-wide hover:bg-white hover:text-neutral-900 transition-all duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Request This Service
-              </a>
+                {loading ? "Processing…" : "Buy Now →"}
+              </button>
             </div>
           </div>
 

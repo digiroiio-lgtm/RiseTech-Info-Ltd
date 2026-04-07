@@ -4,6 +4,7 @@ interface Service {
   title: string;
   description: string;
   price: string;
+  priceInPence: number;
 }
 
 interface ServiceCategoryProps {
@@ -44,6 +45,7 @@ export default function ServiceCategory({
             title={svc.title}
             description={svc.description}
             price={svc.price}
+            priceInPence={svc.priceInPence}
           />
         ))}
       </div>
