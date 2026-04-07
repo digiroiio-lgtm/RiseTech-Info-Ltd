@@ -8,12 +8,6 @@ const categories = [
       "Data-backed search strategy and technical SEO to drive compounding organic growth.",
     services: [
       {
-        title: "SEO Audit",
-        description:
-          "A comprehensive audit of your site's technical health, on-page signals, and backlink profile. Identify what's holding back your organic growth.",
-        price: "£100",
-      },
-      {
         title: "SEO Audit + Optimization",
         description:
           "Everything in the SEO Audit, plus hands-on optimizations. We fix the issues and implement quick-win improvements directly.",
