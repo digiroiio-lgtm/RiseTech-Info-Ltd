@@ -273,6 +273,38 @@ const categories = [
       },
     ],
   },
+  {
+    index: 11,
+    name: "Export Growth Consulting",
+    tagline:
+      "Strategic international expansion advisory for manufacturers and exporters looking to build sustainable global sales.",
+    services: [
+      {
+        title: "Export Strategy Intensive",
+        description:
+          "Export readiness audit, target market prioritization, pricing and margin structure design, and distributor model design. Delivered as a comprehensive Export Strategy Report with a market prioritization framework. Timeline: 4–6 weeks.",
+        price: "£10,000",
+      },
+      {
+        title: "International Market Launch",
+        description:
+          "Deep target country analysis, distributor targeting strategy, import structure analysis, go-to-market export roadmap, and sales channel mapping. Delivered as an International Market Launch Plan with a distributor strategy framework. Timeline: 6–8 weeks.",
+        price: "£20,000",
+      },
+      {
+        title: "Global Export Engine",
+        description:
+          "Multi-country expansion plan, distributor network architecture, export sales system design, CRM pipeline model, export pricing optimization, and a 12-month export growth roadmap. Delivered as a Global Export Growth Blueprint. Timeline: 8–10 weeks.",
+        price: "£35,000",
+      },
+      {
+        title: "Global Market Expansion Program",
+        description:
+          "End-to-end global expansion strategy covering distributor acquisition advisory, export sales architecture, and ongoing strategic decision advisory for founders and executives. Delivered as a Global Export Strategy Framework with a full expansion roadmap. Timeline: 3–6 month advisory engagement.",
+        price: "£50,000",
+      },
+    ],
+  },
 ];
 
 export default function ServicesSection() {
