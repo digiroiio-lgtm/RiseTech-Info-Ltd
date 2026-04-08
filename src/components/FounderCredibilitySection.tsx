@@ -65,13 +65,22 @@ export default function FounderCredibilitySection() {
             The name RiseTech was born on an open American highway — a moment
             that captured the philosophy we&apos;d been living for years.
           </p>
-          <Link
-            href="/founder-story"
-            className="inline-flex items-center gap-1.5 mt-3 text-xs font-medium tracking-widest uppercase text-neutral-400 hover:text-white transition-colors duration-200"
-          >
-            Read the full story
-            <span aria-hidden="true">→</span>
-          </Link>
+          <div className="flex flex-wrap items-center gap-6 mt-3">
+            <Link
+              href="/founder-story"
+              className="inline-flex items-center gap-1.5 text-xs font-medium tracking-widest uppercase text-neutral-400 hover:text-white transition-colors duration-200"
+            >
+              Read the full story
+              <span aria-hidden="true">→</span>
+            </Link>
+            <Link
+              href="/team"
+              className="inline-flex items-center gap-1.5 text-xs font-medium tracking-widest uppercase text-neutral-400 hover:text-white transition-colors duration-200"
+            >
+              Meet the full team
+              <span aria-hidden="true">→</span>
+            </Link>
+          </div>
         </div>
 
         {/* Team cards */}

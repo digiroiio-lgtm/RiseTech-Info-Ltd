@@ -17,6 +17,7 @@ export default function Navbar() {
           {[
             { label: "Services", href: "#services" },
             { label: "Intelligence", href: "#services" },
+            { label: "Our Team", href: "/team" },
             { label: "Advisory", href: "#contact" },
           ].map((link) => (
             <a
