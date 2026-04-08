@@ -2,6 +2,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import { LEGAL_LINKS } from "@/lib/legalLinks";
 import HeroSection from "@/components/HeroSection";
+import WhatWeDoSection from "@/components/WhatWeDoSection";
 import TrustSection from "@/components/TrustSection";
 import ServicesSection from "@/components/ServicesSection";
 import FeaturedService from "@/components/FeaturedService";
@@ -15,6 +16,7 @@ export default function Home() {
       <Navbar />
       <main className="flex-1 pt-16">
         <HeroSection />
+        <WhatWeDoSection />
         <TrustSection />
         <ServicesSection />
         <FeaturedService />

@@ -28,9 +28,9 @@ export default function ServiceCard({
         <span className="text-xl font-light text-neutral-900">{price}</span>
         <a
           href="#contact"
-          className="text-xs font-semibold tracking-widest uppercase text-neutral-500 group-hover:text-neutral-900 transition-colors duration-200 underline-offset-4 hover:underline"
+          className="inline-flex items-center px-4 py-2 bg-neutral-900 text-white text-xs font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200 group-hover:bg-neutral-900"
         >
-          Learn More →
+          Get Started
         </a>
       </div>
     </div>
