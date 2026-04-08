@@ -1,5 +1,6 @@
 import ServiceCategory from "./ServiceCategory";
 import StartupAdvisoryCarousel from "./StartupAdvisoryCarousel";
+import RealEstateCarousel from "./RealEstateCarousel";
 
 const categories = [
   {
@@ -462,6 +463,32 @@ const categories = [
       },
     ],
   },
+  {
+    index: 18,
+    name: "Real Estate Intelligence",
+    tagline:
+      "Strategic real estate intelligence designed to help investors identify high-ROI locations, evaluate opportunities, and make data-driven acquisition decisions.",
+    services: [
+      {
+        title: "Real Estate Market Scan",
+        description:
+          "City/neighborhood demand analysis, property price trends, rental yield snapshot, and investment hotspot identification. Deliverable: Real Estate Market Snapshot Report.",
+        price: "£1,200",
+      },
+      {
+        title: "Real Estate Investment Intelligence",
+        description:
+          "ROI modelling, rental yield projections, neighborhood scoring system, comparable property benchmarking, and demand & absorption analysis. Deliverable: Investment Intelligence Report.",
+        price: "£3,000",
+      },
+      {
+        title: "Strategic Property Acquisition Blueprint",
+        description:
+          "High-ROI location identification, appreciation potential analysis, portfolio strategy, risk mapping, and acquisition strategy. Deliverable: Strategic Property Investment Blueprint.",
+        price: "£7,500",
+      },
+    ],
+  },
 ];
 
 export default function ServicesSection() {
@@ -480,6 +507,8 @@ export default function ServicesSection() {
         {categories.map((cat) =>
           cat.index === 3 ? (
             <StartupAdvisoryCarousel key={cat.index} />
+          ) : cat.index === 18 ? (
+            <RealEstateCarousel key={cat.index} />
           ) : (
             <ServiceCategory
               key={cat.index}
