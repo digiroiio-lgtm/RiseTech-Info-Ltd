@@ -1,4 +1,5 @@
 import ServiceCategory from "./ServiceCategory";
+import StartupAdvisoryCarousel from "./StartupAdvisoryCarousel";
 
 const categories = [
   {
@@ -476,15 +477,19 @@ export default function ServicesSection() {
           </h2>
         </div>
 
-        {categories.map((cat) => (
-          <ServiceCategory
-            key={cat.index}
-            index={cat.index}
-            name={cat.name}
-            tagline={cat.tagline}
-            services={cat.services}
-          />
-        ))}
+        {categories.map((cat) =>
+          cat.index === 3 ? (
+            <StartupAdvisoryCarousel key={cat.index} />
+          ) : (
+            <ServiceCategory
+              key={cat.index}
+              index={cat.index}
+              name={cat.name}
+              tagline={cat.tagline}
+              services={cat.services}
+            />
+          )
+        )}
       </div>
     </section>
   );
