@@ -1,16 +1,29 @@
+import Image from "next/image";
 import Link from "next/link";
 import ThemeToggleButton from "@/components/ThemeToggleButton";
+
+const LOGO_URL =
+  "https://github.com/user-attachments/assets/3ad79727-7477-4896-8113-2afdc8917a27";
 
 export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-neutral-900/90 backdrop-blur-sm border-b border-neutral-100 dark:border-neutral-800 transition-colors duration-200">
       <div className="max-w-6xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link
-          href="/"
-          className="text-sm font-semibold tracking-[0.15em] uppercase text-neutral-900 dark:text-white"
-        >
-          RiseTech
+        <Link href="/" className="flex items-center gap-2.5">
+          <div className="w-8 h-8 rounded-full bg-neutral-900 dark:bg-black flex items-center justify-center overflow-hidden">
+            <Image
+              src={LOGO_URL}
+              alt="RiseTech logo"
+              width={32}
+              height={32}
+              className="object-cover"
+              priority
+            />
+          </div>
+          <span className="text-sm font-semibold tracking-[0.15em] uppercase text-neutral-900 dark:text-white">
+            RiseTech
+          </span>
         </Link>
 
         {/* Nav links */}
