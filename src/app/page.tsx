@@ -4,9 +4,12 @@ import { LEGAL_LINKS } from "@/lib/legalLinks";
 import HeroSection from "@/components/HeroSection";
 import WhatWeDoSection from "@/components/WhatWeDoSection";
 import TrustSection from "@/components/TrustSection";
-import ServicesSection from "@/components/ServicesSection";
-import FeaturedService from "@/components/FeaturedService";
+import FeaturedServicesSection from "@/components/FeaturedServicesSection";
+import CaseStudiesPreviewSection from "@/components/CaseStudiesPreviewSection";
 import WhyUsSection from "@/components/WhyUsSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import FounderCredibilitySection from "@/components/FounderCredibilitySection";
+import ServicesSection from "@/components/ServicesSection";
 import ClientTypesSection from "@/components/ClientTypesSection";
 import CTASection from "@/components/CTASection";
 
@@ -18,9 +21,12 @@ export default function Home() {
         <HeroSection />
         <WhatWeDoSection />
         <TrustSection />
-        <ServicesSection />
-        <FeaturedService />
+        <FeaturedServicesSection />
+        <CaseStudiesPreviewSection />
         <WhyUsSection />
+        <TestimonialsSection />
+        <FounderCredibilitySection />
+        <ServicesSection />
         <ClientTypesSection />
         <CTASection />
       </main>

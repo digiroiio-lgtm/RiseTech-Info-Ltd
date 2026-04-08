@@ -6,11 +6,22 @@ const metrics = [
 
 const clientCategories = ["Startups", "Export companies", "Retail brands", "SaaS founders", "CFO teams"];
 
+const logos = [
+  "NordExport",
+  "AlphaVentures",
+  "PrimeBrands",
+  "CrestCapital",
+  "VistaTrade",
+  "ScaleOps",
+  "OrbitRetail",
+  "MeridianGroup",
+];
+
 export default function TrustSection() {
   return (
     <section className="bg-neutral-950 text-white py-24 lg:py-32">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-16 items-start mb-20">
           {/* Left: credibility message */}
           <div>
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 mb-6">
@@ -44,6 +55,25 @@ export default function TrustSection() {
                 </span>
                 <div className="w-px h-8 bg-neutral-800 group-hover:bg-neutral-600 transition-colors duration-200 flex-shrink-0" />
                 <p className="text-sm text-neutral-400">{m.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Client logos */}
+        <div className="border-t border-neutral-800 pt-14">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-600 mb-10 text-center">
+            Companies We&apos;ve Worked With
+          </p>
+          <div className="grid grid-cols-4 lg:grid-cols-8 gap-4">
+            {logos.map((name) => (
+              <div
+                key={name}
+                className="border border-neutral-800 px-3 py-4 flex items-center justify-center hover:border-neutral-600 transition-colors duration-200"
+              >
+                <span className="text-xs font-semibold tracking-wide text-neutral-500 text-center leading-tight">
+                  {name}
+                </span>
               </div>
             ))}
           </div>
