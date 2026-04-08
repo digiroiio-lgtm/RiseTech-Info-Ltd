@@ -1,10 +1,9 @@
 import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
 
 const CSP = [
   "default-src 'self'",
   "script-src 'self' 'unsafe-inline'",
-  "style-src 'self' 'unsafe-inline'",
+  "style-src 'self'",
   "img-src 'self' data: https:",
   "connect-src 'self'",
   "font-src 'self'",
@@ -15,8 +14,7 @@ const CSP = [
   "upgrade-insecure-requests",
 ].join("; ");
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-export function middleware(_request: NextRequest) {
+export function middleware() {
   const response = NextResponse.next();
 
   response.headers.set("X-Frame-Options", "DENY");

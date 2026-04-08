@@ -67,7 +67,7 @@ Strict CSP applied (no external origins required — site uses system fonts and 
 ```
 default-src 'self';
 script-src 'self' 'unsafe-inline';
-style-src 'self' 'unsafe-inline';
+style-src 'self';
 img-src 'self' data: https:;
 connect-src 'self';
 font-src 'self';
@@ -78,7 +78,7 @@ frame-ancestors 'none';
 upgrade-insecure-requests
 ```
 
-> **Note:** `'unsafe-inline'` is required for `script-src` because Next.js App Router injects inline hydration scripts. The secure alternative is nonce-based CSP (see §4).
+> **Note:** `'unsafe-inline'` is required for `script-src` because Next.js App Router injects inline hydration scripts. TailwindCSS v4 generates static CSS classes so `style-src 'self'` is sufficient. The secure alternative for scripts is nonce-based CSP (see §4).
 
 ### 2.3 Middleware — `src/middleware.ts`
 
