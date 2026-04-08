@@ -10,7 +10,7 @@ import {
   type Tab,
   type TeamMember,
 } from "@/lib/team";
-import { LEGAL_LINKS } from "@/lib/legalLinks";
+import SiteFooter from "@/components/SiteFooter";
 
 // ── Initials Avatar ──────────────────────────────────────────────────────────
 
@@ -570,101 +570,7 @@ export default function TeamPageClient() {
       </main>
 
       {/* ── Footer ───────────────────────────────────────────────────────────── */}
-      <footer className="bg-neutral-950 text-neutral-500 mt-20">
-        <div className="max-w-[1320px] mx-auto px-6 lg:px-10">
-          {/* Top section */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 py-16 border-b border-neutral-800">
-            {/* Brand */}
-            <div className="lg:col-span-1">
-              <Link
-                href="/"
-                className="text-sm font-semibold tracking-[0.15em] uppercase text-white"
-              >
-                RiseTech
-              </Link>
-              <p className="text-xs leading-relaxed mt-4 max-w-xs">
-                Strategic intelligence, market entry advisory, and technology systems for growth-stage and institutional clients.
-              </p>
-            </div>
-
-            {/* Services */}
-            <div>
-              <p className="text-[10px] font-semibold tracking-widest uppercase text-neutral-400 mb-4">
-                Services
-              </p>
-              <ul className="space-y-2.5">
-                {["Export Strategy", "Market Intelligence", "Technology & Systems", "Startup Strategy"].map((s) => (
-                  <li key={s}>
-                    <span className="text-xs text-neutral-500">{s}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Company */}
-            <div>
-              <p className="text-[10px] font-semibold tracking-widest uppercase text-neutral-400 mb-4">
-                Company
-              </p>
-              <ul className="space-y-2.5">
-                <li>
-                  <Link href="/team" className="text-xs hover:text-neutral-300 transition-colors">
-                    Our Team
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/founder-story" className="text-xs hover:text-neutral-300 transition-colors">
-                    Founder Story
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/case-studies" className="text-xs hover:text-neutral-300 transition-colors">
-                    Case Studies
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="text-xs hover:text-neutral-300 transition-colors">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Legal + Offices */}
-            <div>
-              <p className="text-[10px] font-semibold tracking-widest uppercase text-neutral-400 mb-4">
-                Legal
-              </p>
-              <ul className="space-y-2.5 mb-8">
-                {LEGAL_LINKS.map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="text-xs hover:text-neutral-300 transition-colors"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-              <p className="text-[10px] font-semibold tracking-widest uppercase text-neutral-400 mb-3">
-                Offices
-              </p>
-              <p className="text-xs leading-relaxed">London, UK<br />Dubai, UAE<br />New York, USA</p>
-            </div>
-          </div>
-
-          {/* Bottom bar */}
-          <div className="py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-[11px] tracking-widest uppercase">
-              &copy; {new Date().getFullYear()} RiseTech Information Ltd
-            </p>
-            <p className="text-[11px] text-neutral-600">
-              Strategic Advisory &middot; Market Intelligence &middot; Growth Architecture
-            </p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

@@ -1,8 +1,16 @@
 @import "tailwindcss";
 
+/* Class-based dark mode for Tailwind v4 */
+@variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+
+.dark {
+  --background: #0f172a;
+  --foreground: #f1f5f9;
 }
 
 @theme inline {
@@ -23,6 +31,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 /* Animated proof cards */
