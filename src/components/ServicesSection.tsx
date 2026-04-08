@@ -489,6 +489,58 @@ const categories = [
       },
     ],
   },
+  {
+    index: 19,
+    name: "Customer Loyalty Platforms",
+    tagline:
+      "Data-driven loyalty and customer engagement platforms designed for retail chains, coffee brands, supermarkets, and fuel station networks.",
+    services: [
+      {
+        title: "Coffee Chain Loyalty Platform",
+        description:
+          "Branded loyalty mobile app, digital stamp / reward system, customer membership system, push notification campaigns, and customer analytics dashboard. Best for: coffee chains, café franchises, dessert brands.",
+        price: "£12,000",
+      },
+      {
+        title: "Supermarket Loyalty Platform",
+        description:
+          "Points-based loyalty system, digital coupon campaigns, purchase behavior analytics, personalised offers engine, and customer segmentation tools. Best for: supermarket chains, grocery retailers, hypermarkets.",
+        price: "£18,000",
+      },
+      {
+        title: "Fuel Station Loyalty Platform",
+        description:
+          "Fuel rewards system, digital membership app, transaction tracking system, cross-promotion campaigns, and loyalty analytics dashboard. Best for: petrol station networks, mobility brands, convenience retail chains.",
+        price: "£15,000",
+      },
+    ],
+  },
+  {
+    index: 20,
+    name: "Dashboard & Data Systems",
+    tagline:
+      "Decision-focused dashboards that simplify complex data, integrate financial APIs, and give leadership teams real-time visibility.",
+    services: [
+      {
+        title: "Executive Dashboard Setup",
+        description:
+          "KPI dashboard design, simplified data visualisation, integration of basic data sources, executive-friendly UI layout, and decision-focused metrics. Deliverables: Executive Dashboard Interface & KPI tracking framework. Best for: startups, SaaS founders, operational teams.",
+        price: "£2,500",
+      },
+      {
+        title: "Financial Data Dashboard",
+        description:
+          "Financial API integrations, revenue tracking dashboards, cashflow visualisation, financial performance metrics, and automated reporting. Deliverables: Financial Intelligence Dashboard & financial metrics framework. Best for: fintech companies, CFO teams, subscription businesses.",
+        price: "£5,000",
+      },
+      {
+        title: "Enterprise Intelligence Dashboard",
+        description:
+          "Multi-source data architecture, CRM / ERP / marketing data integration, executive-level reporting dashboards, advanced analytics visualisations, and operational intelligence system. Deliverables: Enterprise Intelligence Dashboard & data architecture blueprint. Best for: scaling companies, enterprise teams, multi-department organisations.",
+        price: "£9,000",
+      },
+    ],
+  },
 ];
 
 export default function ServicesSection() {
