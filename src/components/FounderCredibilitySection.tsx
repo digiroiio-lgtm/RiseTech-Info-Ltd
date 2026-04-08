@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const team = [
   {
     initials: "OY",
@@ -58,6 +60,18 @@ export default function FounderCredibilitySection() {
             scaled, and advised real businesses — not recent graduates working
             from templates.
           </p>
+          {/* Founder story teaser */}
+          <p className="text-neutral-500 mt-5 max-w-xl text-sm leading-relaxed">
+            The name RiseTech was born on an open American highway — a moment
+            that captured the philosophy we&apos;d been living for years.
+          </p>
+          <Link
+            href="/founder-story"
+            className="inline-flex items-center gap-1.5 mt-3 text-xs font-medium tracking-widest uppercase text-neutral-400 hover:text-white transition-colors duration-200"
+          >
+            Read the full story
+            <span aria-hidden="true">→</span>
+          </Link>
         </div>
 
         {/* Team cards */}
