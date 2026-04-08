@@ -38,7 +38,7 @@ export default function WhatWeDoSection() {
           <p className="text-xs font-normal tracking-[0.2em] uppercase text-neutral-400 mb-6">
             What We Do
           </p>
-          <h2 className="text-5xl lg:text-6xl font-light text-neutral-900 max-w-3xl leading-tight">
+          <h2 className="text-6xl lg:text-8xl font-light text-neutral-900 max-w-4xl leading-tight">
             Four practice areas. One high-impact firm.
           </h2>
         </div>
