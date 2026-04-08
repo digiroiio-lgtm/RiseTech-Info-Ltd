@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import TrustSection from "@/components/TrustSection";
@@ -25,9 +26,23 @@ export default function Home() {
           <p className="text-xs tracking-widest uppercase">
             © {new Date().getFullYear()} RiseTech Information Ltd
           </p>
-          <p className="text-xs">
-            Strategic Advisory · Market Intelligence · Growth Architecture
-          </p>
+          <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+            {[
+              { label: "Terms", href: "/terms" },
+              { label: "Privacy", href: "/privacy" },
+              { label: "Refund Policy", href: "/refund-policy" },
+              { label: "Billing Policy", href: "/billing-policy" },
+              { label: "Contact", href: "/contact" },
+            ].map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-xs hover:text-neutral-400 transition-colors duration-200"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
         </div>
       </footer>
     </>
