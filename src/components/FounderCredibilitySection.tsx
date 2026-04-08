@@ -1,7 +1,7 @@
 const team = [
   {
-    initials: "AR",
-    name: "A. Rahman",
+    initials: "OY",
+    name: "Oguz Y.",
     title: "Founder & Managing Director",
     credentials: [
       "10+ years in international trade strategy",
@@ -11,8 +11,8 @@ const team = [
     focus: "Export Strategy · Market Intelligence · Investor Advisory",
   },
   {
-    initials: "SK",
-    name: "S. Kaya",
+    initials: "HB",
+    name: "Huseyin B.",
     title: "Head of Technology & Systems",
     credentials: [
       "Background in data engineering & BI architecture",
@@ -22,8 +22,8 @@ const team = [
     focus: "Dashboard Systems · Programmatic SEO · Loyalty Platforms",
   },
   {
-    initials: "LC",
-    name: "L. Chen",
+    initials: "DO",
+    name: "Dimitri O.",
     title: "Senior Strategy Analyst",
     credentials: [
       "Former strategy consultant, Big Four background",
