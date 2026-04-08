@@ -35,10 +35,10 @@ export default function WhatWeDoSection() {
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16 lg:mb-20">
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 mb-4">
+          <p className="text-xs font-normal tracking-[0.2em] uppercase text-neutral-400 mb-6">
             What We Do
           </p>
-          <h2 className="text-3xl lg:text-4xl font-light text-neutral-900 max-w-xl">
+          <h2 className="text-5xl lg:text-6xl font-light text-neutral-900 max-w-3xl leading-tight">
             Four practice areas. One high-impact firm.
           </h2>
         </div>
