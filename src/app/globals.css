@@ -24,3 +24,29 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* Animated proof cards */
+@keyframes scrollUp {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+@keyframes scrollDown {
+  0%   { transform: translateY(-50%); }
+  100% { transform: translateY(0); }
+}
+
+.proof-track-up {
+  animation: scrollUp 30s linear infinite;
+  will-change: transform;
+}
+
+.proof-track-down {
+  animation: scrollDown 30s linear infinite;
+  will-change: transform;
+}
+
+.proof-col:hover .proof-track-up,
+.proof-col:hover .proof-track-down {
+  animation-play-state: paused;
+}

@@ -4,6 +4,7 @@ import { LEGAL_LINKS } from "@/lib/legalLinks";
 import HeroSection from "@/components/HeroSection";
 import WhatWeDoSection from "@/components/WhatWeDoSection";
 import TrustSection from "@/components/TrustSection";
+import AnimatedProofSection from "@/components/AnimatedProofSection";
 import FeaturedServicesSection from "@/components/FeaturedServicesSection";
 import CaseStudiesPreviewSection from "@/components/CaseStudiesPreviewSection";
 import WhyUsSection from "@/components/WhyUsSection";
@@ -21,6 +22,7 @@ export default function Home() {
         <HeroSection />
         <WhatWeDoSection />
         <TrustSection />
+        <AnimatedProofSection />
         <FeaturedServicesSection />
         <CaseStudiesPreviewSection />
         <WhyUsSection />
