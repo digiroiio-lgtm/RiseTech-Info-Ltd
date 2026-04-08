@@ -50,3 +50,14 @@ html {
 .proof-col:hover .proof-track-down {
   animation-play-state: paused;
 }
+
+/* Testimonial card hover glow */
+.testi-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testi-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 0 1px rgba(168, 85, 247, 0.3),
+              0 8px 32px rgba(168, 85, 247, 0.15),
+              0 2px 8px rgba(0, 0, 0, 0.3);
+}

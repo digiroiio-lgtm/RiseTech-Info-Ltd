@@ -5,6 +5,8 @@ export interface Testimonial {
   title: string;
   company: string;
   service: string;
+  sector: string;
+  initials: string;
 }
 
 export const testimonials: Testimonial[] = [
@@ -16,6 +18,8 @@ export const testimonials: Testimonial[] = [
     title: "CEO",
     company: "UK Luxury Goods Brand",
     service: "Export Market Entry",
+    sector: "Export",
+    initials: "JT",
   },
   {
     id: "t2",
@@ -25,6 +29,8 @@ export const testimonials: Testimonial[] = [
     title: "COO",
     company: "National Retail Group",
     service: "Dashboard System",
+    sector: "Retail",
+    initials: "SM",
   },
   {
     id: "t3",
@@ -34,6 +40,8 @@ export const testimonials: Testimonial[] = [
     title: "Partner",
     company: "Growth-Stage VC Fund",
     service: "Market Intelligence Report",
+    sector: "VC",
+    initials: "HA",
   },
   {
     id: "t4",
@@ -43,6 +51,8 @@ export const testimonials: Testimonial[] = [
     title: "Head of Growth",
     company: "B2B SaaS Platform",
     service: "Programmatic SEO Plan",
+    sector: "SaaS",
+    initials: "MK",
   },
   {
     id: "t5",
@@ -52,6 +62,8 @@ export const testimonials: Testimonial[] = [
     title: "Export Director",
     company: "Premium Food & Beverage",
     service: "Distributor Finder",
+    sector: "Export",
+    initials: "TB",
   },
   {
     id: "t6",
@@ -61,6 +73,8 @@ export const testimonials: Testimonial[] = [
     title: "Founder & CEO",
     company: "EdTech Startup (UAE)",
     service: "Startup Diagnostic",
+    sector: "EdTech",
+    initials: "AR",
   },
   {
     id: "t7",
@@ -68,8 +82,10 @@ export const testimonials: Testimonial[] = [
       "Comprehensive, professional, and built for execution — not just presentation. The GTM strategy they delivered was the document that got us across the line in our seed round. Investors specifically commented on the commercial clarity.",
     name: "Priya S.",
     title: "Founder",
-    company: "D2C Consumer Brand",
+    company: "FinTech Startup",
     service: "Go To Market Strategy",
+    sector: "FinTech",
+    initials: "PS",
   },
   {
     id: "t8",
@@ -79,6 +95,8 @@ export const testimonials: Testimonial[] = [
     title: "CFO",
     company: "Logistics Group",
     service: "Dashboard System",
+    sector: "Retail",
+    initials: "LF",
   },
   {
     id: "t9",
@@ -88,6 +106,8 @@ export const testimonials: Testimonial[] = [
     title: "Development Director",
     company: "London Property Developer",
     service: "Real Estate Intelligence",
+    sector: "Real Estate",
+    initials: "DH",
   },
   {
     id: "t10",
@@ -97,6 +117,8 @@ export const testimonials: Testimonial[] = [
     title: "Managing Director",
     company: "Turkish Textile Manufacturer",
     service: "Export Growth Program",
+    sector: "Export",
+    initials: "KD",
   },
   {
     id: "t11",
@@ -106,6 +128,8 @@ export const testimonials: Testimonial[] = [
     title: "VP Strategy",
     company: "SaaS Scale-Up",
     service: "Startup Strategy",
+    sector: "SaaS",
+    initials: "RN",
   },
   {
     id: "t12",
@@ -115,5 +139,8 @@ export const testimonials: Testimonial[] = [
     title: "CEO",
     company: "Multi-Brand Retail Group",
     service: "Loyalty Platform",
+    sector: "Retail",
+    initials: "SC",
   },
 ];
+
