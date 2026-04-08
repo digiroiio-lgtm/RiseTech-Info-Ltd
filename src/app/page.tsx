@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import { LEGAL_LINKS } from "@/lib/legalLinks";
 import HeroSection from "@/components/HeroSection";
 import TrustSection from "@/components/TrustSection";
 import ServicesSection from "@/components/ServicesSection";
@@ -27,13 +28,7 @@ export default function Home() {
             © {new Date().getFullYear()} RiseTech Information Ltd
           </p>
           <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
-            {[
-              { label: "Terms", href: "/terms" },
-              { label: "Privacy", href: "/privacy" },
-              { label: "Refund Policy", href: "/refund-policy" },
-              { label: "Billing Policy", href: "/billing-policy" },
-              { label: "Contact", href: "/contact" },
-            ].map((link) => (
+            {LEGAL_LINKS.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}

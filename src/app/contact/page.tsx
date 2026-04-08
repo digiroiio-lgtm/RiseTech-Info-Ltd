@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { LEGAL_LINKS } from "@/lib/legalLinks";
 
 export const metadata: Metadata = {
   title: "Contact — RiseTech Advisory",
@@ -126,13 +127,7 @@ export default function ContactPage() {
             © {new Date().getFullYear()} RiseTech Information Ltd
           </p>
           <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
-            {[
-              { label: "Terms", href: "/terms" },
-              { label: "Privacy", href: "/privacy" },
-              { label: "Refund Policy", href: "/refund-policy" },
-              { label: "Billing Policy", href: "/billing-policy" },
-              { label: "Contact", href: "/contact" },
-            ].map((link) => (
+            {LEGAL_LINKS.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
