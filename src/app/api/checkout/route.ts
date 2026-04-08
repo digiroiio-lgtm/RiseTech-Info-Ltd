@@ -47,7 +47,7 @@ export async function POST(req: NextRequest) {
         quantity: 1,
         price_data: {
           currency: "gbp",
-          unit_amount: service.priceGBP * 100, // convert to pence
+          unit_amount: service.priceGBP * 100, // priceGBP is whole pounds; Stripe requires pence
           product_data: {
             name: service.title,
             description: service.description,
