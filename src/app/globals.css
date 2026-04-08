@@ -51,6 +51,21 @@ html {
   animation-play-state: paused;
 }
 
+/* Horizontal logo marquee */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.logo-track {
+  animation: marquee 28s linear infinite;
+  will-change: transform;
+}
+
+.logo-marquee:hover .logo-track {
+  animation-play-state: paused;
+}
+
 /* Testimonial card hover glow */
 .testi-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
