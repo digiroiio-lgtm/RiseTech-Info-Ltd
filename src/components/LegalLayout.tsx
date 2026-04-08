@@ -25,7 +25,7 @@ export default function LegalLayout({
           </Link>
           <nav className="hidden md:flex items-center gap-8">
             {[
-              { label: "Services", href: "/#services" },
+              { label: "Services", href: "/services" },
               { label: "Intelligence", href: "/#services" },
               { label: "Advisory", href: "/#contact" },
             ].map((link) => (

@@ -113,7 +113,7 @@ export default function CTASection() {
                 <div>
                   <label
                     htmlFor="cta-message"
-                    className="block text-xs tracking-widests uppercase text-neutral-500 mb-2"
+                    className="block text-xs tracking-widest uppercase text-neutral-500 mb-2"
                   >
                     How can we help? <span aria-hidden="true">*</span>
                   </label>
