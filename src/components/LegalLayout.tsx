@@ -26,7 +26,7 @@ export default function LegalLayout({
           <nav className="hidden md:flex items-center gap-8">
             {[
               { label: "Services", href: "/services" },
-              { label: "Intelligence", href: "/#services" },
+              { label: "Pricing", href: "/pricing" },
               { label: "Advisory", href: "/#contact" },
             ].map((link) => (
               <a
@@ -77,6 +77,7 @@ export default function LegalLayout({
           <div className="flex flex-wrap justify-center sm:justify-end gap-x-6 gap-y-2">
             {[
               { label: "Services", href: "/services" },
+              { label: "Pricing", href: "/pricing" },
               { label: "Terms", href: "/terms" },
               { label: "Privacy", href: "/privacy" },
               { label: "Refund Policy", href: "/refund" },

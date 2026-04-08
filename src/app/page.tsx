@@ -34,6 +34,7 @@ export default function Home() {
           <div className="flex flex-wrap justify-center sm:justify-end gap-x-6 gap-y-2">
             {[
               { label: "Services", href: "/services" },
+              { label: "Pricing", href: "/pricing" },
               { label: "Terms", href: "/terms" },
               { label: "Privacy", href: "/privacy" },
               { label: "Refund Policy", href: "/refund" },

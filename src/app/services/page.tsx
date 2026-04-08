@@ -43,8 +43,8 @@ export default function ServicesPage() {
                 },
                 {
                   step: "02",
-                  title: "Submit an enquiry",
-                  body: "Send us a brief via the contact form. We confirm scope, timeline, and payment before work begins.",
+                  title: "Accept terms & pay",
+                  body: 'Click "Select & Pay" on any service. Review the scope, accept our Terms and Billing Policy, then complete payment via Stripe.',
                 },
                 {
                   step: "03",
@@ -70,8 +70,8 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        {/* All services with prices — reuses the homepage ServicesSection component */}
-        <ServicesSection />
+        {/* All services with prices — "Select & Pay" links to checkout */}
+        <ServicesSection showCheckoutLinks />
 
         {/* Bottom CTA */}
         <section className="bg-neutral-900 text-white py-16 lg:py-20">
@@ -123,6 +123,7 @@ export default function ServicesPage() {
           <div className="flex flex-wrap justify-center sm:justify-end gap-x-6 gap-y-2">
             {[
               { label: "Services", href: "/services" },
+              { label: "Pricing", href: "/pricing" },
               { label: "Terms", href: "/terms" },
               { label: "Privacy", href: "/privacy" },
               { label: "Refund Policy", href: "/refund" },
