@@ -9,10 +9,11 @@ export const metadata: Metadata = {
     "Hear from the founders, operators, and investors who have worked with RiseTech Advisory.",
 };
 
-// Top 8 testimonials for the animated wall (t1–t8)
-const wallTestimonials = testimonials.slice(0, 8);
-const col1 = wallTestimonials.slice(0, 4);
-const col2 = wallTestimonials.slice(4, 8);
+// All 12 testimonials for the animated wall — 6 per column so the
+// duplicate copies used for seamless looping never fit in the viewport
+// at the same time, eliminating visible repetition.
+const col1 = testimonials.slice(0, 6);
+const col2 = testimonials.slice(6, 12);
 
 // Sector colour map
 const sectorColour: Record<string, string> = {
@@ -43,7 +44,7 @@ function StarRow() {
 }
 
 interface WallCardProps {
-  t: (typeof wallTestimonials)[number];
+  t: (typeof col1)[number];
 }
 
 function WallCard({ t }: WallCardProps) {
@@ -455,7 +456,7 @@ export default function WallOfLovePage() {
         >
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-600 mb-8">
-              8 client voices
+              12 client voices
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
               <ScrollColumn cards={col1} direction="up" />
