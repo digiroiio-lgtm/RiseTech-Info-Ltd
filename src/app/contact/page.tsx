@@ -66,9 +66,23 @@ export default function ContactPage() {
 
       <h2>Registered Office</h2>
       <p>
-        RiseTech Information Ltd
+        <strong>RiseTech Information Ltd</strong>
         <br />
-        Registered in England and Wales
+        128 City Road
+        <br />
+        London
+        <br />
+        EC1V 2NX
+        <br />
+        England, United Kingdom
+      </p>
+      <p>
+        <strong>Company Registration No.:</strong> 15985140
+        <br />
+        <strong>Country of Incorporation:</strong> England and Wales
+        <br />
+        <strong>Email:</strong>{" "}
+        <a href="mailto:advisory@risetech.info">advisory@risetech.info</a>
       </p>
 
       <h2>Response Times</h2>

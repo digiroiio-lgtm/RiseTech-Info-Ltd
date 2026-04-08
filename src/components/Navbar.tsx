@@ -15,9 +15,9 @@ export default function Navbar() {
         {/* Nav links */}
         <nav className="hidden md:flex items-center gap-8">
           {[
-            { label: "Services", href: "#services" },
-            { label: "Intelligence", href: "#services" },
-            { label: "Advisory", href: "#contact" },
+            { label: "Services", href: "/services" },
+            { label: "Intelligence", href: "/#services" },
+            { label: "Advisory", href: "/#contact" },
           ].map((link) => (
             <a
               key={link.label}
@@ -30,12 +30,12 @@ export default function Navbar() {
         </nav>
 
         {/* CTA */}
-        <a
-          href="#contact"
+        <Link
+          href="/#contact"
           className="inline-flex items-center px-5 py-2.5 bg-neutral-900 text-white text-xs font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200"
         >
           Request Advisory
-        </a>
+        </Link>
       </div>
     </header>
   );
