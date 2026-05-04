@@ -28,8 +28,33 @@ export default function SiteFooter() {
             </p>
           </div>
 
+          {/* Nav links */}
+          <nav className="flex flex-col gap-4">
+            <p className="text-xs font-semibold tracking-widest uppercase text-neutral-600">
+              Intelligence
+            </p>
+            <Link
+              href="/insights"
+              className="text-xs text-neutral-500 hover:text-neutral-300 transition-colors duration-200"
+            >
+              Insights
+            </Link>
+            <Link
+              href="/reports"
+              className="text-xs text-neutral-500 hover:text-neutral-300 transition-colors duration-200"
+            >
+              Reports
+            </Link>
+            <Link
+              href="/case-studies"
+              className="text-xs text-neutral-500 hover:text-neutral-300 transition-colors duration-200"
+            >
+              Case Studies
+            </Link>
+          </nav>
+
           {/* Legal links */}
-          <nav className="flex flex-wrap items-start gap-x-6 gap-y-2">
+          <nav className="flex flex-wrap items-start gap-x-6 gap-y-2 self-start">
             {LEGAL_LINKS.map((link) => (
               <Link
                 key={link.href}

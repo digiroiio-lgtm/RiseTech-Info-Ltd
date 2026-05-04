@@ -13,6 +13,8 @@ import FounderCredibilitySection from "@/components/FounderCredibilitySection";
 import ServicesSection from "@/components/ServicesSection";
 import ClientTypesSection from "@/components/ClientTypesSection";
 import CTASection from "@/components/CTASection";
+import InsightsPreviewSection from "@/components/InsightsPreviewSection";
+import ReportsPreviewSection from "@/components/ReportsPreviewSection";
 
 export default function Home() {
   return (
@@ -30,6 +32,8 @@ export default function Home() {
         <FounderCredibilitySection />
         <ServicesSection />
         <ClientTypesSection />
+        <InsightsPreviewSection />
+        <ReportsPreviewSection />
         <CTASection />
       </main>
       <SiteFooter />
