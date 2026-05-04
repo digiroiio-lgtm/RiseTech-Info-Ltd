@@ -1,6 +1,7 @@
 import ServiceCard from "./ServiceCard";
 
 interface Service {
+  slug: string;
   title: string;
   description: string;
   price: string;
@@ -11,6 +12,7 @@ interface ServiceCategoryProps {
   name: string;
   tagline: string;
   services: Service[];
+  showCheckoutLinks?: boolean;
 }
 
 export default function ServiceCategory({
@@ -18,6 +20,7 @@ export default function ServiceCategory({
   name,
   tagline,
   services,
+  showCheckoutLinks = false,
 }: ServiceCategoryProps) {
   const indexStr = String(index).padStart(2, "0");
   return (
@@ -40,10 +43,12 @@ export default function ServiceCategory({
       <div className="ml-0 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {services.map((svc) => (
           <ServiceCard
-            key={svc.title}
+            key={svc.slug}
+            slug={svc.slug}
             title={svc.title}
             description={svc.description}
             price={svc.price}
+            showCheckoutLink={showCheckoutLinks}
           />
         ))}
       </div>

@@ -24,3 +24,61 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* Legal page prose styles */
+.prose-legal h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #171717;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.prose-legal h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #404040;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose-legal p {
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: #525252;
+  margin-bottom: 1rem;
+}
+
+.prose-legal ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose-legal ul li {
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: #525252;
+  margin-bottom: 0.25rem;
+}
+
+.prose-legal a {
+  color: #171717;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.prose-legal a:hover {
+  color: #525252;
+}
+
+.prose-legal hr {
+  border-color: #f5f5f5;
+  margin: 2rem 0;
+}
+
+.prose-legal strong {
+  font-weight: 600;
+  color: #171717;
+}
