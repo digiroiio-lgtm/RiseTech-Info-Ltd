@@ -127,3 +127,14 @@ html {
               0 8px 32px rgba(168, 85, 247, 0.15),
               0 2px 8px rgba(0, 0, 0, 0.3);
 }
+
+/* Fixed-header anchors and keyboard navigation across both themes. */
+html { scroll-padding-top: 80px; }
+:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; transition: none; }
+  .proof-track-up, .proof-track-down, .logo-track { animation: none; }
+  .fade-up { opacity: 1; transform: none; transition: none; }
+  .testi-card { transition: none; }
+}

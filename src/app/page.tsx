@@ -1,7 +1,7 @@
-import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import SiteFooter from "@/components/SiteFooter";
 import HeroSection from "@/components/HeroSection";
+import DigitalProductsSection from "@/components/DigitalProductsSection";
 import WhatWeDoSection from "@/components/WhatWeDoSection";
 import TrustSection from "@/components/TrustSection";
 import AnimatedProofSection from "@/components/AnimatedProofSection";
@@ -22,6 +22,7 @@ export default function Home() {
       <Navbar />
       <main className="flex-1 pt-16">
         <HeroSection />
+        <DigitalProductsSection />
         <WhatWeDoSection />
         <TrustSection />
         <AnimatedProofSection />
