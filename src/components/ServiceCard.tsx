@@ -1,19 +1,19 @@
 import Link from "next/link";
 
 interface ServiceCardProps {
-  slug: string;
+  slug?: string;
+  showCheckoutLink?: boolean;
   title: string;
   description: string;
   price: string;
-  showCheckoutLink?: boolean;
 }
 
 export default function ServiceCard({
   slug,
+  showCheckoutLink = false,
   title,
   description,
   price,
-  showCheckoutLink = false,
 }: ServiceCardProps) {
   return (
     <div className="group border border-neutral-200 bg-white p-8 flex flex-col justify-between hover:border-neutral-900 hover:shadow-sm transition-all duration-300">
@@ -32,23 +32,22 @@ export default function ServiceCard({
       {/* Bottom */}
       <div className="flex items-center justify-between pt-4 border-t border-neutral-100">
         <span className="text-xl font-light text-neutral-900">{price}</span>
-        {showCheckoutLink ? (
+        {showCheckoutLink && slug ? (
           <Link
             href={`/checkout?service=${slug}`}
-            className="text-xs font-semibold tracking-widest uppercase text-neutral-500 group-hover:text-neutral-900 transition-colors duration-200 underline-offset-4 hover:underline"
+            className="inline-flex items-center px-4 py-2 bg-neutral-900 text-white text-xs font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200"
           >
             Select &amp; Pay →
           </Link>
         ) : (
-          <a
-            href="#contact"
-            className="text-xs font-semibold tracking-widest uppercase text-neutral-500 group-hover:text-neutral-900 transition-colors duration-200 underline-offset-4 hover:underline"
+          <Link
+            href="/#contact"
+            className="inline-flex items-center px-4 py-2 bg-neutral-900 text-white text-xs font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200 group-hover:bg-neutral-900"
           >
-            Learn More →
-          </a>
+            Get Started
+          </Link>
         )}
       </div>
     </div>
   );
 }
-

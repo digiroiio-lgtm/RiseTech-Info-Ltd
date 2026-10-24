@@ -1,131 +1,202 @@
 import type { Metadata } from "next";
-import LegalLayout from "@/components/LegalLayout";
+import LegalPage from "@/components/LegalPage";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — RiseTech Information Ltd",
+  title: "Terms and Conditions — RiseTech Advisory",
   description:
-    "Terms and conditions governing the use of RiseTech Information Ltd services.",
+    "Terms and Conditions governing your use of wealwaysrise.com and services provided by RISETECH INFO LTD.",
 };
 
 export default function TermsPage() {
   return (
-    <LegalLayout title="Terms of Service" lastUpdated="8 April 2026">
-      <p>
-        These Terms of Service (&ldquo;Terms&rdquo;) govern your access to and
-        use of the advisory, consulting, and information services
-        (&ldquo;Services&rdquo;) provided by <strong>RiseTech Information Ltd</strong>,
-        a company registered in England and Wales. By purchasing or accessing
-        our Services you agree to be bound by these Terms.
-      </p>
-
-      <h2>1. Services</h2>
-      <p>
-        RiseTech Information Ltd provides strategic advisory, market
-        intelligence, growth strategy, and founder consulting services to
-        businesses and individuals. The scope of each engagement is defined in
-        the applicable order form, proposal, or statement of work agreed between
-        the parties.
-      </p>
-
-      <h2>2. Eligibility</h2>
-      <p>
-        You must be at least 18 years of age and have the legal authority to
-        enter into contracts in your jurisdiction to purchase our Services. By
-        placing an order you represent that these conditions are met.
-      </p>
-
-      <h2>3. Payment</h2>
-      <p>
-        All fees are quoted in GBP (British Pounds) unless otherwise specified.
-        Payments are processed securely through Stripe. By providing your
-        payment information, you authorise us to charge the applicable fees.
-        Full payment terms, including subscription billing cycles where
-        applicable, are set out in our{" "}
-        <a href="/billing">Billing Policy</a>.
-      </p>
-
-      <h2>4. Intellectual Property</h2>
-      <p>
-        All reports, analyses, frameworks, and materials delivered to you
-        (&ldquo;Deliverables&rdquo;) are licensed to you for your internal
-        business use only. You may not resell, redistribute, or sublicense
-        Deliverables without our prior written consent. RiseTech Information Ltd
-        retains all underlying intellectual property rights.
-      </p>
-
-      <h2>5. Confidentiality</h2>
-      <p>
-        Each party agrees to keep confidential any non-public information
-        disclosed by the other party in connection with the Services and to use
-        such information only for the purpose of receiving or providing the
-        Services.
-      </p>
-
-      <h2>6. Acceptable Use</h2>
-      <p>You agree not to:</p>
-      <ul>
-        <li>Use the Services for any unlawful or fraudulent purpose</li>
-        <li>
-          Attempt to reverse-engineer, copy, or reproduce proprietary
-          methodologies
-        </li>
-        <li>
-          Share access credentials or Deliverables with unauthorised third
-          parties
-        </li>
-        <li>
-          Use the Services in any way that could damage our reputation or
-          business
-        </li>
-      </ul>
-
-      <h2>7. Limitation of Liability</h2>
-      <p>
-        Our Services provide strategic information and advisory opinions.
-        They do not constitute legal, financial, or investment advice. We are
-        not liable for any business decisions made in reliance on our
-        Deliverables. To the maximum extent permitted by law, our total
-        liability to you shall not exceed the fees paid in the three months
-        preceding the claim.
-      </p>
-
-      <h2>8. Disclaimers</h2>
-      <p>
-        The Services are provided &ldquo;as is&rdquo;. We make no warranties,
-        express or implied, regarding accuracy, completeness, or fitness for a
-        particular purpose. Market conditions change; forward-looking analysis
-        is inherently uncertain.
-      </p>
-
-      <h2>9. Termination</h2>
-      <p>
-        Either party may terminate an engagement with written notice as set out
-        in the applicable order form. Termination does not relieve you of any
-        outstanding payment obligations. Our refund policy is set out at{" "}
-        <a href="/refund">Refund Policy</a>.
-      </p>
-
-      <h2>10. Governing Law</h2>
-      <p>
-        These Terms are governed by the laws of England and Wales. Any disputes
-        shall be subject to the exclusive jurisdiction of the courts of England
-        and Wales.
-      </p>
-
-      <h2>11. Changes to These Terms</h2>
-      <p>
-        We may update these Terms from time to time. We will notify you of
-        material changes by email or by posting the updated Terms on this page
-        with a revised &ldquo;Last updated&rdquo; date. Continued use of the
-        Services after changes constitutes acceptance.
-      </p>
-
-      <h2>12. Contact</h2>
-      <p>
-        Questions about these Terms should be directed to{" "}
-        <a href="mailto:legal@risetech.info">legal@risetech.info</a> or via our{" "}
-        <a href="/contact">Contact page</a>.
-      </p>
-    </LegalLayout>
+    <LegalPage
+      title="Terms and Conditions"
+      lastUpdated="2026"
+      sections={[
+        {
+          heading: "1. Company Information",
+          paragraphs: [
+            "Legal Entity: RISETECH INFO LTD.",
+            "Company Number: 14876900",
+            "Registered Office: 71-75 Shelton Street, Covent Garden, London, United Kingdom, WC2H 9JQ",
+            "Website: wealwaysrise.com",
+            "Support: support@wealwaysrise.com",
+          ],
+        },
+        {
+          heading: "2. Acceptance of Terms",
+          paragraphs: [
+            "By accessing or purchasing services from wealwaysrise.com, you agree to these Terms and Conditions.",
+            "If you do not agree with these terms, you must not use this website or purchase services.",
+          ],
+        },
+        {
+          heading: "3. Services",
+          paragraphs: [
+            "RiseTech provides strategic advisory, consulting, and market intelligence services.",
+            "Services may include but are not limited to:",
+          ],
+          items: [
+            "executive advisory",
+            "growth strategy consulting",
+            "market intelligence",
+            "startup advisory",
+            "business strategy consultation",
+            "advisory marketplace access",
+          ],
+          subsections: [
+            {
+              heading: "",
+              paragraphs: [
+                "Services are provided as professional consulting services and results are not guaranteed.",
+              ],
+            },
+          ],
+        },
+        {
+          heading: "4. Marketplace Advisory Services",
+          paragraphs: [
+            "Some services listed on the website may be provided by independent advisors or consultants.",
+            "RiseTech acts as a platform and facilitator for advisory services.",
+            "RiseTech is not responsible for:",
+          ],
+          items: [
+            "actions of independent advisors",
+            "business decisions made based on advice",
+            "financial or operational outcomes",
+          ],
+        },
+        {
+          heading: "5. Payments",
+          paragraphs: [
+            "All payments are processed securely via Stripe.",
+            "By purchasing a service you agree that:",
+          ],
+          items: [
+            "payment is authorized",
+            "you are the legal cardholder",
+            "billing information is accurate",
+          ],
+          subsections: [
+            {
+              heading: "",
+              paragraphs: [
+                "Prices are displayed in GBP unless stated otherwise.",
+                "RiseTech reserves the right to modify pricing at any time.",
+              ],
+            },
+          ],
+        },
+        {
+          heading: "6. Subscription Services",
+          paragraphs: [
+            "Certain services may be billed as recurring subscriptions.",
+            "By purchasing a subscription you agree that:",
+          ],
+          items: [
+            "the subscription renews automatically",
+            "payment will be charged periodically",
+            "cancellation must occur before the next billing cycle",
+          ],
+          subsections: [
+            {
+              heading: "",
+              paragraphs: [
+                "Subscription billing terms are detailed in the Billing Policy.",
+              ],
+            },
+          ],
+        },
+        {
+          heading: "7. Refunds",
+          paragraphs: [
+            "Advisory services are generally non-refundable once the engagement has started.",
+            "Refund eligibility is governed by the Refund Policy.",
+          ],
+        },
+        {
+          heading: "8. Intellectual Property",
+          paragraphs: [
+            "All content on the website including:",
+          ],
+          items: [
+            "brand assets",
+            "content",
+            "frameworks",
+            "advisory materials",
+          ],
+          subsections: [
+            {
+              heading: "",
+              paragraphs: [
+                "remain the intellectual property of RiseTech Info Ltd unless explicitly stated otherwise.",
+                "Content may not be copied, redistributed, or resold without written permission.",
+              ],
+            },
+          ],
+        },
+        {
+          heading: "9. Limitation of Liability",
+          paragraphs: ["RiseTech shall not be liable for:"],
+          items: [
+            "business losses",
+            "investment losses",
+            "indirect damages",
+            "decisions made based on advisory services",
+          ],
+          subsections: [
+            {
+              heading: "",
+              paragraphs: [
+                "Total liability is limited to the amount paid for the service.",
+              ],
+            },
+          ],
+        },
+        {
+          heading: "10. Disclaimer",
+          paragraphs: [
+            "Advisory services are provided for informational and strategic purposes only.",
+            "RiseTech does not provide:",
+          ],
+          items: [
+            "legal advice",
+            "financial investment advice",
+            "regulated financial services",
+          ],
+          subsections: [
+            {
+              heading: "",
+              paragraphs: [
+                "Clients are responsible for their own business decisions.",
+              ],
+            },
+          ],
+        },
+        {
+          heading: "11. Chargebacks",
+          paragraphs: [
+            "If a payment dispute or chargeback is initiated without contacting support first, RiseTech reserves the right to:",
+          ],
+          items: [
+            "suspend services",
+            "terminate accounts",
+            "dispute the chargeback",
+          ],
+          subsections: [
+            {
+              heading: "",
+              paragraphs: ["Support contact: support@wealwaysrise.com"],
+            },
+          ],
+        },
+        {
+          heading: "12. Governing Law",
+          paragraphs: [
+            "These Terms shall be governed by the laws of England and Wales.",
+          ],
+        },
+      ]}
+    />
   );
 }

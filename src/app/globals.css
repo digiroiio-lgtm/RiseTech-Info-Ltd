@@ -1,8 +1,16 @@
 @import "tailwindcss";
 
+/* Class-based dark mode for Tailwind v4 */
+@variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+
+.dark {
+  --background: #0f172a;
+  --foreground: #f1f5f9;
 }
 
 @theme inline {
@@ -23,6 +31,112 @@ body {
 
 html {
   scroll-behavior: smooth;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Animated proof cards */
+@keyframes scrollUp {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+@keyframes scrollDown {
+  0%   { transform: translateY(-50%); }
+  100% { transform: translateY(0); }
+}
+
+.proof-track-up {
+  animation: scrollUp 30s linear infinite;
+  will-change: transform;
+}
+
+.proof-track-down {
+  animation: scrollDown 30s linear infinite;
+  will-change: transform;
+}
+
+.proof-col:hover .proof-track-up,
+.proof-col:hover .proof-track-down {
+  animation-play-state: paused;
+}
+
+/* Horizontal logo marquee */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.logo-track {
+  animation: marquee 28s linear infinite;
+  will-change: transform;
+}
+
+.logo-marquee:hover .logo-track {
+  animation-play-state: paused;
+}
+
+/* ─── Insights page premium effects ─────────────────────────────────────── */
+
+:root {
+  --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #06b6d4 100%);
+}
+
+/* Gradient border — inner bg must match card background */
+.glow-border {
+  border: 1px solid transparent;
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    var(--gradient-primary) border-box;
+  transition: box-shadow 0.35s ease;
+}
+
+.glow-border:hover {
+  box-shadow:
+    0 0 0 1px rgba(99, 102, 241, 0.25),
+    0 8px 32px rgba(99, 102, 241, 0.12),
+    0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Frosted-glass panel (for dark backgrounds) */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Scroll reveal — trigger via Intersection Observer adding .active */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Testimonial card hover glow ────────────────────────────────────────── */
+/* Testimonial card hover glow */
+.testi-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testi-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 0 1px rgba(168, 85, 247, 0.3),
+              0 8px 32px rgba(168, 85, 247, 0.15),
+              0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Fixed-header anchors and keyboard navigation across both themes. */
+html { scroll-padding-top: 80px; }
+:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; transition: none; }
+  .proof-track-up, .proof-track-down, .logo-track { animation: none; }
+  .fade-up { opacity: 1; transform: none; transition: none; }
+  .testi-card { transition: none; }
 }
 
 /* Legal page prose styles */

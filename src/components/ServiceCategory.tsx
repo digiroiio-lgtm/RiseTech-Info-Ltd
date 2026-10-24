@@ -1,7 +1,7 @@
 import ServiceCard from "./ServiceCard";
 
 interface Service {
-  slug: string;
+  slug?: string;
   title: string;
   description: string;
   price: string;
@@ -43,7 +43,7 @@ export default function ServiceCategory({
       <div className="ml-0 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {services.map((svc) => (
           <ServiceCard
-            key={svc.slug}
+            key={svc.slug ?? svc.title}
             slug={svc.slug}
             title={svc.title}
             description={svc.description}

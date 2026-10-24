@@ -1,107 +1,127 @@
 import type { Metadata } from "next";
-import LegalLayout from "@/components/LegalLayout";
+import Link from "next/link";
+import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Contact — RiseTech Information Ltd",
+  title: "Contact — RiseTech Advisory",
   description:
-    "Get in touch with RiseTech Information Ltd for advisory and consulting enquiries.",
+    "Get in touch with RiseTech Info Ltd for advisory enquiries, support, or billing questions.",
 };
 
 export default function ContactPage() {
   return (
-    <LegalLayout title="Contact Us" lastUpdated="8 April 2026">
-      <p>
-        Thank you for your interest in{" "}
-        <strong>RiseTech Information Ltd</strong>. We welcome enquiries from
-        founders, operators, and businesses seeking strategic advisory support.
-      </p>
+    <>
+      {/* Navbar */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-neutral-100">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
+          <Link
+            href="/"
+            className="text-sm font-semibold tracking-[0.15em] uppercase text-neutral-900"
+          >
+            RiseTech
+          </Link>
+          <Link
+            href="/#contact"
+            className="inline-flex items-center px-5 py-2.5 bg-neutral-900 text-white text-xs font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200"
+          >
+            Request Advisory
+          </Link>
+        </div>
+      </header>
 
-      <h2>General Enquiries</h2>
-      <p>
-        For advisory requests, service enquiries, and general questions:
-      </p>
-      <ul>
-        <li>
-          <strong>Email:</strong>{" "}
-          <a href="mailto:advisory@risetech.info">advisory@risetech.info</a>
-        </li>
-      </ul>
+      <main className="flex-1 pt-16">
+        {/* Header */}
+        <div className="bg-neutral-950 text-white py-20 lg:py-28">
+          <div className="max-w-4xl mx-auto px-6 lg:px-8">
+            <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 mb-4">
+              Get in Touch
+            </p>
+            <h1 className="text-4xl lg:text-5xl font-light leading-tight">
+              Contact
+            </h1>
+          </div>
+        </div>
 
-      <h2>Billing &amp; Payments</h2>
-      <p>
-        For invoices, payment queries, subscription changes, and refund
-        requests:
-      </p>
-      <ul>
-        <li>
-          <strong>Email:</strong>{" "}
-          <a href="mailto:billing@risetech.info">billing@risetech.info</a>
-        </li>
-      </ul>
-      <p>
-        See also our <a href="/billing">Billing Policy</a> and{" "}
-        <a href="/refund">Refund Policy</a>.
-      </p>
+        {/* Content */}
+        <div className="max-w-4xl mx-auto px-6 lg:px-8 py-16 lg:py-24">
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* General & Advisory */}
+            <div>
+              <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 mb-4">
+                Advisory Enquiries
+              </p>
+              <p className="text-neutral-600 leading-relaxed mb-6">
+                For strategic advisory, consulting, and marketplace enquiries,
+                reach out directly to our team.
+              </p>
+              <a
+                href="mailto:support@wealwaysrise.com"
+                className="inline-flex items-center px-6 py-3 bg-neutral-900 text-white text-sm font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200"
+              >
+                support@wealwaysrise.com
+              </a>
+            </div>
 
-      <h2>Privacy &amp; Data</h2>
-      <p>
-        For data subject access requests, erasure requests, or any other
-        privacy-related enquiry:
-      </p>
-      <ul>
-        <li>
-          <strong>Email:</strong>{" "}
-          <a href="mailto:privacy@risetech.info">privacy@risetech.info</a>
-        </li>
-      </ul>
+            {/* Company Details */}
+            <div>
+              <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 mb-4">
+                Company Details
+              </p>
+              <ul className="space-y-2 text-sm text-neutral-600 leading-relaxed">
+                <li>
+                  <span className="font-medium text-neutral-900">
+                    Legal Entity:
+                  </span>{" "}
+                  RISETECH INFO LTD.
+                </li>
+                <li>
+                  <span className="font-medium text-neutral-900">
+                    Company Number:
+                  </span>{" "}
+                  14876900
+                </li>
+                <li>
+                  <span className="font-medium text-neutral-900">
+                    Registered Office:
+                  </span>{" "}
+                  71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, United
+                  Kingdom
+                </li>
+                <li>
+                  <span className="font-medium text-neutral-900">Website:</span>{" "}
+                  wealwaysrise.com
+                </li>
+              </ul>
+            </div>
+          </div>
 
-      <h2>Legal</h2>
-      <p>For legal notices and formal correspondence:</p>
-      <ul>
-        <li>
-          <strong>Email:</strong>{" "}
-          <a href="mailto:legal@risetech.info">legal@risetech.info</a>
-        </li>
-      </ul>
+          {/* Legal links */}
+          <div className="mt-16 pt-10 border-t border-neutral-100">
+            <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 mb-6">
+              Legal Pages
+            </p>
+            <div className="flex flex-wrap gap-4">
+              {[
+                { label: "Terms and Conditions", href: "/terms" },
+                { label: "Privacy Policy", href: "/privacy" },
+                { label: "Refund Policy", href: "/refund-policy" },
+                { label: "Billing Policy", href: "/billing-policy" },
+              ].map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm text-neutral-500 underline underline-offset-4 hover:text-neutral-900 transition-colors duration-200"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </main>
 
-      <h2>Registered Office</h2>
-      <p>
-        <strong>RiseTech Information Ltd</strong>
-        <br />
-        128 City Road
-        <br />
-        London
-        <br />
-        EC1V 2NX
-        <br />
-        England, United Kingdom
-      </p>
-      <p>
-        <strong>Company Registration No.:</strong> 15985140
-        <br />
-        <strong>Country of Incorporation:</strong> England and Wales
-        <br />
-        <strong>Email:</strong>{" "}
-        <a href="mailto:advisory@risetech.info">advisory@risetech.info</a>
-      </p>
-
-      <h2>Response Times</h2>
-      <p>
-        We aim to respond to all enquiries within <strong>1 business day</strong>{" "}
-        (Monday–Friday, 09:00–17:30 GMT). For urgent matters, please mark your
-        email subject &ldquo;URGENT&rdquo;.
-      </p>
-
-      <hr />
-
-      <h2>Request Advisory</h2>
-      <p>
-        Ready to work together? Email{" "}
-        <a href="mailto:advisory@risetech.info">advisory@risetech.info</a> with
-        a brief description of your business, the challenges you are facing, and
-        the type of support you are looking for. We will respond within one
-        business day to schedule an initial call.
-      </p>
-    </LegalLayout>
+      {/* Footer */}
+      <SiteFooter />
+    </>
   );
 }
