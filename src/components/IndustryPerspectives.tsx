@@ -77,8 +77,11 @@ export default function IndustryPerspectives() {
           <li key={item.name} className={styles.perspectiveCard}>
             <figure>
               <p className={styles.perspectiveLabel}>{item.industry}</p>
+              <span className={styles.perspectiveMark} aria-hidden="true">
+                &ldquo;
+              </span>
               <blockquote>
-                <p>&ldquo;{item.quote}&rdquo;</p>
+                <p>{item.quote}</p>
               </blockquote>
               <figcaption>
                 <strong>{item.name}</strong>
