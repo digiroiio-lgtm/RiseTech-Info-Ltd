@@ -659,6 +659,127 @@
   color: var(--product-muted);
   line-height: 1.8;
 }
+.perspectives {
+  border-top: 1px solid var(--product-line);
+  padding: 56px 0;
+}
+.perspectiveTrack {
+  list-style: none;
+  margin: 26px 0 0;
+  padding: 4px 0 8px;
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+}
+.perspectiveTrack::-webkit-scrollbar {
+  display: none;
+}
+.perspectiveTrack:focus-visible {
+  outline: 2px solid var(--product-ink);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+.perspectiveCard {
+  flex: 0 0 88%;
+  min-width: 0;
+  scroll-snap-align: start;
+  display: flex;
+}
+.perspectiveCard figure {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 24px;
+  background: var(--product-surface);
+  border: 1px solid var(--product-line);
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+.perspectiveCard figure:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgb(0 0 0 / 0.08);
+}
+.perspectiveLabel {
+  color: var(--product-muted);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.perspectiveCard blockquote {
+  flex: 1;
+  margin: 16px 0 22px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--product-ink);
+}
+.perspectiveCard figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 16px;
+  border-top: 1px solid var(--product-line);
+}
+.perspectiveCard figcaption strong {
+  font-size: 13px;
+  font-weight: 500;
+}
+.perspectiveCard figcaption span {
+  color: var(--product-muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+.perspectiveDots {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 14px;
+}
+.perspectiveDots button {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  position: relative;
+}
+.perspectiveDots button::after {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border-radius: 50%;
+  background: var(--product-line);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.perspectiveDots button[aria-current="true"]::after {
+  background: var(--product-ink);
+  transform: scale(1.2);
+}
+@media (min-width: 640px) {
+  .perspectiveTrack {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    overflow: visible;
+    padding: 0;
+  }
+  .perspectiveCard {
+    flex: none;
+  }
+  .perspectiveDots {
+    display: none;
+  }
+}
+@media (min-width: 1100px) {
+  .perspectiveTrack {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
 @media (max-width: 1023px) {
   .hero {
     grid-template-columns: minmax(0, 1fr);
@@ -825,6 +946,9 @@
   .audiences {
     padding: 36px 0;
   }
+  .perspectives {
+    padding: 44px 0;
+  }
   .audienceIntro,
   .curriculumIntro {
     align-items: start;
@@ -884,6 +1008,13 @@
   }
 }
 @media (prefers-reduced-motion: reduce) {
+  .perspectiveCard figure,
+  .perspectiveDots button::after {
+    transition: none;
+  }
+  .perspectiveCard figure:hover {
+    transform: none;
+  }
   .section *,
   .section *::before,
   .section *::after {

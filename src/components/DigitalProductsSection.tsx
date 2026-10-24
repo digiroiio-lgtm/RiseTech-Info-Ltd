@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "./DigitalProductsSection.module.css";
+import IndustryPerspectives from "./IndustryPerspectives";
 
 const productName = "AI Daily Assistant & Operations Masterclass";
 
@@ -432,6 +433,7 @@ export default function DigitalProductsSection() {
             </div>
           </div>
         </div>
+        <IndustryPerspectives />
         <div id="planned-curriculum" className={styles.curriculum}>
           <div className={styles.curriculumIntro}>
             <div>
