@@ -15,7 +15,8 @@ export default function SiteFooter() {
               Operated by RiseTech Information Ltd
             </p>
             <p className="text-xs leading-relaxed mt-4 text-neutral-500">
-              Advisory and strategy consulting services for founders and companies.
+              Advisory and strategy consulting services for founders and
+              companies.
             </p>
             <p className="text-xs mt-3">
               <span className="text-neutral-600">Contact: </span>
@@ -55,7 +56,11 @@ export default function SiteFooter() {
 
           {/* Legal links */}
           <nav className="flex flex-wrap items-start gap-x-6 gap-y-2 self-start">
-            {LEGAL_LINKS.map((link) => (
+            {[
+              { label: "Services", href: "/services" },
+              { label: "Pricing", href: "/pricing" },
+              ...LEGAL_LINKS,
+            ].map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
@@ -73,7 +78,8 @@ export default function SiteFooter() {
             &copy; {new Date().getFullYear()} RiseTech Information Ltd
           </p>
           <p className="text-[11px] text-neutral-700">
-            Strategic Advisory &middot; Market Intelligence &middot; Growth Architecture
+            Strategic Advisory &middot; Market Intelligence &middot; Growth
+            Architecture
           </p>
         </div>
       </div>

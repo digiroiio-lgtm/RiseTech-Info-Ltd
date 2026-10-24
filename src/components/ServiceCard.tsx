@@ -1,10 +1,16 @@
+import Link from "next/link";
+
 interface ServiceCardProps {
+  slug?: string;
+  showCheckoutLink?: boolean;
   title: string;
   description: string;
   price: string;
 }
 
 export default function ServiceCard({
+  slug,
+  showCheckoutLink = false,
   title,
   description,
   price,
@@ -26,12 +32,21 @@ export default function ServiceCard({
       {/* Bottom */}
       <div className="flex items-center justify-between pt-4 border-t border-neutral-100">
         <span className="text-xl font-light text-neutral-900">{price}</span>
-        <a
-          href="#contact"
-          className="inline-flex items-center px-4 py-2 bg-neutral-900 text-white text-xs font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200 group-hover:bg-neutral-900"
-        >
-          Get Started
-        </a>
+        {showCheckoutLink && slug ? (
+          <Link
+            href={`/checkout?service=${slug}`}
+            className="inline-flex items-center px-4 py-2 bg-neutral-900 text-white text-xs font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200"
+          >
+            Select &amp; Pay →
+          </Link>
+        ) : (
+          <Link
+            href="/#contact"
+            className="inline-flex items-center px-4 py-2 bg-neutral-900 text-white text-xs font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200 group-hover:bg-neutral-900"
+          >
+            Get Started
+          </Link>
+        )}
       </div>
     </div>
   );

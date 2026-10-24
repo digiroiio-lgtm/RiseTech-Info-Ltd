@@ -1,4 +1,5 @@
 import ServiceCategory from "./ServiceCategory";
+import { SERVICE_CATEGORIES } from "@/lib/services";
 import StartupAdvisoryCarousel from "./StartupAdvisoryCarousel";
 import RealEstateCarousel from "./RealEstateCarousel";
 
@@ -543,9 +544,16 @@ const categories = [
   },
 ];
 
-export default function ServicesSection() {
+export default function ServicesSection({
+  showCheckoutLinks = false,
+}: {
+  showCheckoutLinks?: boolean;
+}) {
   return (
-    <section id="services" className="bg-white py-24 lg:py-32 border-t border-neutral-100">
+    <section
+      id="services"
+      className="bg-white py-24 lg:py-32 border-t border-neutral-100"
+    >
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="mb-16 lg:mb-24">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 mb-4">
@@ -556,10 +564,10 @@ export default function ServicesSection() {
           </h2>
         </div>
 
-        {categories.map((cat) =>
-          cat.index === 3 ? (
+        {(showCheckoutLinks ? SERVICE_CATEGORIES : categories).map((cat) =>
+          !showCheckoutLinks && cat.index === 3 ? (
             <StartupAdvisoryCarousel key={cat.index} />
-          ) : cat.index === 18 ? (
+          ) : !showCheckoutLinks && cat.index === 18 ? (
             <RealEstateCarousel key={cat.index} />
           ) : (
             <ServiceCategory
@@ -568,8 +576,9 @@ export default function ServicesSection() {
               name={cat.name}
               tagline={cat.tagline}
               services={cat.services}
+              showCheckoutLinks={showCheckoutLinks}
             />
-          )
+          ),
         )}
       </div>
     </section>
