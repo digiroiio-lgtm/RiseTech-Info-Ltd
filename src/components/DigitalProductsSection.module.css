@@ -705,20 +705,44 @@
   box-shadow: 0 10px 24px rgb(0 0 0 / 0.08);
 }
 .perspectiveLabel {
-  color: var(--product-muted);
+  align-self: flex-start;
+  background: var(--product-accent);
+  color: #202518;
+  border-radius: 30px;
+  padding: 6px 12px;
   font-size: 10px;
   font-weight: 600;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
   text-transform: uppercase;
+  white-space: nowrap;
+}
+.perspectiveMark {
+  display: block;
+  margin-top: 14px;
+  color: var(--product-line);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 72px;
+  line-height: 0.75;
+  padding-top: 10px;
+}
+.perspectiveMark::after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 2px;
+  margin-top: 4px;
+  background: var(--product-accent);
 }
 .perspectiveCard blockquote {
   flex: 1;
-  margin: 16px 0 22px;
+  margin: 22px 0 22px;
   font-size: 13px;
   line-height: 1.8;
   color: var(--product-ink);
 }
 .perspectiveCard figcaption {
+  min-height: 78px;
   display: flex;
   flex-direction: column;
   gap: 4px;
