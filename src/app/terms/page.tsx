@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import LegalPage from "@/components/LegalPage";
 
 export const metadata: Metadata = {
-  title: "Terms and Conditions — RiseTech Advisory",
+  title: "Terms and Conditions — Werrise Digital",
   description:
     "Terms and Conditions governing your use of wealwaysrise.com and services provided by WERRISE DIGITAL LTD",
 };
@@ -33,7 +33,7 @@ export default function TermsPage() {
         {
           heading: "3. Services",
           paragraphs: [
-            "Werrise Digital Ltd, trading as RiseTech, provides strategic advisory, consulting, and market intelligence services.",
+            "Werrise Digital Ltd provides strategic advisory, consulting, and market intelligence services.",
             "Services may include but are not limited to:",
           ],
           items: [
@@ -122,7 +122,7 @@ export default function TermsPage() {
         },
         {
           heading: "9. Limitation of Liability",
-          paragraphs: ["RiseTech shall not be liable for:"],
+          paragraphs: ["Werrise Digital Ltd shall not be liable for:"],
           items: [
             "business losses",
             "investment losses",
@@ -142,7 +142,7 @@ export default function TermsPage() {
           heading: "10. Disclaimer",
           paragraphs: [
             "Advisory services are provided for informational and strategic purposes only.",
-            "RiseTech does not provide:",
+            "Werrise Digital Ltd does not provide:",
           ],
           items: [
             "legal advice",
@@ -161,7 +161,7 @@ export default function TermsPage() {
         {
           heading: "11. Chargebacks",
           paragraphs: [
-            "If a payment dispute or chargeback is initiated without contacting support first, RiseTech reserves the right to:",
+            "If a payment dispute or chargeback is initiated without contacting support first, Werrise Digital Ltd reserves the right to:",
           ],
           items: [
             "suspend services",

@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = insights.find((p) => p.slug === slug);
   if (!post) return {};
   return {
-    title: `${post.title} — RiseTech Insights`,
+    title: `${post.title} — Werrise Digital Insights`,
     description: post.excerpt,
   };
 }
@@ -52,7 +52,7 @@ export default async function InsightPostPage({ params }: Props) {
       <Navbar />
       <main className="flex-1 pt-16">
         {/* Hero */}
-        <div className="bg-neutral-950 text-white py-24 lg:py-28">
+        <div className="bg-neutral-950 text-white py-14 md:py-20 lg:py-28">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <div className="flex items-center gap-3 mb-8">
               <Link
@@ -77,13 +77,13 @@ export default async function InsightPostPage({ params }: Props) {
             <div className="flex items-center gap-6 text-xs text-neutral-600">
               <span>{formatDate(post.date)}</span>
               <span>{post.readTime} min read</span>
-              <span className="hidden sm:inline">RiseTech Advisory</span>
+              <span className="hidden sm:inline">Werrise Digital</span>
             </div>
           </div>
         </div>
 
         {/* Body */}
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 py-16 lg:py-24">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8 py-10 md:py-16 lg:py-24">
           <div className="prose prose-neutral max-w-none">
             {paragraphs.map((para, i) => (
               <p
@@ -96,8 +96,8 @@ export default async function InsightPostPage({ params }: Props) {
           </div>
 
           {/* CTA block */}
-          <div className="mt-16 border-t border-neutral-100 pt-16">
-            <div className="bg-neutral-950 p-8 lg:p-12">
+          <div className="mt-10 md:mt-16 border-t border-neutral-100 pt-16">
+            <div className="bg-neutral-950 p-6 sm:p-8 lg:p-12">
               <p className="text-xs font-normal tracking-[0.2em] uppercase text-neutral-500 mb-4">
                 Go Deeper
               </p>
@@ -128,7 +128,7 @@ export default async function InsightPostPage({ params }: Props) {
 
           {/* Related posts */}
           {related.length > 0 && (
-            <div className="mt-20">
+            <div className="mt-12 md:mt-20">
               <p className="text-xs font-normal tracking-[0.2em] uppercase text-neutral-400 mb-8">
                 Related Insights
               </p>

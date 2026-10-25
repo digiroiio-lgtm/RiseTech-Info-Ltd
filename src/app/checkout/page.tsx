@@ -56,7 +56,7 @@ function CheckoutFlow() {
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-6 lg:px-8 py-20 lg:py-28">
+    <div className="max-w-6xl mx-auto px-6 lg:px-8 py-12 md:py-20 lg:py-28">
       {/* Header */}
       <div className="mb-12">
         <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 mb-4">

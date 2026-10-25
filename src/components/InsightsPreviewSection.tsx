@@ -31,7 +31,7 @@ export default function InsightsPreviewSection() {
               Intelligence Hub
             </p>
             <h2 className="text-3xl lg:text-4xl font-light text-neutral-900">
-              Latest insights from RiseTech.
+              Latest insights from Werrise Digital.
             </h2>
           </div>
           <Link

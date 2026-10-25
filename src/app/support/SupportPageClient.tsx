@@ -101,7 +101,7 @@ export default function SupportPageClient() {
             href="/"
             className="text-sm font-semibold tracking-[0.15em] uppercase text-neutral-900 dark:text-white"
           >
-            RiseTech
+            Werrise Digital
           </Link>
 
           <nav className="hidden md:flex items-center gap-6">
@@ -127,10 +127,10 @@ export default function SupportPageClient() {
       </header>
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
-      <section className="bg-neutral-50 dark:bg-[#111827] py-20 lg:py-28 transition-colors duration-200">
+      <section className="bg-neutral-50 dark:bg-[#111827] py-12 md:py-20 lg:py-28 transition-colors duration-200">
         <div className="max-w-[1200px] mx-auto px-6 lg:px-10 flex flex-col items-center text-center">
           <h1 className="text-4xl lg:text-5xl font-semibold tracking-tight text-neutral-900 dark:text-white mb-3">
-            RiseTech Support
+            Werrise Digital Support
           </h1>
           <p className="text-base text-neutral-500 dark:text-neutral-400 mb-10">
             How can we help you today?
@@ -201,7 +201,7 @@ export default function SupportPageClient() {
         )}
 
         {/* Contact nudge */}
-        <div className="mt-20 text-center">
+        <div className="mt-12 md:mt-20 text-center">
           <p className="text-sm text-neutral-500 dark:text-neutral-400">
             Can&apos;t find what you&apos;re looking for?{" "}
             <a

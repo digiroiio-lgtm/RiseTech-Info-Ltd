@@ -399,7 +399,7 @@ export default function TeamPageClient() {
             href="/"
             className="text-sm font-semibold tracking-[0.15em] uppercase text-neutral-900"
           >
-            RiseTech
+            Werrise Digital
           </Link>
           <nav className="hidden md:flex items-center gap-8">
             {[
@@ -428,7 +428,7 @@ export default function TeamPageClient() {
 
       {/* ── Hero ─────────────────────────────────────────────────────────────── */}
       <section className="pt-16 bg-neutral-950 text-white">
-        <div className="max-w-[1320px] mx-auto px-6 lg:px-10 py-20 lg:py-28">
+        <div className="max-w-[1320px] mx-auto px-6 lg:px-10 py-12 md:py-20 lg:py-28">
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-[11px] text-neutral-500 mb-8" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-neutral-300 transition-colors">Home</Link>
@@ -447,10 +447,10 @@ export default function TeamPageClient() {
       </section>
 
       {/* ── Main Content ─────────────────────────────────────────────────────── */}
-      <main className="flex-1 max-w-[1320px] mx-auto w-full px-6 lg:px-10 py-16 lg:py-24">
+      <main className="flex-1 max-w-[1320px] mx-auto w-full px-6 lg:px-10 py-10 md:py-16 lg:py-24">
 
         {/* ── Tab Navigation ─────────────────────────────────────────────── */}
-        <div className="border-b border-neutral-200 mb-14">
+        <div className="border-b border-neutral-200 mb-8 md:mb-14">
           <nav className="flex gap-0" role="tablist" aria-label="Team sections">
             {TABS.map((tab) => (
               <button
@@ -464,7 +464,7 @@ export default function TeamPageClient() {
                   setPracticeFilter("All Practice Areas");
                   setRegionFilter("All Regions");
                 }}
-                className={`px-6 py-4 text-xs font-semibold tracking-widest uppercase transition-colors duration-150 border-b-2 -mb-px ${
+                className={`px-4 sm:px-6 py-4 text-xs font-semibold tracking-wider sm:tracking-widest uppercase transition-colors duration-150 border-b-2 -mb-px ${
                   activeTab === tab.id
                     ? "border-neutral-900 text-neutral-900"
                     : "border-transparent text-neutral-500 hover:text-neutral-700"
@@ -477,7 +477,7 @@ export default function TeamPageClient() {
         </div>
 
         {/* ── Executive Grid (top cards for active tab) ──────────────────── */}
-        <div className="mb-20">
+        <div className="mb-12 md:mb-20">
           <div className="flex items-baseline justify-between mb-10">
             <h2 className="text-xl font-light text-neutral-900 tracking-tight">
               {TABS.find((t) => t.id === activeTab)?.label}

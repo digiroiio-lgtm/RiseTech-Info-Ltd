@@ -15,7 +15,7 @@ export default function ServicesPage() {
       <Navbar />
       <main className="flex-1 pt-16">
         {/* Page header */}
-        <section className="bg-white border-b border-neutral-100 py-16 lg:py-20">
+        <section className="bg-white border-b border-neutral-100 py-10 md:py-16 lg:py-20">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 mb-4">
               Services &amp; Pricing
@@ -74,7 +74,7 @@ export default function ServicesPage() {
         <ServicesSection showCheckoutLinks />
 
         {/* Bottom CTA */}
-        <section className="bg-neutral-900 text-white py-16 lg:py-20">
+        <section className="bg-neutral-900 text-white py-10 md:py-16 lg:py-20">
           <div className="max-w-6xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8">
             <div>
               <h2 className="text-2xl lg:text-3xl font-light text-white mb-2">

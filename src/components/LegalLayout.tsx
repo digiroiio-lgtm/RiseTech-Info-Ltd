@@ -21,7 +21,7 @@ export default function LegalLayout({
             href="/"
             className="text-sm font-semibold tracking-[0.15em] uppercase text-neutral-900"
           >
-            RiseTech
+            Werrise Digital
           </Link>
           <nav className="hidden md:flex items-center gap-8">
             {[
