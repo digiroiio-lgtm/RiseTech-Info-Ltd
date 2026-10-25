@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import CollapsibleCategory from "./CollapsibleCategory";
 
 const services = [
   {
@@ -114,45 +115,47 @@ export default function RealEstateCarousel() {
   };
 
   return (
-    <div
-      className="mb-12 md:mb-20 lg:mb-32 -mx-6 lg:-mx-8 px-6 lg:px-8 py-10 md:py-16 lg:py-20"
-      style={{ backgroundColor: "#f0ede6" }}
-    >
-      {/* Header row */}
-      <div className="max-w-6xl mx-auto flex items-start justify-between mb-6 md:mb-10">
-        <div>
-          <div className="flex items-baseline gap-6 mb-2">
-            <span className="text-xs font-semibold tracking-[0.2em] text-neutral-400 uppercase">
-              18
-            </span>
-            <h2 className="text-3xl lg:text-4xl font-bold text-neutral-900 leading-tight">
-              Real Estate Intelligence
-            </h2>
+    <CollapsibleCategory
+      className="-mx-6 lg:-mx-8 px-6 lg:px-8 bg-[#f0ede6] md:mb-20 md:py-16 lg:mb-32 lg:py-20"
+      openClassName="mb-12 py-10"
+      closedClassName="mb-0 py-5 border-b border-neutral-300/60 md:border-0"
+      meta="3 services"
+      header={
+        <div className="max-w-6xl mx-auto flex items-start justify-between">
+          <div>
+            <div className="flex items-baseline gap-4 md:gap-6 mb-2">
+              <span className="text-xs font-semibold tracking-[0.2em] text-neutral-400 uppercase">18</span>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-900 leading-tight">
+                Real Estate Intelligence
+              </h2>
+            </div>
+            <p className="ml-[2.75rem] md:ml-[3.5rem] text-sm text-neutral-500 leading-relaxed max-w-md">
+              Strategic real estate intelligence designed to help investors identify high-ROI locations, evaluate opportunities, and make data-driven acquisition decisions.
+            </p>
           </div>
-          <p className="ml-[3.5rem] text-sm text-neutral-500 leading-relaxed max-w-md">
-            Strategic real estate intelligence designed to help investors identify high-ROI locations,
-            evaluate opportunities, and make data-driven acquisition decisions.
-          </p>
+          {/* Arrow buttons (desktop only; touch users swipe) */}
+          <div className="hidden md:flex gap-2 mt-1 shrink-0">
+            <button
+              type="button"
+              onClick={(e) => { e.stopPropagation(); scroll("left"); }}
+              aria-label="Scroll left"
+              className="w-10 h-10 flex items-center justify-center border border-neutral-300 bg-white hover:bg-neutral-900 hover:border-neutral-900 hover:text-white text-neutral-700 transition-all duration-200"
+            >
+              ←
+            </button>
+            <button
+              type="button"
+              onClick={(e) => { e.stopPropagation(); scroll("right"); }}
+              aria-label="Scroll right"
+              className="w-10 h-10 flex items-center justify-center border border-neutral-300 bg-white hover:bg-neutral-900 hover:border-neutral-900 hover:text-white text-neutral-700 transition-all duration-200"
+            >
+              →
+            </button>
+          </div>
         </div>
-        {/* Arrow buttons */}
-        <div className="flex gap-2 mt-1 shrink-0">
-          <button
-            onClick={() => scroll("left")}
-            aria-label="Scroll left"
-            className="w-10 h-10 flex items-center justify-center border border-neutral-300 bg-white hover:bg-neutral-900 hover:border-neutral-900 hover:text-white text-neutral-700 transition-all duration-200"
-          >
-            ←
-          </button>
-          <button
-            onClick={() => scroll("right")}
-            aria-label="Scroll right"
-            className="w-10 h-10 flex items-center justify-center border border-neutral-300 bg-white hover:bg-neutral-900 hover:border-neutral-900 hover:text-white text-neutral-700 transition-all duration-200"
-          >
-            →
-          </button>
-        </div>
-      </div>
-
+      }
+    >
+      <div className="mt-6 md:mt-10" />
       {/* Scrollable card row */}
       <div
         ref={scrollRef}
@@ -204,6 +207,6 @@ export default function RealEstateCarousel() {
           </div>
         ))}
       </div>
-    </div>
+    </CollapsibleCategory>
   );
 }
