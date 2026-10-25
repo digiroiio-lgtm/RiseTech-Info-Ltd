@@ -13,7 +13,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "t1",
     quote:
-      "RiseTech's export strategy roadmap was the clearest, most actionable document we've ever received from an outside firm. We entered three EU markets within six months — something we'd been talking about for two years.",
+      "Werrise Digital's export strategy roadmap was the clearest, most actionable document we've ever received from an outside firm. We entered three EU markets within six months — something we'd been talking about for two years.",
     name: "James T.",
     title: "CEO",
     company: "UK Luxury Goods Brand",
@@ -101,7 +101,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "t9",
     quote:
-      "RiseTech doesn't just deliver reports — they deliver conviction. The real estate intelligence they produced redirected £20M of our capital allocation. That single engagement has already paid for itself many times over.",
+      "Werrise Digital doesn't just deliver reports — they deliver conviction. The real estate intelligence they produced redirected £20M of our capital allocation. That single engagement has already paid for itself many times over.",
     name: "David H.",
     title: "Development Director",
     company: "London Property Developer",

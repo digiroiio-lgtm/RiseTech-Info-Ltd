@@ -62,7 +62,7 @@ export default function FounderCredibilitySection() {
           </p>
           {/* Founder story teaser */}
           <p className="text-neutral-500 mt-5 max-w-xl text-sm leading-relaxed">
-            The name RiseTech was born on an open American highway — a moment
+            The idea behind Werrise Digital was born on an open American highway — a moment
             that captured the philosophy we&apos;d been living for years.
           </p>
           <div className="flex flex-wrap items-center gap-6 mt-3">
