@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { INFORMATION_DISCLAIMER } from "@/lib/services";
 import Navbar from "@/components/Navbar";
 import SiteFooter from "@/components/SiteFooter";
 import { reports } from "@/lib/reports";
@@ -35,6 +36,9 @@ export default function ReportsPage() {
               Each report is 40–55 pages of proprietary analysis — market
               sizing, competitive landscape, investment signals, and strategic
               recommendations built for decision-makers.
+            </p>
+            <p className="text-xs text-neutral-500 leading-relaxed max-w-xl mt-4">
+              {INFORMATION_DISCLAIMER}
             </p>
           </div>
         </div>

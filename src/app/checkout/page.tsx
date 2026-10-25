@@ -3,7 +3,7 @@
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
-import { SERVICE_CATEGORIES, SERVICES_BY_SLUG, type Service } from "@/lib/services";
+import { INFORMATION_DISCLAIMER, SERVICE_CATEGORIES, SERVICES_BY_SLUG, type Service } from "@/lib/services";
 
 function CheckoutFlow() {
   const searchParams = useSearchParams();
@@ -159,7 +159,10 @@ function CheckoutFlow() {
             <p className="text-base font-semibold text-neutral-900 mb-1">
               {selected.title}
             </p>
-            <p className="text-sm text-neutral-500 mb-4">{selected.description}</p>
+            <p className="text-sm text-neutral-500 mb-3">{selected.description}</p>
+            <p className="text-xs text-neutral-500 leading-relaxed mb-4">
+              {INFORMATION_DISCLAIMER}
+            </p>
             <div className="flex items-center justify-between pt-3 border-t border-neutral-200">
               <span className="text-xs text-neutral-400">Total (incl. VAT)</span>
               <span className="text-2xl font-light text-neutral-900">

@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import CollapsibleCategory from "./CollapsibleCategory";
-import { quoteHref } from "@/lib/services";
+import { INFORMATION_DISCLAIMER, quoteHref } from "@/lib/services";
 
 const services = [
   {
@@ -199,6 +199,9 @@ export default function RealEstateCarousel() {
                 <RealEstateIcon type={svc.icon} />
               </div>
               <div className="pt-4 border-t border-neutral-100">
+                <p className="text-[10px] text-neutral-500 leading-relaxed mb-3">
+                  {INFORMATION_DISCLAIMER}
+                </p>
                 <span className="text-sm text-neutral-500">Custom quote</span>
               </div>
             </div>

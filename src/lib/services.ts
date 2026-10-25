@@ -193,3 +193,11 @@ export const SUPPORT_EMAIL = "support@wealwaysrise.com";
 export function quoteHref(title: string): string {
   return `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent(`Quote request: ${title}`)}`;
 }
+
+export const INFORMATION_DISCLAIMER =
+  "Business and market analysis for informational purposes. This is not investment, financial, tax or legal advice and does not recommend any specific investment.";
+
+/** Services whose names point at investment, funding or acquisition topics. */
+export function needsInformationDisclaimer(title: string): boolean {
+  return /due diligence|investment|investor|acquisition|consolidation|fundrais|\bVC\b|real estate|property/i.test(title);
+}
