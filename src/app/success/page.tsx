@@ -51,13 +51,13 @@ export default async function SuccessPage({ searchParams }: SuccessPageProps) {
             href="/"
             className="text-sm font-semibold tracking-[0.15em] uppercase text-neutral-900"
           >
-            RiseTech
+            Werrise Digital
           </Link>
         </div>
       </header>
 
       <main className="flex-1 pt-16 min-h-screen bg-white">
-        <div className="max-w-2xl mx-auto px-6 lg:px-8 py-20 lg:py-32">
+        <div className="max-w-2xl mx-auto px-6 lg:px-8 py-12 md:py-20 lg:py-32">
           {/* Success icon */}
           <div className="w-14 h-14 rounded-full bg-neutral-900 flex items-center justify-center mb-8">
             <svg

@@ -5,7 +5,7 @@ import SiteFooter from "@/components/SiteFooter";
 import { reports } from "@/lib/reports";
 
 export const metadata: Metadata = {
-  title: "Intelligence Reports — RiseTech Advisory",
+  title: "Intelligence Reports — Werrise Digital",
   description:
     "Investment-grade market intelligence reports for founders, operators, and investors. Deep-dive analysis, proprietary data, and strategic recommendations.",
 };
@@ -23,7 +23,7 @@ export default function ReportsPage() {
       <Navbar />
       <main className="flex-1 pt-16">
         {/* Hero */}
-        <div className="bg-neutral-950 text-white py-24 lg:py-32">
+        <div className="bg-neutral-950 text-white py-14 md:py-20 lg:py-32">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <p className="text-xs font-normal tracking-[0.2em] uppercase text-neutral-500 mb-6">
               Premium Intelligence
@@ -74,7 +74,7 @@ export default function ReportsPage() {
         </div>
 
         {/* Reports list */}
-        <div className="max-w-6xl mx-auto px-6 lg:px-8 py-20 lg:py-28">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8 py-12 md:py-20 lg:py-28">
           <div className="space-y-8">
             {reports.map((report, i) => (
               <article
@@ -82,7 +82,7 @@ export default function ReportsPage() {
                 className="border border-neutral-200 bg-white hover:border-neutral-900 hover:shadow-sm transition-all duration-300"
               >
                 {/* Header */}
-                <div className="p-8 lg:p-10 border-b border-neutral-100">
+                <div className="p-6 sm:p-8 lg:p-10 border-b border-neutral-100">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
                     <div className="flex items-center gap-4">
                       <span className="text-xs font-mono text-neutral-300">
@@ -110,7 +110,7 @@ export default function ReportsPage() {
                 </div>
 
                 {/* Preview & CTA */}
-                <div className="p-8 lg:p-10 grid lg:grid-cols-3 gap-8">
+                <div className="p-6 sm:p-8 lg:p-10 grid lg:grid-cols-3 gap-8">
                   <div className="lg:col-span-2">
                     <p className="text-xs font-semibold tracking-[0.15em] uppercase text-neutral-400 mb-4">
                       Free Preview — What&apos;s Inside
@@ -161,7 +161,7 @@ export default function ReportsPage() {
           </div>
 
           {/* Enterprise CTA */}
-          <div className="mt-20 pt-16 border-t border-neutral-100">
+          <div className="mt-12 md:mt-20 pt-16 border-t border-neutral-100">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-xs font-normal tracking-[0.2em] uppercase text-neutral-400 mb-4">

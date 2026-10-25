@@ -16,7 +16,7 @@ export default function PrivacyPage() {
         {
           heading: "Who We Are",
           paragraphs: [
-            "The data controller is Werrise Digital Ltd (trading as RiseTech), Company No. 16345678, registered at 85 Great Portland Street, London, W1W 7LT, United Kingdom.",
+            "The data controller is Werrise Digital Ltd, Company No. 16345678, registered at 85 Great Portland Street, London, W1W 7LT, United Kingdom.",
             "You can contact us about your personal data at support@wealwaysrise.com.",
           ],
         },

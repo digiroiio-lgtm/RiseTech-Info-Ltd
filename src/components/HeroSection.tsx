@@ -14,7 +14,7 @@ export default function HeroSection() {
         <div className="max-w-4xl">
           {/* Eyebrow */}
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 mb-6 md:mb-8">
-            RiseTech Advisory
+            Werrise Digital
           </p>
 
           {/* Headline */}

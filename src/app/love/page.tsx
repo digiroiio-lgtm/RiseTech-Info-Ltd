@@ -4,9 +4,9 @@ import SiteFooter from "@/components/SiteFooter";
 import { testimonials } from "@/lib/testimonials";
 
 export const metadata: Metadata = {
-  title: "Wall of Love — RiseTech Advisory",
+  title: "Wall of Love — Werrise Digital",
   description:
-    "Hear from the founders, operators, and investors who have worked with RiseTech Advisory.",
+    "Hear from the founders, operators, and investors who have worked with Werrise Digital.",
 };
 
 // All 12 testimonials for the animated wall — 6 per column so the
@@ -163,7 +163,7 @@ export default function WallOfLovePage() {
             href="/"
             className="text-sm font-semibold tracking-[0.15em] uppercase text-neutral-900"
           >
-            RiseTech
+            Werrise Digital
           </Link>
           <a
             href="mailto:support@wealwaysrise.com"
@@ -176,7 +176,7 @@ export default function WallOfLovePage() {
 
       <main className="flex-1 pt-16">
         {/* ── Hero ──────────────────────────────────────── */}
-        <div className="bg-neutral-950 text-white py-20 lg:py-28">
+        <div className="bg-neutral-950 text-white py-12 md:py-20 lg:py-28">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 mb-6">
               Wall of Love
@@ -213,7 +213,7 @@ export default function WallOfLovePage() {
         </div>
 
         {/* ── Top 3 Highlights ─────────────────────────── */}
-        <div className="bg-neutral-950 border-t border-neutral-900 pb-20">
+        <div className="bg-neutral-950 border-t border-neutral-900 pb-12 md:pb-20">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-600 pt-14 mb-8">
               Headline results
@@ -279,7 +279,7 @@ export default function WallOfLovePage() {
         </div>
 
         {/* ── Featured Case Study ───────────────────────── */}
-        <div className="bg-neutral-950 border-t border-neutral-900 pb-20">
+        <div className="bg-neutral-950 border-t border-neutral-900 pb-12 md:pb-20">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-600 pt-14 mb-8">
               Featured engagement
@@ -300,7 +300,7 @@ export default function WallOfLovePage() {
                 className="relative grid lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-white/[0.06]"
                 style={{ background: "rgba(255,255,255,0.03)" }}
               >
-                <div className="p-8">
+                <div className="p-6 sm:p-8">
                   <p className="text-[10px] font-bold tracking-widest uppercase text-neutral-600 mb-3">
                     Challenge
                   </p>
@@ -311,7 +311,7 @@ export default function WallOfLovePage() {
                     Poland — with no existing buyer network.
                   </p>
                 </div>
-                <div className="p-8">
+                <div className="p-6 sm:p-8">
                   <p className="text-[10px] font-bold tracking-widest uppercase text-neutral-600 mb-3">
                     Solution
                   </p>
@@ -321,7 +321,7 @@ export default function WallOfLovePage() {
                     show preparation, and ongoing commercial strategy support.
                   </p>
                 </div>
-                <div className="p-8">
+                <div className="p-6 sm:p-8">
                   <p className="text-[10px] font-bold tracking-widest uppercase text-neutral-600 mb-3">
                     Result
                   </p>
@@ -363,7 +363,7 @@ export default function WallOfLovePage() {
         </div>
 
         {/* ── Video Testimonials ────────────────────────── */}
-        <div className="bg-neutral-950 border-t border-neutral-900 pb-20">
+        <div className="bg-neutral-950 border-t border-neutral-900 pb-12 md:pb-20">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-600 pt-14 mb-8">
               Video testimonials
@@ -452,7 +452,7 @@ export default function WallOfLovePage() {
         {/* ── Auto-scroll Testimonial Wall ──────────────── */}
         <div
           style={{ background: "rgb(3,7,18)" }}
-          className="py-20 overflow-hidden border-t border-neutral-900"
+          className="py-12 md:py-20 overflow-hidden border-t border-neutral-900"
         >
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-600 mb-8">
@@ -466,7 +466,7 @@ export default function WallOfLovePage() {
         </div>
 
         {/* ── CTA ───────────────────────────────────────── */}
-        <div className="bg-white py-20 lg:py-28 border-t border-neutral-100">
+        <div className="bg-white py-12 md:py-20 lg:py-28 border-t border-neutral-100">
           <div className="max-w-6xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 mb-4">
               Ready to get started?

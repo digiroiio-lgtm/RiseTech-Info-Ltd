@@ -3,7 +3,7 @@ import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Founder Story — RiseTech Advisory",
+  title: "Founder Story — Werrise Digital",
   description:
     "The moment that started everything. How a song on an American highway gave birth to the philosophy behind RiseTech.",
 };
@@ -18,7 +18,7 @@ export default function FounderStoryPage() {
             href="/"
             className="text-sm font-semibold tracking-[0.15em] uppercase text-neutral-900"
           >
-            RiseTech
+            Werrise Digital
           </Link>
           <Link
             href="/#contact"
@@ -32,7 +32,7 @@ export default function FounderStoryPage() {
       <main className="flex-1 pt-16">
 
         {/* ── 1. HERO ──────────────────────────────────────────── */}
-        <div className="bg-neutral-950 text-white py-24 lg:py-36">
+        <div className="bg-neutral-950 text-white py-14 md:py-20 lg:py-36">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 mb-6">
               Founder Story
@@ -48,7 +48,7 @@ export default function FounderStoryPage() {
         </div>
 
         {/* ── 2. HIGHWAY STORY ─────────────────────────────────── */}
-        <div className="bg-white py-20 lg:py-28">
+        <div className="bg-white py-12 md:py-20 lg:py-28">
           <div className="max-w-3xl mx-auto px-6 lg:px-8 space-y-6 text-neutral-700 leading-relaxed text-base lg:text-lg">
             <p>
               Years before RiseTech was built, our team had already spent years
@@ -111,7 +111,7 @@ export default function FounderStoryPage() {
         </div>
 
         {/* ── 3. PHILOSOPHY ────────────────────────────────────── */}
-        <div className="bg-neutral-950 text-white py-20 lg:py-28">
+        <div className="bg-neutral-950 text-white py-12 md:py-20 lg:py-28">
           <div className="max-w-3xl mx-auto px-6 lg:px-8">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 mb-6">
               Our Philosophy
@@ -148,7 +148,7 @@ export default function FounderStoryPage() {
         </div>
 
         {/* ── 4. FOUNDER'S NOTE ────────────────────────────────── */}
-        <div className="bg-white py-20 lg:py-28">
+        <div className="bg-white py-12 md:py-20 lg:py-28">
           <div className="max-w-3xl mx-auto px-6 lg:px-8">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 mb-6">
               Founder&apos;s Note
@@ -173,7 +173,7 @@ export default function FounderStoryPage() {
         </div>
 
         {/* ── 5. MANIFESTO ─────────────────────────────────────── */}
-        <div className="bg-neutral-950 text-white py-24 lg:py-36">
+        <div className="bg-neutral-950 text-white py-14 md:py-20 lg:py-36">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 mb-8">
               We Always Rise
@@ -189,7 +189,7 @@ export default function FounderStoryPage() {
             <p className="text-3xl lg:text-5xl font-light text-white tracking-wide">
               We Always Rise.
             </p>
-            <div className="mt-16">
+            <div className="mt-10 md:mt-16">
               <Link
                 href="/#contact"
                 className="inline-flex items-center px-8 py-4 bg-white text-neutral-900 text-xs font-semibold tracking-widest uppercase hover:bg-neutral-100 transition-colors duration-200"

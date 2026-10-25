@@ -3,7 +3,7 @@ import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Contact — RiseTech Advisory",
+  title: "Contact — Werrise Digital",
   description:
     "Get in touch with Werrise Digital Ltd for advisory enquiries, support, or billing questions.",
 };
@@ -18,7 +18,7 @@ export default function ContactPage() {
             href="/"
             className="text-sm font-semibold tracking-[0.15em] uppercase text-neutral-900"
           >
-            RiseTech
+            Werrise Digital
           </Link>
           <Link
             href="/#contact"
@@ -31,7 +31,7 @@ export default function ContactPage() {
 
       <main className="flex-1 pt-16">
         {/* Header */}
-        <div className="bg-neutral-950 text-white py-20 lg:py-28">
+        <div className="bg-neutral-950 text-white py-12 md:py-20 lg:py-28">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 mb-4">
               Get in Touch
@@ -43,7 +43,7 @@ export default function ContactPage() {
         </div>
 
         {/* Content */}
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 py-16 lg:py-24">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8 py-10 md:py-16 lg:py-24">
           <div className="grid md:grid-cols-2 gap-12">
             {/* General & Advisory */}
             <div>
@@ -96,7 +96,7 @@ export default function ContactPage() {
           </div>
 
           {/* Legal links */}
-          <div className="mt-16 pt-10 border-t border-neutral-100">
+          <div className="mt-10 md:mt-16 pt-10 border-t border-neutral-100">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 mb-6">
               Legal Pages
             </p>

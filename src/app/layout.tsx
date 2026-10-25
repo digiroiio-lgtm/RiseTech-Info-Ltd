@@ -3,9 +3,9 @@ import "./globals.css";
 import ThemeProvider from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
-  title: "RiseTech Advisory — Strategic Intelligence for Founders",
+  title: "Werrise Digital — AI-Powered Business Solutions & Growth Strategy",
   description:
-    "Market intelligence, growth strategy, and founder advisory designed to help companies scale, raise capital, and win markets.",
+    "AI-powered business solutions, digital transformation and growth strategy for ambitious companies.",
 };
 
 export default function RootLayout({

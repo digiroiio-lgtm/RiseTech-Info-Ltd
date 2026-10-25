@@ -52,7 +52,7 @@ export default function InsightsPageClient() {
   return (
     <>
       {/* ── Hero ── glass panel over dark bg */}
-      <div className="bg-neutral-950 text-white py-24 lg:py-32 relative overflow-hidden">
+      <div className="bg-neutral-950 text-white py-14 md:py-20 lg:py-32 relative overflow-hidden">
         {/* Subtle radial glow behind the glass panel */}
         <div
           aria-hidden
@@ -73,7 +73,7 @@ export default function InsightsPageClient() {
             </h1>
             <p className="text-base text-neutral-400 leading-relaxed">
               Market analysis, startup frameworks, growth playbooks, and investor
-              intelligence — published by the RiseTech Advisory team.
+              intelligence — published by the Werrise Digital team.
             </p>
           </div>
         </div>
@@ -94,7 +94,7 @@ export default function InsightsPageClient() {
       </div>
 
       {/* ── Articles grid ── glow-border + fade-up per card */}
-      <div className="max-w-6xl mx-auto px-6 lg:px-8 py-20 lg:py-28">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8 py-12 md:py-20 lg:py-28">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {sorted.map((post, i) => (
             <Link
@@ -128,7 +128,7 @@ export default function InsightsPageClient() {
         </div>
 
         {/* ── Reports CTA ── fade-up on the block */}
-        <div className="fade-up mt-20 pt-16 border-t border-neutral-100">
+        <div className="fade-up mt-12 md:mt-20 pt-16 border-t border-neutral-100">
           <div className="bg-neutral-950 p-10 lg:p-14 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
             <div>
               <p className="text-xs font-normal tracking-[0.2em] uppercase text-neutral-500 mb-4">

@@ -4,9 +4,9 @@ import SiteFooter from "@/components/SiteFooter";
 import { caseStudies } from "@/lib/caseStudies";
 
 export const metadata: Metadata = {
-  title: "Case Studies — RiseTech Advisory",
+  title: "Case Studies — Werrise Digital",
   description:
-    "Real results from real engagements. Explore how RiseTech Advisory has helped founders, operators, and investors scale faster.",
+    "Real results from real engagements. Explore how Werrise Digital has helped founders, operators, and investors scale faster.",
 };
 
 export default function CaseStudiesPage() {
@@ -19,7 +19,7 @@ export default function CaseStudiesPage() {
             href="/"
             className="text-sm font-semibold tracking-[0.15em] uppercase text-neutral-900"
           >
-            RiseTech
+            Werrise Digital
           </Link>
           <nav className="hidden md:flex items-center gap-8">
             {[
@@ -47,7 +47,7 @@ export default function CaseStudiesPage() {
 
       <main className="flex-1 pt-16">
         {/* Hero */}
-        <div className="bg-neutral-950 text-white py-24 lg:py-32">
+        <div className="bg-neutral-950 text-white py-14 md:py-20 lg:py-32">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 mb-6">
               Case Studies
@@ -64,7 +64,7 @@ export default function CaseStudiesPage() {
         </div>
 
         {/* Case study list */}
-        <div className="max-w-6xl mx-auto px-6 lg:px-8 py-20 lg:py-28">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8 py-12 md:py-20 lg:py-28">
           <div className="space-y-8">
             {caseStudies.map((cs, i) => (
               <article
@@ -73,7 +73,7 @@ export default function CaseStudiesPage() {
                 className="border border-neutral-200 bg-white hover:border-neutral-900 hover:shadow-sm transition-all duration-300"
               >
                 {/* Card header */}
-                <div className="p-8 lg:p-10 border-b border-neutral-100">
+                <div className="p-6 sm:p-8 lg:p-10 border-b border-neutral-100">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
                     <div className="flex items-center gap-4">
                       <span className="text-xs font-mono text-neutral-300">
@@ -96,7 +96,7 @@ export default function CaseStudiesPage() {
                 </div>
 
                 {/* Body */}
-                <div className="p-8 lg:p-10 grid lg:grid-cols-3 gap-8">
+                <div className="p-6 sm:p-8 lg:p-10 grid lg:grid-cols-3 gap-8">
                   <div>
                     <p className="text-xs font-semibold tracking-[0.15em] uppercase text-neutral-400 mb-3">
                       Challenge
@@ -140,7 +140,7 @@ export default function CaseStudiesPage() {
           </div>
 
           {/* CTA */}
-          <div className="mt-20 pt-16 border-t border-neutral-100 text-center">
+          <div className="mt-12 md:mt-20 pt-16 border-t border-neutral-100 text-center">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 mb-4">
               Ready to build your case study?
             </p>

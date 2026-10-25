@@ -28,7 +28,7 @@ export default function LegalPage({
             href="/"
             className="text-sm font-semibold tracking-[0.15em] uppercase text-neutral-900"
           >
-            RiseTech
+            Werrise Digital
           </Link>
           <Link
             href="/#contact"

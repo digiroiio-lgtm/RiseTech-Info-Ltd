@@ -15,7 +15,7 @@ export default function PricingPage() {
       <Navbar />
       <main className="flex-1 pt-16">
         {/* Header */}
-        <section className="bg-white border-b border-neutral-100 py-16 lg:py-20">
+        <section className="bg-white border-b border-neutral-100 py-10 md:py-16 lg:py-20">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 mb-4">
               Pricing
@@ -32,7 +32,7 @@ export default function PricingPage() {
         </section>
 
         {/* Pricing tables */}
-        <section className="bg-white py-16 lg:py-24">
+        <section className="bg-white py-10 md:py-16 lg:py-24">
           <div className="max-w-6xl mx-auto px-6 lg:px-8 space-y-16">
             {SERVICE_CATEGORIES.map((cat) => (
               <div key={cat.index}>
