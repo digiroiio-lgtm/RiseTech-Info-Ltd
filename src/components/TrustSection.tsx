@@ -1,6 +1,6 @@
 const metrics = [
   { value: "50+", label: "Strategy reports delivered" },
-  { value: "$120M+", label: "Revenue influenced" },
+  { value: "Growth", label: "Revenue growth & business transformation" },
   { value: "20+", label: "International expansion projects" },
 ];
 

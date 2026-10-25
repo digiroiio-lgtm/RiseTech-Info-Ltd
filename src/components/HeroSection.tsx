@@ -53,7 +53,7 @@ export default function HeroSection() {
             {[
               "50+ founders",
               "20+ international expansion projects",
-              "$120M+ revenue influenced",
+              "Revenue Growth & Business Transformation",
             ].map((item, i) => (
               <span key={item} className="flex items-center gap-6">
                 {i !== 0 && (

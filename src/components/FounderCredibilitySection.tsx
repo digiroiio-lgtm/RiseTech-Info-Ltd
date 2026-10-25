@@ -40,7 +40,7 @@ const credentials = [
   { value: "10+", label: "Years in B2B consulting" },
   { value: "50+", label: "Strategy engagements delivered" },
   { value: "15+", label: "Countries covered across export projects" },
-  { value: "£120M+", label: "Client revenue influenced" },
+  { value: "Growth", label: "Revenue growth & business transformation" },
 ];
 
 export default function FounderCredibilitySection() {
