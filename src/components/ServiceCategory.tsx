@@ -5,7 +5,7 @@ interface Service {
   slug?: string;
   title: string;
   description: string;
-  price: string;
+  price?: string;
 }
 
 interface ServiceCategoryProps {
@@ -13,7 +13,6 @@ interface ServiceCategoryProps {
   name: string;
   tagline: string;
   services: Service[];
-  showCheckoutLinks?: boolean;
 }
 
 export default function ServiceCategory({
@@ -21,7 +20,6 @@ export default function ServiceCategory({
   name,
   tagline,
   services,
-  showCheckoutLinks = false,
 }: ServiceCategoryProps) {
   const indexStr = String(index).padStart(2, "0");
   return (
@@ -56,7 +54,6 @@ export default function ServiceCategory({
             title={svc.title}
             description={svc.description}
             price={svc.price}
-            showCheckoutLink={showCheckoutLinks}
           />
         ))}
       </div>

@@ -1,20 +1,25 @@
 import Link from "next/link";
+import { quoteHref } from "@/lib/services";
 
 interface ServiceCardProps {
+  /** Present only for services that can be bought through checkout. */
   slug?: string;
-  showCheckoutLink?: boolean;
   title: string;
   description: string;
-  price: string;
+  /** Present only together with `slug`; services without one are quote-only. */
+  price?: string;
 }
+
+const buttonClass =
+  "inline-flex items-center px-4 py-2 bg-neutral-900 text-white text-xs font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200";
 
 export default function ServiceCard({
   slug,
-  showCheckoutLink = false,
   title,
   description,
   price,
 }: ServiceCardProps) {
+  const payable = Boolean(slug && price);
   return (
     <div className="group border border-neutral-200 bg-white p-6 sm:p-8 flex flex-col justify-between hover:border-neutral-900 hover:shadow-sm transition-all duration-300">
       {/* Top */}
@@ -30,22 +35,21 @@ export default function ServiceCard({
       </div>
 
       {/* Bottom */}
-      <div className="flex items-center justify-between pt-4 border-t border-neutral-100">
-        <span className="text-xl font-light text-neutral-900">{price}</span>
-        {showCheckoutLink && slug ? (
-          <Link
-            href={`/checkout?service=${slug}`}
-            className="inline-flex items-center px-4 py-2 bg-neutral-900 text-white text-xs font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200"
-          >
-            Select &amp; Pay →
-          </Link>
+      <div className="flex items-center justify-between gap-3 pt-4 border-t border-neutral-100">
+        {payable ? (
+          <>
+            <span className="text-xl font-light text-neutral-900">{price}</span>
+            <Link href={`/checkout?service=${slug}`} className={buttonClass}>
+              Select &amp; Pay →
+            </Link>
+          </>
         ) : (
-          <Link
-            href="/#contact"
-            className="inline-flex items-center px-4 py-2 bg-neutral-900 text-white text-xs font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200 group-hover:bg-neutral-900"
-          >
-            Get Started
-          </Link>
+          <>
+            <span className="text-sm text-neutral-500">Custom quote</span>
+            <a href={quoteHref(title)} className={buttonClass}>
+              Request a Quote
+            </a>
+          </>
         )}
       </div>
     </div>

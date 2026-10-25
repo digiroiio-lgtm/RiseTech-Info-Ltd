@@ -1,43 +1,39 @@
 "use client";
 
 import { useRef } from "react";
+import Link from "next/link";
 import CollapsibleCategory from "./CollapsibleCategory";
+import { SERVICES_BY_TITLE } from "@/lib/services";
 
 const services = [
   {
     label: "Pitch Deck Design & Review",
     tagline: "Decks that open investor doors.",
-    price: "£600",
     icon: "deck",
   },
   {
     label: "Business Model Review",
     tagline: "Find gaps before investors do.",
-    price: "£900",
     icon: "model",
   },
   {
     label: "Go-To-Market Strategy Review",
     tagline: "Pressure-test your GTM for traction.",
-    price: "£1,200",
     icon: "gtm",
   },
   {
     label: "Founder Advisory Session",
     tagline: "Clarity for high-stakes decisions.",
-    price: "£1,800",
     icon: "advisory",
   },
   {
     label: "Startup Reframing Package",
     tagline: "Reposition for the next stage of growth.",
-    price: "£1,500",
     icon: "reframe",
   },
   {
     label: "Business Content Package",
     tagline: "Strategic content that moves capital.",
-    price: "£1,300",
     icon: "content",
   },
 ];
@@ -214,12 +210,12 @@ export default function StartupAdvisoryCarousel() {
               <h3 className="text-xl font-bold text-neutral-900 leading-snug mb-4">
                 {svc.tagline}
               </h3>
-              <a
-                href="#contact"
+              <Link
+                href={`/checkout?service=${SERVICES_BY_TITLE[svc.label]?.slug ?? ""}`}
                 className="text-xs font-bold text-neutral-900 underline underline-offset-4 decoration-neutral-400 hover:decoration-neutral-900 transition-colors duration-200"
               >
-                Learn more
-              </a>
+                Select &amp; Pay →
+              </Link>
             </div>
 
             {/* Bottom: icon + price */}
@@ -228,7 +224,7 @@ export default function StartupAdvisoryCarousel() {
                 <ServiceIcon type={svc.icon} />
               </div>
               <div className="pt-4 border-t border-neutral-100">
-                <span className="text-lg font-light text-neutral-900">{svc.price}</span>
+                <span className="text-lg font-light text-neutral-900">{SERVICES_BY_TITLE[svc.label]?.price}</span>
               </div>
             </div>
           </div>

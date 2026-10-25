@@ -2,26 +2,24 @@
 
 import { useRef } from "react";
 import CollapsibleCategory from "./CollapsibleCategory";
+import { quoteHref } from "@/lib/services";
 
 const services = [
   {
     label: "Real Estate Market Scan",
     tagline: "Data-driven investment snapshot.",
-    price: "£1,200",
     icon: "scan",
     bestFor: ["first-time investors", "international buyers", "market exploration"],
   },
   {
     label: "Real Estate Investment Intelligence",
     tagline: "ROI-focused property analysis.",
-    price: "£3,000",
     icon: "intelligence",
     bestFor: ["serious property investors", "buy-to-let buyers", "short-term rental investors"],
   },
   {
     label: "Strategic Property Acquisition Blueprint",
     tagline: "High-conviction property investment strategy.",
-    price: "£7,500",
     icon: "blueprint",
     bestFor: ["portfolio investors", "family offices", "international property investors"],
   },
@@ -177,10 +175,10 @@ export default function RealEstateCarousel() {
                 {svc.tagline}
               </h3>
               <a
-                href="#contact"
+                href={quoteHref(svc.label)}
                 className="text-xs font-bold text-neutral-900 underline underline-offset-4 decoration-neutral-400 hover:decoration-neutral-900 transition-colors duration-200"
               >
-                Learn more
+                Request a Quote
               </a>
               {/* Best for tags */}
               <div className="mt-4 flex flex-wrap gap-1">
@@ -201,7 +199,7 @@ export default function RealEstateCarousel() {
                 <RealEstateIcon type={svc.icon} />
               </div>
               <div className="pt-4 border-t border-neutral-100">
-                <span className="text-lg font-light text-neutral-900">{svc.price}</span>
+                <span className="text-sm text-neutral-500">Custom quote</span>
               </div>
             </div>
           </div>
