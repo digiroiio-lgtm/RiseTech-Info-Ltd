@@ -45,10 +45,10 @@ const credentials = [
 
 export default function FounderCredibilitySection() {
   return (
-    <section className="bg-neutral-950 text-white py-24 lg:py-32">
+    <section className="bg-neutral-950 text-white py-14 md:py-20 lg:py-32">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="mb-16 lg:mb-20">
+        <div className="mb-10 md:mb-14 lg:mb-20">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 mb-4">
             Our Team
           </p>
@@ -84,11 +84,11 @@ export default function FounderCredibilitySection() {
         </div>
 
         {/* Team cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10 md:mb-16">
           {team.map((member) => (
             <div
               key={member.name}
-              className="border border-neutral-800 p-8 flex flex-col gap-6 hover:border-neutral-600 transition-colors duration-200"
+              className="border border-neutral-800 p-6 sm:p-8 flex flex-col gap-5 sm:gap-6 hover:border-neutral-600 transition-colors duration-200"
             >
               {/* Avatar initials */}
               <div className="w-12 h-12 bg-neutral-800 flex items-center justify-center">

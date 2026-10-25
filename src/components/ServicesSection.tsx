@@ -552,10 +552,10 @@ export default function ServicesSection({
   return (
     <section
       id="services"
-      className="bg-white py-24 lg:py-32 border-t border-neutral-100"
+      className="bg-white py-14 md:py-20 lg:py-32 border-t border-neutral-100"
     >
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        <div className="mb-16 lg:mb-24">
+        <div className="mb-10 md:mb-14 lg:mb-24">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 mb-4">
             Services
           </p>

@@ -1,7 +1,7 @@
 export const CSP_HEADER = [
   "default-src 'self'",
   "script-src 'self' 'unsafe-inline'",
-  "style-src 'self'",
+  "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: https:",
   "connect-src 'self'",
   "font-src 'self'",

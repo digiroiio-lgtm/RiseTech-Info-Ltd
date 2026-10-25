@@ -16,15 +16,15 @@ export default function ServiceCard({
   price,
 }: ServiceCardProps) {
   return (
-    <div className="group border border-neutral-200 bg-white p-8 flex flex-col justify-between hover:border-neutral-900 hover:shadow-sm transition-all duration-300">
+    <div className="group border border-neutral-200 bg-white p-6 sm:p-8 flex flex-col justify-between hover:border-neutral-900 hover:shadow-sm transition-all duration-300">
       {/* Top */}
       <div>
-        <div className="flex items-start justify-between mb-4">
+        <div className="flex items-start justify-between mb-3 sm:mb-4">
           <h3 className="text-base font-semibold text-neutral-900 leading-snug">
             {title}
           </h3>
         </div>
-        <p className="text-sm text-neutral-500 leading-relaxed mb-6">
+        <p className="text-sm text-neutral-500 leading-relaxed mb-4 sm:mb-6">
           {description}
         </p>
       </div>

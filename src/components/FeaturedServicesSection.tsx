@@ -77,10 +77,10 @@ const featured = [
 
 export default function FeaturedServicesSection() {
   return (
-    <section className="bg-white py-24 lg:py-32 border-t border-neutral-100">
+    <section className="bg-white py-14 md:py-20 lg:py-32 border-t border-neutral-100">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-16 lg:mb-20">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 sm:gap-6 mb-10 md:mb-14 lg:mb-20">
           <div>
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 mb-4">
               Featured Services
@@ -102,7 +102,7 @@ export default function FeaturedServicesSection() {
           {featured.map((svc) => (
             <div
               key={svc.title}
-              className="group border border-neutral-200 bg-white p-8 flex flex-col justify-between hover:border-neutral-900 hover:shadow-sm transition-all duration-300"
+              className="group border border-neutral-200 bg-white p-6 sm:p-8 flex flex-col justify-between hover:border-neutral-900 hover:shadow-sm transition-all duration-300"
             >
               {/* Top */}
               <div>

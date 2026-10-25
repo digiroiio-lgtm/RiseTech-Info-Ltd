@@ -3,10 +3,10 @@ import { reports } from "@/lib/reports";
 
 export default function ReportsPreviewSection() {
   return (
-    <section className="bg-neutral-950 py-24 lg:py-32">
+    <section className="bg-neutral-950 py-14 md:py-20 lg:py-32">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-16 lg:mb-20">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 sm:gap-6 mb-10 md:mb-14 lg:mb-20">
           <div>
             <p className="text-xs font-normal tracking-[0.2em] uppercase text-neutral-500 mb-4">
               Premium Intelligence
@@ -32,7 +32,7 @@ export default function ReportsPreviewSection() {
           {reports.map((report, i) => (
             <div
               key={report.slug}
-              className="bg-neutral-950 p-8 flex flex-col gap-6 group hover:bg-neutral-900 transition-colors duration-300"
+              className="bg-neutral-950 p-6 sm:p-8 flex flex-col gap-6 group hover:bg-neutral-900 transition-colors duration-300"
             >
               <div className="flex items-center justify-between">
                 <span className="text-xs font-mono text-neutral-600">

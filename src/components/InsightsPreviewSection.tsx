@@ -22,10 +22,10 @@ const featured = [...insights]
 
 export default function InsightsPreviewSection() {
   return (
-    <section className="bg-white py-24 lg:py-32 border-t border-neutral-100">
+    <section className="bg-white py-14 md:py-20 lg:py-32 border-t border-neutral-100">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-16 lg:mb-20">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 sm:gap-6 mb-10 md:mb-14 lg:mb-20">
           <div>
             <p className="text-xs font-normal tracking-[0.2em] uppercase text-neutral-400 mb-4">
               Intelligence Hub
