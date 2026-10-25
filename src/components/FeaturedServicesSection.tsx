@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SERVICES_BY_TITLE, quoteHref } from "@/lib/services";
 
 const featured = [
   {
@@ -10,7 +11,6 @@ const featured = [
       "Page generation system",
       "Content automation plan",
     ],
-    price: "£1,000",
     category: "Technology",
   },
   {
@@ -22,7 +22,6 @@ const featured = [
       "Regulatory & logistics mapping",
       "Entry roadmap with milestones",
     ],
-    price: "£2,500",
     category: "Export",
   },
   {
@@ -34,7 +33,6 @@ const featured = [
       "Competitive landscape deep-dive",
       "Investment-grade executive summary",
     ],
-    price: "£3,000",
     category: "Intelligence",
   },
   {
@@ -46,7 +44,6 @@ const featured = [
       "Dashboard design & build",
       "Team onboarding & documentation",
     ],
-    price: "£1,800",
     category: "Technology",
   },
   {
@@ -58,7 +55,6 @@ const featured = [
       "Qualification & shortlisting",
       "Outreach templates & intro support",
     ],
-    price: "£1,500",
     category: "Export",
   },
   {
@@ -70,7 +66,6 @@ const featured = [
       "Market fit & positioning review",
       "Priority action plan",
     ],
-    price: "£950",
     category: "Strategy",
   },
 ];
@@ -131,16 +126,30 @@ export default function FeaturedServicesSection() {
               </div>
 
               {/* Bottom */}
-              <div className="flex items-center justify-between pt-4 border-t border-neutral-100">
-                <span className="text-xl font-light text-neutral-900">
-                  {svc.price}
-                </span>
-                <a
-                  href="#contact"
-                  className="inline-flex items-center px-4 py-2 bg-neutral-900 text-white text-xs font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200"
-                >
-                  Get Started
-                </a>
+              <div className="flex items-center justify-between gap-3 pt-4 border-t border-neutral-100">
+                {SERVICES_BY_TITLE[svc.title] ? (
+                  <>
+                    <span className="text-xl font-light text-neutral-900">
+                      {SERVICES_BY_TITLE[svc.title].price}
+                    </span>
+                    <Link
+                      href={`/checkout?service=${SERVICES_BY_TITLE[svc.title].slug}`}
+                      className="inline-flex items-center px-4 py-2 bg-neutral-900 text-white text-xs font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200"
+                    >
+                      Select &amp; Pay →
+                    </Link>
+                  </>
+                ) : (
+                  <>
+                    <span className="text-sm text-neutral-500">Custom quote</span>
+                    <a
+                      href={quoteHref(svc.title)}
+                      className="inline-flex items-center px-4 py-2 bg-neutral-900 text-white text-xs font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200"
+                    >
+                      Request a Quote
+                    </a>
+                  </>
+                )}
               </div>
             </div>
           ))}

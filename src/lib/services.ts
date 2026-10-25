@@ -182,3 +182,14 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
 export const SERVICES_BY_SLUG: Record<string, Service> = Object.fromEntries(
   SERVICE_CATEGORIES.flatMap((cat) => cat.services).map((s) => [s.slug, s]),
 );
+
+/** Lookup by display title, used to link homepage listings to their checkout slug and price */
+export const SERVICES_BY_TITLE: Record<string, Service> = Object.fromEntries(
+  SERVICE_CATEGORIES.flatMap((cat) => cat.services).map((s) => [s.title, s]),
+);
+
+export const SUPPORT_EMAIL = "support@wealwaysrise.com";
+
+export function quoteHref(title: string): string {
+  return `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent(`Quote request: ${title}`)}`;
+}
