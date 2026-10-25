@@ -1,31 +1,47 @@
 const serviceGroups = [
   {
-    label: "Strategy & Growth",
+    label: "Business & Management Consultancy",
     description:
-      "Startup strategy, go-to-market planning, and business intelligence to build and scale with confidence.",
-    items: ["Startup Strategy", "Go To Market", "Business Intelligence"],
-  },
-  {
-    label: "Export & Trade",
-    description:
-      "End-to-end export consulting, distributor discovery, and market entry execution for cross-border growth.",
-    items: ["Export Consulting", "Distributor Finder", "Export Growth Program"],
-  },
-  {
-    label: "Market Intelligence",
-    description:
-      "Deep research reports covering market sizing, competitive landscape, and in-depth analysis.",
+      "Business strategy, growth planning, commercial development, operational improvement, process optimisation and management advisory.",
     items: [
-      "Market Reports",
-      "Business Intelligence Reports",
-      "Real Estate Intelligence",
+      "Business Strategy",
+      "Go-To-Market Planning",
+      "Export & Market Entry",
+      "Market Intelligence Reports",
     ],
   },
   {
-    label: "Technology Systems",
+    label: "AI & Technology Consultancy",
     description:
-      "Productized tech delivery — from data dashboards and loyalty platforms to programmatic SEO systems.",
-    items: ["Dashboard Systems", "Loyalty Platforms", "Programmatic SEO"],
+      "AI adoption, digital transformation, workflow automation, systems integration and technology implementation.",
+    items: [
+      "AI Adoption",
+      "Workflow Automation",
+      "Digital Transformation",
+      "Systems Integration",
+    ],
+  },
+  {
+    label: "Software & Digital Product Development",
+    description:
+      "Business software, SaaS applications, web platforms, digital products and custom software solutions.",
+    items: [
+      "Business Software",
+      "SaaS & Web Platforms",
+      "Dashboard Systems",
+      "Custom Software",
+    ],
+  },
+  {
+    label: "Digital Marketing & Growth",
+    description:
+      "SEO, digital advertising, lead generation, campaign management, marketing automation and performance optimisation.",
+    items: [
+      "SEO",
+      "Digital Advertising",
+      "Lead Generation",
+      "Marketing Automation",
+    ],
   },
 ];
 
@@ -38,8 +54,8 @@ export default function WhatWeDoSection() {
           <p className="text-xs font-normal tracking-[0.2em] uppercase text-neutral-400 mb-6">
             What We Do
           </p>
-          <h2 className="text-6xl lg:text-8xl font-light text-neutral-900 max-w-4xl leading-tight">
-            Four practice areas. One high-impact firm.
+          <h2 className="text-4xl sm:text-6xl lg:text-8xl font-light text-neutral-900 max-w-4xl leading-tight">
+            Four service areas. One digital consultancy.
           </h2>
         </div>
 
@@ -72,6 +88,13 @@ export default function WhatWeDoSection() {
             </div>
           ))}
         </div>
+
+        <p className="mt-6 max-w-3xl text-xs text-neutral-500 leading-relaxed">
+          Fixed-price consulting packages and reports can be bought online.
+          Software development, marketing campaigns and retainers are quoted per
+          project and agreed in writing. We do not currently offer
+          subscriptions. Results depend on many factors and are not guaranteed.
+        </p>
       </div>
     </section>
   );

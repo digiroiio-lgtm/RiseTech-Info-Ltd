@@ -28,7 +28,7 @@ export const teamMembers: TeamMember[] = [
     region: "EMEA",
     location: "London, UK",
     bio: "Oguz founded Werrise Digital after more than a decade structuring international trade strategies for mid-market and growth-stage businesses. He has advised over 30 companies entering EU, MENA, and Asian markets, and served as an export advisor to UKEF-backed programmes. His work sits at the intersection of commercial strategy, distribution architecture, and investor readiness.",
-    expertise: ["Export Market Entry", "Market Intelligence", "Investor Advisory", "Trade Strategy"],
+    expertise: ["Export Market Entry", "Market Intelligence", "Business Advisory", "Trade Strategy"],
     sectors: ["Export", "Manufacturing", "Consumer Goods", "FinTech"],
     tab: "executive",
   },
