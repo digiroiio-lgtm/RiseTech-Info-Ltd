@@ -124,7 +124,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
         slug: "pitch-deck-review",
         title: "Pitch Deck Design & Review",
         description:
-          "Investor-grade pitch deck crafted to communicate your vision, traction, and market opportunity with precision and confidence.",
+          "Professionally designed pitch deck crafted to communicate your vision, traction, and market opportunity with precision and confidence.",
         price: "£600",
         priceGBP: 600,
         category: "Startup Advisory",

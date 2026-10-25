@@ -14,7 +14,7 @@ const serviceGroups = [
   {
     label: "Market Intelligence",
     description:
-      "Deep research reports covering market sizing, competitive landscape, and investment-grade analysis.",
+      "Deep research reports covering market sizing, competitive landscape, and in-depth analysis.",
     items: [
       "Market Reports",
       "Business Intelligence Reports",

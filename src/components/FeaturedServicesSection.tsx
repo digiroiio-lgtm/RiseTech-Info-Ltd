@@ -31,7 +31,7 @@ const featured = [
     bullets: [
       "Market sizing & segmentation",
       "Competitive landscape deep-dive",
-      "Investment-grade executive summary",
+      "Decision-ready executive summary",
     ],
     category: "Intelligence",
   },

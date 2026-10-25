@@ -69,7 +69,7 @@ const categories = [
       {
         title: "Pitch Deck Design & Review",
         description:
-          "Investor-grade pitch deck crafted to communicate your vision, traction, and market opportunity with precision and confidence.",
+          "Professionally designed pitch deck crafted to communicate your vision, traction, and market opportunity with precision and confidence.",
       },
       {
         title: "Business Model Review",

@@ -105,7 +105,7 @@ export default async function InsightPostPage({ params }: Props) {
                 Want the full intelligence report?
               </h2>
               <p className="text-sm text-neutral-400 leading-relaxed mb-8 max-w-lg">
-                Our premium reports go 40–55 pages deep — investment-grade
+                Our premium reports go 40–55 pages deep — a thorough
                 analysis with proprietary data, frameworks, and strategic
                 recommendations.
               </p>

@@ -16,7 +16,7 @@ export default function ReportsPreviewSection() {
               Market intelligence reports.
             </h2>
             <p className="text-sm text-neutral-400 leading-relaxed mt-4 max-w-md">
-              Investment-grade analysis — 40–55 pages of proprietary research,
+              In-depth analysis — 40–55 pages of proprietary research,
               competitive mapping, and strategic recommendations.
             </p>
             <p className="text-[11px] text-neutral-500 leading-relaxed mt-3 max-w-md">
