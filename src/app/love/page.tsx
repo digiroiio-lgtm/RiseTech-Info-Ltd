@@ -192,18 +192,18 @@ export default function WallOfLovePage() {
             {/* Impact metrics bar */}
             <div className="grid grid-cols-3 gap-px rounded-2xl overflow-hidden border border-neutral-800">
               {[
-                { value: "£120M+", label: "Revenue influenced" },
+                { value: "Growth", label: "Revenue growth" },
                 { value: "50+", label: "Engagements delivered" },
                 { value: "20+", label: "Markets entered" },
               ].map((m) => (
                 <div
                   key={m.label}
-                  className="bg-neutral-900/60 px-6 py-6 text-center"
+                  className="bg-neutral-900/60 px-3 sm:px-6 py-6 text-center"
                 >
                   <p className="text-2xl lg:text-3xl font-light text-white mb-1">
                     {m.value}
                   </p>
-                  <p className="text-xs text-neutral-500 uppercase tracking-widest">
+                  <p className="text-[10px] sm:text-xs text-neutral-500 uppercase tracking-wider sm:tracking-widest">
                     {m.label}
                   </p>
                 </div>
