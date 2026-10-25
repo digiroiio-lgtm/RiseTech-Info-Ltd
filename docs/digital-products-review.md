@@ -29,7 +29,7 @@ Prepared for PR #3. The product showcase adds no dependencies. The main integrat
 
 ## Contact behaviour
 
-The current site offers email enquiries, not a persisted waitlist. Both product CTAs are therefore labelled **Enquire About Launch** and open a draft to the existing advisory address, `advisory@risetech.info`, with the product name and selected audience. The visitor must send the email. No success state, registration, payment or immediate access is claimed. `/contact` remains an alternative destination.
+The current site offers email enquiries, not a persisted waitlist. Both product CTAs are therefore labelled **Enquire About Launch** and open a draft to the existing advisory address, `support@wealwaysrise.com`, with the product name and selected audience. The visitor must send the email. No success state, registration, payment or immediate access is claimed. `/contact` remains an alternative destination.
 
 A saved-registration service is not integrated. No API credentials or provider setup are needed for the implemented email fallback. Mail delivery was not attempted during QA.
 

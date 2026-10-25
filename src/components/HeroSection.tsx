@@ -38,7 +38,7 @@ export default function HeroSection() {
               Explore Services
             </a>
             <a
-              href="mailto:advisory@risetech.info"
+              href="mailto:support@wealwaysrise.com"
               className="inline-flex items-center justify-center px-8 py-4 border border-neutral-300 text-neutral-900 text-sm font-medium tracking-wide transition-all duration-200 hover:border-neutral-900 hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-2"
             >
               Book Strategy Call

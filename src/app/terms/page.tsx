@@ -33,7 +33,7 @@ export default function TermsPage() {
         {
           heading: "3. Services",
           paragraphs: [
-            "RiseTech provides strategic advisory, consulting, and market intelligence services.",
+            "Werrise Digital Ltd, trading as RiseTech, provides strategic advisory, consulting, and market intelligence services.",
             "Services may include but are not limited to:",
           ],
           items: [
@@ -42,7 +42,6 @@ export default function TermsPage() {
             "market intelligence",
             "startup advisory",
             "business strategy consultation",
-            "advisory marketplace access",
           ],
           subsections: [
             {
@@ -54,14 +53,13 @@ export default function TermsPage() {
           ],
         },
         {
-          heading: "4. Marketplace Advisory Services",
+          heading: "4. Delivery",
           paragraphs: [
-            "Some services listed on the website may be provided by independent advisors or consultants.",
-            "RiseTech acts as a platform and facilitator for advisory services.",
-            "RiseTech is not responsible for:",
+            "Services are supplied by Werrise Digital Ltd. We may use qualified subcontractors or specialist advisors to help deliver a service, and we remain responsible to you for its delivery.",
+            "Work begins once payment is confirmed and we have contacted you, normally within 1 business day (Monday to Friday, 09:00 to 17:30 GMT). Delivery timelines are stated in the description of each service or agreed with you in writing.",
+            "Werrise Digital Ltd is not responsible for:",
           ],
           items: [
-            "actions of independent advisors",
             "business decisions made based on advice",
             "financial or operational outcomes",
           ],
@@ -82,36 +80,23 @@ export default function TermsPage() {
               heading: "",
               paragraphs: [
                 "Prices are displayed in GBP unless stated otherwise.",
-                "RiseTech reserves the right to modify pricing at any time.",
+                "Prices include VAT where applicable. We may change prices at any time; a change does not affect an order you have already paid for.",
               ],
             },
           ],
         },
         {
-          heading: "6. Subscription Services",
+          heading: "6. Retainers and Custom Engagements",
           paragraphs: [
-            "Certain services may be billed as recurring subscriptions.",
-            "By purchasing a subscription you agree that:",
-          ],
-          items: [
-            "the subscription renews automatically",
-            "payment will be charged periodically",
-            "cancellation must occur before the next billing cycle",
-          ],
-          subsections: [
-            {
-              heading: "",
-              paragraphs: [
-                "Subscription billing terms are detailed in the Billing Policy.",
-              ],
-            },
+            "Ongoing retainers and custom engagements are not sold through online checkout.",
+            "Their price, payment schedule and cancellation terms are agreed in writing before any payment is taken and are set out in our proposal or order confirmation.",
           ],
         },
         {
           heading: "7. Refunds",
           paragraphs: [
-            "Advisory services are generally non-refundable once the engagement has started.",
-            "Refund eligibility is governed by the Refund Policy.",
+            "Consumers have a 14-day right to cancel under UK law, and refunds are otherwise governed by our Refund Policy.",
+            "Your statutory rights are not affected.",
           ],
         },
         {

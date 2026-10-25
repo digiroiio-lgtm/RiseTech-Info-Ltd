@@ -4,12 +4,12 @@ import LegalLayout from "@/components/LegalLayout";
 export const metadata: Metadata = {
   title: "Billing Policy — Werrise Digital Ltd",
   description:
-    "How Werrise Digital Ltd handles billing, payments, and subscriptions.",
+    "How Werrise Digital Ltd handles billing and payments.",
 };
 
 export default function BillingPage() {
   return (
-    <LegalLayout title="Billing Policy" lastUpdated="8 April 2026">
+    <LegalLayout title="Billing Policy" lastUpdated="25 October 2026">
       <p>
         This Billing Policy explains how <strong>Werrise Digital Ltd</strong>{" "}
         charges for its advisory and consulting Services. By purchasing our
@@ -19,133 +19,90 @@ export default function BillingPage() {
       <h2>1. Currency and Pricing</h2>
       <p>
         All prices are quoted in <strong>GBP (British Pounds Sterling)</strong>{" "}
-        and are inclusive of any applicable taxes unless otherwise stated.
-        Pricing is confirmed in writing before any payment is taken.
+        and include VAT where applicable. The price shown at checkout is the
+        total you pay; no additional charges are added at payment.
       </p>
 
       <h2>2. Payment Methods</h2>
       <p>
-        We accept the following payment methods, processed securely via Stripe:
+        Payments are taken in full at checkout and processed securely by
+        Stripe. Available payment methods (shown at checkout) typically
+        include:
       </p>
       <ul>
         <li>Visa, Mastercard, and American Express credit/debit cards</li>
-        <li>BACS bank transfer (for invoiced engagements)</li>
-        <li>Apple Pay and Google Pay (where available)</li>
+        <li>Apple Pay and Google Pay (where available on your device)</li>
       </ul>
       <p>
         All card transactions are encrypted and processed by Stripe. We do not
         store card numbers on our systems.
       </p>
 
-      <h2>3. One-Time Engagements</h2>
+      <h2>3. When You Are Charged</h2>
       <p>
-        For project-based or one-time advisory engagements:
+        The full price of the Service is charged at the time of purchase. You
+        will receive a receipt and invoice by email from Stripe. Work begins
+        once payment is confirmed and we have contacted you, normally within{" "}
+        <strong>1 business day</strong> (Monday&ndash;Friday, 09:00&ndash;17:30
+        GMT).
       </p>
-      <ul>
-        <li>
-          A <strong>50% deposit</strong> is required at the time of booking to
-          secure your engagement date.
-        </li>
-        <li>
-          The remaining balance is due upon delivery of the final deliverable or
-          as otherwise stated in the project proposal.
-        </li>
-        <li>
-          For engagements under £500, full payment in advance may be required.
-        </li>
-      </ul>
 
-      <h2>4. Subscription Plans</h2>
+      <h2>4. Retainers and Custom Engagements</h2>
       <p>
-        For monthly or annual advisory retainer plans:
+        Ongoing retainers and custom engagements are not sold through online
+        checkout. Their pricing, payment schedule and invoicing terms are
+        agreed in writing before any payment is taken, and are set out in the
+        proposal or order confirmation we send you.
       </p>
-      <ul>
-        <li>
-          Billing is automatic and recurs on the same day of each month or year
-          from the date of your first payment.
-        </li>
-        <li>
-          You will receive an email receipt for each charge to the email address
-          on your account.
-        </li>
-        <li>
-          Annual plans are billed as a single payment for the full year and
-          offer a discount versus monthly billing.
-        </li>
-        <li>
-          Subscription prices are locked for the duration of a prepaid annual
-          plan. Month-to-month prices may be updated with 30 days&rsquo; notice.
-        </li>
-      </ul>
 
-      <h2>5. Invoicing</h2>
+      <h2>5. Invoices</h2>
       <p>
-        Invoices are issued by email in PDF format. For corporate clients
-        requiring PO-based billing or specific invoice formats, please contact{" "}
-        <a href="mailto:billing@risetech.info">billing@risetech.info</a> before
-        placing your order. Payment terms on invoices are <strong>net 14 days</strong>{" "}
-        unless otherwise agreed in writing.
+        Invoices are issued by email. If you need specific invoice details
+        (such as a company name or purchase order number), please contact{" "}
+        <a href="mailto:support@wealwaysrise.com">support@wealwaysrise.com</a>{" "}
+        before placing your order.
       </p>
 
       <h2>6. Failed Payments</h2>
       <p>
-        If a payment fails (e.g., due to insufficient funds or an expired
-        card):
+        If your payment fails (for example due to insufficient funds or a card
+        decline), the order is not placed and you are not charged. You can try
+        again with another payment method at checkout.
       </p>
-      <ul>
-        <li>
-          Stripe will automatically retry the charge after 3, 5, and 7 days.
-        </li>
-        <li>
-          We will notify you by email and ask you to update your payment details.
-        </li>
-        <li>
-          If payment remains outstanding after 14 days, access to Services may
-          be suspended until the balance is settled.
-        </li>
-        <li>
-          Persistent non-payment may result in the engagement being terminated
-          and the outstanding balance referred for collection.
-        </li>
-      </ul>
 
       <h2>7. Taxes</h2>
       <p>
-        Werrise Digital Ltd is registered for VAT in the United Kingdom.
-        UK customers will be charged VAT at the prevailing rate (currently 20%)
-        where applicable. VAT invoices are available on request. International
-        customers outside the UK may not be subject to UK VAT depending on their
-        location and VAT registration status.
+        Prices include VAT where applicable. International customers may be
+        responsible for any local taxes, duties or import charges in their own
+        country.
       </p>
 
       <h2>8. Cancellation and Refunds</h2>
       <p>
-        Subscription cancellations and refund requests are governed by our{" "}
+        Cancellations and refund requests are governed by our{" "}
         <a href="/refund">Refund Policy</a>.
       </p>
 
       <h2>9. Price Changes</h2>
       <p>
-        We reserve the right to update our pricing. For subscription customers,
-        we will provide at least <strong>30 days&rsquo; written notice</strong>{" "}
-        of any price increase before it takes effect on your next billing cycle.
-        You may cancel your subscription before the price change takes effect if
-        you do not wish to continue at the new price.
+        We may update our prices from time to time. A price change does not
+        affect an order you have already placed and paid for.
       </p>
 
       <h2>10. Disputes</h2>
       <p>
         If you believe a charge is incorrect, please contact{" "}
-        <a href="mailto:billing@risetech.info">billing@risetech.info</a> within
-        30 days of the charge date. We will investigate and respond within 5
-        business days.
+        <a href="mailto:support@wealwaysrise.com">support@wealwaysrise.com</a>{" "}
+        within 30 days of the charge date. We will investigate and respond
+        within 5 business days. We encourage you to contact us before raising a
+        dispute with your bank.
       </p>
 
       <h2>11. Contact</h2>
       <p>
         For billing enquiries, contact{" "}
-        <a href="mailto:billing@risetech.info">billing@risetech.info</a> or
-        visit our <a href="/support">Support page</a>.
+        <a href="mailto:support@wealwaysrise.com">support@wealwaysrise.com</a>{" "}
+        or visit our <a href="/support">Support page</a>.
       </p>
     </LegalLayout>
   );

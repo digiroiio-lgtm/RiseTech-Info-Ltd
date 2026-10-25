@@ -67,7 +67,7 @@ function CheckoutFlow() {
         </h1>
         <p className="text-neutral-500 text-base max-w-lg">
           Select a service, accept our terms, and complete payment via Stripe.
-          All prices are in GBP and exclusive of VAT where applicable.
+          All prices are in GBP and inclusive of VAT where applicable.
         </p>
       </div>
 
@@ -161,7 +161,7 @@ function CheckoutFlow() {
             </p>
             <p className="text-sm text-neutral-500 mb-4">{selected.description}</p>
             <div className="flex items-center justify-between pt-3 border-t border-neutral-200">
-              <span className="text-xs text-neutral-400">Total (excl. VAT)</span>
+              <span className="text-xs text-neutral-400">Total (incl. VAT)</span>
               <span className="text-2xl font-light text-neutral-900">
                 {selected.price}
               </span>
@@ -258,7 +258,18 @@ function CheckoutFlow() {
             <p className="mt-3 text-xs text-neutral-400">
               Payments are processed securely by{" "}
               <span className="font-medium text-neutral-600">Stripe</span>. We
-              never store your card details.
+              never store your card details. You will receive a receipt by email.
+            </p>
+            <p className="mt-2 text-xs text-neutral-400">
+              Sold by Werrise Digital Ltd, Company No. 16345678, 85 Great
+              Portland Street, London, W1W 7LT, United Kingdom. Questions?{" "}
+              <a
+                href="mailto:support@wealwaysrise.com"
+                className="underline underline-offset-2"
+              >
+                support@wealwaysrise.com
+              </a>
+              .
             </p>
           </div>
         </section>
@@ -277,7 +288,7 @@ export default function CheckoutPage() {
             href="/"
             className="text-sm font-semibold tracking-[0.15em] uppercase text-neutral-900"
           >
-            RiseTech
+            Werrise Digital Ltd
           </Link>
           <Link
             href="/services"

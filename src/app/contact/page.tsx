@@ -104,8 +104,8 @@ export default function ContactPage() {
               {[
                 { label: "Terms and Conditions", href: "/terms" },
                 { label: "Privacy Policy", href: "/privacy" },
-                { label: "Refund Policy", href: "/refund-policy" },
-                { label: "Billing Policy", href: "/billing-policy" },
+                { label: "Refund Policy", href: "/refund" },
+                { label: "Billing Policy", href: "/billing" },
               ].map((link) => (
                 <Link
                   key={link.href}

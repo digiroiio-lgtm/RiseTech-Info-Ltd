@@ -15,7 +15,7 @@ export default function CTASection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="mailto:advisory@risetech.info"
+              href="mailto:support@wealwaysrise.com"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-neutral-900 text-sm font-medium tracking-wide hover:bg-neutral-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-900"
             >
               Request Advisory
