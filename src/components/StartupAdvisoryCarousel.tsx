@@ -8,12 +8,12 @@ import { SERVICES_BY_TITLE } from "@/lib/services";
 const services = [
   {
     label: "Pitch Deck Design & Review",
-    tagline: "Decks that open investor doors.",
+    tagline: "Decks that communicate your vision clearly.",
     icon: "deck",
   },
   {
     label: "Business Model Review",
-    tagline: "Find gaps before investors do.",
+    tagline: "Review your model before you present it.",
     icon: "model",
   },
   {
@@ -164,7 +164,7 @@ export default function StartupAdvisoryCarousel() {
               </h2>
             </div>
             <p className="ml-[2.75rem] md:ml-[3.5rem] text-sm text-neutral-500 leading-relaxed max-w-md">
-              Investor-ready positioning and strategic clarity for founders at every stage.
+              Clear positioning and strategic clarity for founders at every stage.
             </p>
           </div>
           {/* Arrow buttons (desktop only; touch users swipe) */}

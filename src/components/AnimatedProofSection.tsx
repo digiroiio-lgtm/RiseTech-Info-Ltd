@@ -84,12 +84,12 @@ const allCards: ProofCard[] = [
     href: "/case-studies#retail-loyalty-platform",
   },
   {
-    logo: "VCF",
-    company: "Growth-Stage VC Fund",
-    result: "Investment intelligence behind a £6M decision",
-    metric: "£14M",
-    metricLabel: "Series B raised by portfolio company",
-    href: "/case-studies#vc-due-diligence",
+    logo: "TSC",
+    company: "Technology Sector Client",
+    result: "Independent market validation for a UK software launch",
+    metric: "12",
+    metricLabel: "Buyer interviews conducted",
+    href: "/case-studies#market-validation-logistics-software",
   },
 ];
 

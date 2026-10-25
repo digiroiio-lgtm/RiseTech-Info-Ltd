@@ -7,21 +7,21 @@ import { INFORMATION_DISCLAIMER, quoteHref } from "@/lib/services";
 const services = [
   {
     label: "Real Estate Market Scan",
-    tagline: "Data-driven investment snapshot.",
+    tagline: "Data-driven market snapshot.",
     icon: "scan",
-    bestFor: ["first-time investors", "international buyers", "market exploration"],
+    bestFor: ["international buyers", "market exploration", "location comparison"],
   },
   {
-    label: "Real Estate Investment Intelligence",
+    label: "Real Estate Market Intelligence",
     tagline: "Structured property market analysis.",
     icon: "intelligence",
-    bestFor: ["serious property investors", "buy-to-let buyers", "short-term rental investors"],
+    bestFor: ["property businesses", "market researchers", "location planning"],
   },
   {
-    label: "Strategic Property Acquisition Blueprint",
-    tagline: "High-conviction property investment strategy.",
+    label: "Strategic Property Market Blueprint",
+    tagline: "Detailed property market planning.",
     icon: "blueprint",
-    bestFor: ["portfolio investors", "family offices", "international property investors"],
+    bestFor: ["property developers", "corporate real estate teams", "international market entry"],
   },
 ];
 
