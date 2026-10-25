@@ -47,6 +47,10 @@ export default function RefundPage() {
 
       <h2>3. Pre-Commencement Cancellation</h2>
       <p>
+        This section does not apply where Section 1 (your 14-day right to
+        cancel) gives you a more favourable outcome.
+      </p>
+      <p>
         If you cancel an engagement <strong>before work has commenced</strong>{" "}
         (i.e., before the kick-off call or delivery of any materials):
       </p>

@@ -1,3 +1,4 @@
+import { ILLUSTRATIVE_NOTE } from "@/lib/services";
 import Link from "next/link";
 import { caseStudies } from "@/lib/caseStudies";
 
@@ -16,6 +17,7 @@ export default function CaseStudiesPreviewSection() {
             <h2 className="text-3xl lg:text-4xl font-light text-neutral-900">
               Work that speaks for itself.
             </h2>
+            <p className="text-xs text-neutral-500 mt-3">{ILLUSTRATIVE_NOTE}</p>
           </div>
           <Link
             href="/case-studies"

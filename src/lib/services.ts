@@ -1,3 +1,5 @@
+import { reports } from "./reports";
+
 export interface Service {
   slug: string;
   title: string;
@@ -176,6 +178,20 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
       },
     ],
   },
+  {
+    index: 4,
+    name: "Intelligence Reports",
+    tagline:
+      "In-depth market intelligence reports for decision-makers.",
+    services: reports.map((r) => ({
+      slug: r.slug,
+      title: r.title,
+      description: r.description,
+      price: `£${r.priceGBP.toLocaleString("en-GB")}`,
+      priceGBP: r.priceGBP,
+      category: "Intelligence Reports",
+    })),
+  },
 ];
 
 /** Flat list of all services, keyed by slug for O(1) lookup */
@@ -201,3 +217,9 @@ export const INFORMATION_DISCLAIMER =
 export function needsInformationDisclaimer(title: string): boolean {
   return /due diligence|investment|investor|acquisition|consolidation|fundrais|\bVC\b|real estate|property/i.test(title);
 }
+
+export const ILLUSTRATIVE_NOTE =
+  "Examples are illustrative. Client names and details are anonymised.";
+
+export const DELIVERY_NOTE =
+  "Typical delivery: 5–15 business days from your confirmation, depending on scope. We confirm the timeline with you before work starts.";

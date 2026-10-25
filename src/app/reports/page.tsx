@@ -101,7 +101,7 @@ export default function ReportsPage() {
                         {report.pages} pages · {formatDate(report.publishedDate)}
                       </span>
                       <span className="text-lg font-light text-neutral-900">
-                        £{report.priceGBP.toLocaleString()}
+                        £{report.priceGBP.toLocaleString("en-GB")}
                       </span>
                     </div>
                   </div>
@@ -146,12 +146,12 @@ export default function ReportsPage() {
                         </span>
                       ))}
                     </div>
-                    <a
-                      href={`mailto:support@wealwaysrise.com?subject=Report Purchase: ${report.title}&body=Hi, I would like to purchase the ${report.title} (£${report.priceGBP}). Please send payment instructions.`}
+                    <Link
+                      href={`/checkout?service=${report.slug}`}
                       className="inline-flex items-center justify-center px-6 py-3 bg-neutral-900 text-white text-xs font-semibold tracking-wide hover:bg-neutral-700 transition-colors duration-200"
                     >
-                      Purchase — £{report.priceGBP.toLocaleString()}
-                    </a>
+                      Select &amp; Pay — £{report.priceGBP.toLocaleString("en-GB")}
+                    </Link>
                     <a
                       href="mailto:support@wealwaysrise.com"
                       className="inline-flex items-center justify-center px-6 py-3 border border-neutral-200 text-neutral-700 text-xs font-semibold tracking-wide hover:border-neutral-900 transition-colors duration-200"
@@ -175,9 +175,9 @@ export default function ReportsPage() {
                   Need a custom intelligence brief?
                 </h2>
                 <p className="text-sm text-neutral-500 leading-relaxed">
-                  We produce bespoke market intelligence reports for investors,
-                  PE firms, and enterprise leadership teams. Typical turnaround
-                  is two to three weeks. Starting from £3,000.
+                  We produce bespoke market intelligence reports for founders,
+                  operators, and enterprise leadership teams. Typical turnaround
+                  is two to three weeks. Request a quote for pricing.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 lg:justify-end">

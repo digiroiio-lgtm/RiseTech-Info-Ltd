@@ -13,7 +13,7 @@ const services = [
   },
   {
     label: "Real Estate Investment Intelligence",
-    tagline: "ROI-focused property analysis.",
+    tagline: "Structured property market analysis.",
     icon: "intelligence",
     bestFor: ["serious property investors", "buy-to-let buyers", "short-term rental investors"],
   },
@@ -73,7 +73,7 @@ function RealEstateIcon({ type }: { type: string }) {
         <line x1="114" y1="74" x2="144" y2="74" stroke="#c0c0c0" strokeWidth="1"/>
         <path d="M115 72 L122 66 L129 68 L137 58 L142 54" stroke="#1a1a1a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         <circle cx="142" cy="54" r="2.5" fill="#1a1a1a"/>
-        <text x="118" y="44" fill="#1a1a1a" fontSize="9" fontWeight="bold">ROI</text>
+        <text x="118" y="44" fill="#1a1a1a" fontSize="9" fontWeight="bold">Data</text>
       </svg>
     );
   }
@@ -128,7 +128,7 @@ export default function RealEstateCarousel() {
               </h2>
             </div>
             <p className="ml-[2.75rem] md:ml-[3.5rem] text-sm text-neutral-500 leading-relaxed max-w-md">
-              Strategic real estate intelligence designed to help investors identify high-ROI locations, evaluate opportunities, and make data-driven acquisition decisions.
+              Strategic real estate intelligence designed to help clients understand local markets, compare locations, and make better-informed decisions.
             </p>
           </div>
           {/* Arrow buttons (desktop only; touch users swipe) */}

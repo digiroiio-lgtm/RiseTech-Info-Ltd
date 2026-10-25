@@ -69,7 +69,14 @@ export default async function SuccessPage({ searchParams }: SuccessPageProps) {
               strokeLinecap="round"
               strokeLinejoin="round"
             >
-              <polyline points="20 6 9 17 4 12" />
+              {paid || processing ? (
+                <polyline points="20 6 9 17 4 12" />
+              ) : (
+                <>
+                  <line x1="12" y1="8" x2="12" y2="8.01" />
+                  <line x1="12" y1="12" x2="12" y2="17" />
+                </>
+              )}
             </svg>
           </div>
 

@@ -3,7 +3,7 @@
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
-import { INFORMATION_DISCLAIMER, SERVICE_CATEGORIES, SERVICES_BY_SLUG, type Service } from "@/lib/services";
+import { DELIVERY_NOTE, INFORMATION_DISCLAIMER, SERVICE_CATEGORIES, SERVICES_BY_SLUG, type Service } from "@/lib/services";
 
 function CheckoutFlow() {
   const searchParams = useSearchParams();
@@ -160,6 +160,9 @@ function CheckoutFlow() {
               {selected.title}
             </p>
             <p className="text-sm text-neutral-500 mb-3">{selected.description}</p>
+            <p className="text-xs text-neutral-500 leading-relaxed mb-3">
+              {DELIVERY_NOTE}
+            </p>
             <p className="text-xs text-neutral-500 leading-relaxed mb-4">
               {INFORMATION_DISCLAIMER}
             </p>
@@ -200,9 +203,10 @@ function CheckoutFlow() {
                 >
                   Billing Policy
                 </Link>
-                . I understand that payment is due immediately and the service
-                will be delivered within the agreed timeline. Refunds are subject
-                to the{" "}
+                . I understand that payment is due immediately. I ask Werrise
+                Digital Ltd to start the service now, and I understand that if
+                it is fully performed within 14 days I lose my right to cancel.
+                Refunds are subject to the{" "}
                 <Link
                   href="/refund"
                   target="_blank"
