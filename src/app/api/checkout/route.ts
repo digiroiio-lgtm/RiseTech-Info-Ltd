@@ -119,7 +119,7 @@ export async function POST(req: NextRequest) {
     },
     payment_intent_data: { description: service.title, metadata },
     locale: "en",
-    expires_at: Math.floor(Date.now() / 1000) + 30 * 60,
+    expires_at: Math.floor(Date.now() / 1000) + 60 * 60,
     success_url: `${baseUrl}/success?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: `${baseUrl}/cancel?service=${encodeURIComponent(service.slug)}`,
     metadata,

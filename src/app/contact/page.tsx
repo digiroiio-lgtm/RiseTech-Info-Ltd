@@ -51,7 +51,7 @@ export default function ContactPage() {
                 Advisory Enquiries
               </p>
               <p className="text-neutral-600 leading-relaxed mb-6">
-                For strategic advisory, consulting, and marketplace enquiries,
+                For strategic advisory, consulting, and general enquiries,
                 reach out directly to our team.
               </p>
               <a

@@ -6,9 +6,9 @@ const team = [
     name: "Oguz Y.",
     title: "Founder & Managing Director",
     credentials: [
-      "10+ years in international trade strategy",
+      "Experience in international trade strategy",
       "Former export advisor to UKEF-backed programmes",
-      "Led market entry for 30+ companies across EU, MENA & Asia",
+      "Led market entry projects across EU, MENA & Asia",
     ],
     focus: "Export Strategy · Market Intelligence · Investor Advisory",
   },
@@ -37,9 +37,9 @@ const team = [
 ];
 
 const credentials = [
-  { value: "10+", label: "Years in B2B consulting" },
-  { value: "50+", label: "Strategy engagements delivered" },
-  { value: "15+", label: "Countries covered across export projects" },
+  { value: "B2B", label: "Consulting and advisory" },
+  { value: "Export", label: "Market entry and expansion planning" },
+  { value: "Data", label: "Business and market intelligence" },
   { value: "Growth", label: "Revenue growth & business transformation" },
 ];
 

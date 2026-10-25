@@ -11,7 +11,7 @@ export default function TermsPage() {
   return (
     <LegalPage
       title="Terms and Conditions"
-      lastUpdated="2026"
+      lastUpdated="25 October 2026"
       sections={[
         {
           heading: "1. Company Information",
@@ -56,7 +56,7 @@ export default function TermsPage() {
           heading: "4. Delivery",
           paragraphs: [
             "Services are supplied by Werrise Digital Ltd. We may use qualified subcontractors or specialist advisors to help deliver a service, and we remain responsible to you for its delivery.",
-            "Work begins once payment is confirmed and we have contacted you, normally within 1 business day (Monday to Friday, 09:00 to 17:30 GMT). Delivery timelines are stated in the description of each service or agreed with you in writing.",
+            "Work begins once payment is confirmed and we have contacted you, normally within 1 business day (Monday to Friday, 09:00 to 17:30 GMT). Delivery typically takes 5 to 15 business days from your confirmation, depending on scope, and we confirm the timeline with you before work starts.",
             "Werrise Digital Ltd is not responsible for:",
           ],
           items: [

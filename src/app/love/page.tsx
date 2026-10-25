@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
 import { testimonials } from "@/lib/testimonials";
+import { ILLUSTRATIVE_NOTE } from "@/lib/services";
 
 export const metadata: Metadata = {
   title: "Wall of Love — Werrise Digital",
@@ -184,17 +185,20 @@ export default function WallOfLovePage() {
             <h1 className="text-4xl lg:text-6xl font-light leading-tight text-white max-w-3xl mb-6">
               What our clients say about working with us.
             </h1>
-            <p className="text-lg text-neutral-400 max-w-xl leading-relaxed mb-14">
-              Real feedback from founders, operators, and investors across every
-              practice area.
+            <p className="text-lg text-neutral-400 max-w-xl leading-relaxed mb-3">
+              Feedback from founders, operators, and investors across our
+              practice areas.
+            </p>
+            <p className="text-xs text-neutral-500 max-w-xl mb-10">
+              {ILLUSTRATIVE_NOTE}
             </p>
 
             {/* Impact metrics bar */}
             <div className="grid grid-cols-3 gap-px rounded-2xl overflow-hidden border border-neutral-800">
               {[
                 { value: "Growth", label: "Revenue growth" },
-                { value: "50+", label: "Engagements delivered" },
-                { value: "20+", label: "Markets entered" },
+                { value: "Markets", label: "Market entry" },
+                { value: "Data", label: "Intelligence" },
               ].map((m) => (
                 <div
                   key={m.label}

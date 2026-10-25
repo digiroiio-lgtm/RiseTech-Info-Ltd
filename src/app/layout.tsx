@@ -3,6 +3,16 @@ import "./globals.css";
 import ThemeProvider from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://wealwaysrise.com"),
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    siteName: "Werrise Digital Ltd",
+    url: "https://wealwaysrise.com",
+    title: "Werrise Digital — AI-Powered Business Solutions & Growth Strategy",
+    description:
+      "AI-powered business solutions, digital transformation and growth strategy for ambitious companies.",
+  },
   title: "Werrise Digital — AI-Powered Business Solutions & Growth Strategy",
   description:
     "AI-powered business solutions, digital transformation and growth strategy for ambitious companies.",

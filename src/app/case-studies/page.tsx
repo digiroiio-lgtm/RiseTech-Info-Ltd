@@ -1,3 +1,4 @@
+import { ILLUSTRATIVE_NOTE } from "@/lib/services";
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
@@ -57,8 +58,10 @@ export default function CaseStudiesPage() {
             </h1>
             <p className="text-lg text-neutral-400 leading-relaxed max-w-xl">
               Ten engagements across export strategy, market intelligence,
-              technology systems, and growth consulting. Real clients, real
-              results.
+              technology systems, and growth consulting.
+            </p>
+            <p className="text-xs text-neutral-500 max-w-xl mt-3">
+              {ILLUSTRATIVE_NOTE}
             </p>
           </div>
         </div>

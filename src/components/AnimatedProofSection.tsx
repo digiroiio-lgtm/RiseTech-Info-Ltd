@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ILLUSTRATIVE_NOTE } from "@/lib/services";
 
 interface ProofCard {
   logo: string;
@@ -231,11 +232,14 @@ export default function AnimatedProofSection() {
               Proven Results
             </p>
             <h2 className="text-3xl lg:text-4xl font-light text-white max-w-lg leading-snug">
-              Real clients. Measurable outcomes.
+              Engagement examples.
             </h2>
             <p className="mt-4 text-neutral-400 text-base leading-relaxed max-w-md">
-              A live view of our recent engagements — across export strategy,
-              market intelligence, and technology systems.
+              Examples of engagements across export strategy, market
+              intelligence, and technology systems.
+            </p>
+            <p className="mt-2 text-xs text-neutral-500 max-w-md">
+              {ILLUSTRATIVE_NOTE}
             </p>
           </div>
           <Link

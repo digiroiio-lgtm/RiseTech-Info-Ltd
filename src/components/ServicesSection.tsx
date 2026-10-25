@@ -414,22 +414,22 @@ const categories = [
     index: 18,
     name: "Real Estate Intelligence",
     tagline:
-      "Strategic real estate intelligence designed to help investors identify high-ROI locations, evaluate opportunities, and make data-driven acquisition decisions.",
+      "Strategic real estate intelligence designed to help clients understand local markets, compare locations, and make better-informed decisions.",
     services: [
       {
         title: "Real Estate Market Scan",
         description:
-          "City/neighborhood demand analysis, property price trends, rental yield snapshot, and investment hotspot identification. Deliverable: Real Estate Market Snapshot Report.",
+          "City/neighborhood demand analysis, property price trends, rental market snapshot, and area demand analysis. Deliverable: Real Estate Market Snapshot Report.",
       },
       {
         title: "Real Estate Investment Intelligence",
         description:
-          "ROI modelling, rental yield projections, neighborhood scoring system, comparable property benchmarking, and demand & absorption analysis. Deliverable: Investment Intelligence Report.",
+          "Market modelling, rental market analysis, neighborhood scoring system, comparable property benchmarking, and demand & absorption analysis. Deliverable: Market Intelligence Report.",
       },
       {
         title: "Strategic Property Acquisition Blueprint",
         description:
-          "High-ROI location identification, appreciation potential analysis, portfolio strategy, risk mapping, and acquisition strategy. Deliverable: Strategic Property Investment Blueprint.",
+          "Location comparison, market trend analysis, risk mapping, and acquisition planning support. Deliverable: Strategic Property Market Blueprint.",
       },
     ],
   },

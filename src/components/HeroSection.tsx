@@ -48,11 +48,9 @@ export default function HeroSection() {
           {/* Social proof strip */}
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
             <span className="text-xs font-semibold tracking-[0.15em] uppercase text-neutral-400">
-              Trusted by
+              Focus
             </span>
             {[
-              "50+ founders",
-              "20+ international expansion projects",
               "Revenue Growth & Business Transformation",
             ].map((item, i) => (
               <span key={item} className="flex items-center gap-6">
