@@ -300,7 +300,7 @@ export default function DigitalProductsSection() {
   const [selected, setSelected] = useState(0);
   const audience = audiences[selected];
   // The existing site uses email enquiries; this opens a draft, never a registration.
-  const enquiryHref = `mailto:advisory@risetech.info?subject=${encodeURIComponent(`Launch enquiry: ${productName}`)}&body=${encodeURIComponent(`Hello RiseTech,\n\nI would like to enquire about the launch of ${productName}.\n\nMy audience: ${audience.role}\nPlanned launch price: £99, one-time payment.\n\nPlease share more information when available.\n\nName:\nCompany (optional):\n`)}`;
+  const enquiryHref = `mailto:support@wealwaysrise.com?subject=${encodeURIComponent(`Launch enquiry: ${productName}`)}&body=${encodeURIComponent(`Hello RiseTech,\n\nI would like to enquire about the launch of ${productName}.\n\nMy audience: ${audience.role}\nPlanned launch price: £99, one-time payment.\n\nPlease share more information when available.\n\nName:\nCompany (optional):\n`)}`;
 
   return (
     <section

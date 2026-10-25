@@ -14,6 +14,10 @@ export default function SiteFooter() {
             <p className="text-xs text-neutral-600 mt-0.5">
               Operated by Werrise Digital Ltd
             </p>
+            <p className="text-xs text-neutral-600 mt-0.5">
+              Company No. 16345678 &middot; 85 Great Portland Street, London,
+              W1W 7LT, United Kingdom
+            </p>
             <p className="text-xs leading-relaxed mt-4 text-neutral-500">
               Advisory and strategy consulting services for founders and
               companies.

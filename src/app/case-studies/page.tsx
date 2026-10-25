@@ -37,7 +37,7 @@ export default function CaseStudiesPage() {
             ))}
           </nav>
           <a
-            href="mailto:advisory@risetech.info"
+            href="mailto:support@wealwaysrise.com"
             className="inline-flex items-center px-5 py-2.5 bg-neutral-900 text-white text-xs font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200"
           >
             Book Strategy Call
@@ -149,7 +149,7 @@ export default function CaseStudiesPage() {
             </h2>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="mailto:advisory@risetech.info"
+                href="mailto:support@wealwaysrise.com"
                 className="inline-flex items-center justify-center px-8 py-4 bg-neutral-900 text-white text-sm font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200"
               >
                 Book Strategy Call

@@ -25,7 +25,7 @@ export default function PricingPage() {
             </h1>
             <p className="text-lg font-light text-neutral-500 leading-relaxed max-w-xl">
               Every service is a clearly scoped deliverable at a fixed price.
-              All amounts are in GBP and exclusive of VAT where applicable.
+              All amounts are in GBP and inclusive of VAT where applicable.
               Payment is processed securely by Stripe.
             </p>
           </div>

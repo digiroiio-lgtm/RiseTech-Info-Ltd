@@ -8,6 +8,12 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "github.com" },
     ],
   },
+  async redirects() {
+    return [
+      { source: "/refund-policy", destination: "/refund", permanent: true },
+      { source: "/billing-policy", destination: "/billing", permanent: true },
+    ];
+  },
   async headers() {
     return [
       { source: "/(.*)", headers: SECURITY_HEADERS.map((h) => ({ ...h })) },

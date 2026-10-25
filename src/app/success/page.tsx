@@ -3,8 +3,9 @@ import Link from "next/link";
 import Stripe from "stripe";
 
 export const metadata: Metadata = {
-  title: "Payment Confirmed — Werrise Digital Ltd",
-  description: "Your payment has been received. Thank you for choosing Werrise Digital Ltd.",
+  title: "Payment Status — Werrise Digital Ltd",
+  description: "The status of your payment to Werrise Digital Ltd.",
+  robots: { index: false, follow: false },
 };
 
 interface SuccessPageProps {
@@ -16,7 +17,9 @@ async function getSessionDetails(sessionId: string) {
   if (!secretKey) return null;
   try {
     const stripe = new Stripe(secretKey);
-    const session = await stripe.checkout.sessions.retrieve(sessionId);
+    const session = await stripe.checkout.sessions.retrieve(sessionId, {
+      expand: ["line_items"],
+    });
     return session;
   } catch {
     return null;
@@ -27,10 +30,13 @@ export default async function SuccessPage({ searchParams }: SuccessPageProps) {
   const { session_id } = await searchParams;
   const session = session_id ? await getSessionDetails(session_id) : null;
 
+  const paid = session?.payment_status === "paid";
+  const processing =
+    session?.status === "complete" && session.payment_status === "unpaid";
+
   const serviceName =
     session?.metadata?.serviceTitle ??
-    (session?.line_items as { data?: { description?: string }[] } | undefined)
-      ?.data?.[0]?.description ??
+    session?.line_items?.data?.[0]?.description ??
     null;
 
   const amountTotal = session?.amount_total;
@@ -68,14 +74,18 @@ export default async function SuccessPage({ searchParams }: SuccessPageProps) {
           </div>
 
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 mb-4">
-            Payment Confirmed
+            {paid
+              ? "Payment Confirmed"
+              : processing
+                ? "Payment Processing"
+                : "Payment Not Confirmed"}
           </p>
           <h1 className="text-4xl lg:text-5xl font-light text-neutral-900 mb-6">
-            Thank you.
+            {paid ? "Thank you." : processing ? "Almost there." : "We could not verify this payment."}
           </h1>
 
           {/* Purchase summary */}
-          {serviceName && (
+          {(paid || processing) && serviceName && (
             <div className="border border-neutral-200 p-6 mb-8">
               <p className="text-xs font-semibold tracking-[0.15em] uppercase text-neutral-400 mb-3">
                 Order summary
@@ -105,18 +115,26 @@ export default async function SuccessPage({ searchParams }: SuccessPageProps) {
           )}
 
           <p className="text-neutral-500 leading-relaxed mb-4">
-            Your payment has been received. We will contact you at the email
-            address provided to begin the engagement.
+            {paid
+              ? "Your payment has been received. We will contact you at the email address provided to begin the engagement."
+              : processing
+                ? "Your payment method takes a little longer to confirm. We will email you as soon as it clears; you have not been charged twice."
+                : "This page could not confirm a completed payment. If you were charged, please email us with your payment receipt and we will check it straight away."}
           </p>
           <p className="text-neutral-500 leading-relaxed mb-10">
-            Expect to hear from us within{" "}
-            <strong className="text-neutral-900">1 business day</strong>{" "}
-            (Monday–Friday, 09:00–17:30 GMT). For any questions, email{" "}
+            {paid && (
+              <>
+                Expect to hear from us within{" "}
+                <strong className="text-neutral-900">1 business day</strong>{" "}
+                (Monday–Friday, 09:00–17:30 GMT).{" "}
+              </>
+            )}
+            For any questions, email{" "}
             <a
-              href="mailto:advisory@risetech.info"
+              href="mailto:support@wealwaysrise.com"
               className="underline underline-offset-2 text-neutral-900"
             >
-              advisory@risetech.info
+              support@wealwaysrise.com
             </a>
             .
           </p>

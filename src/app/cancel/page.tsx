@@ -5,6 +5,7 @@ import { SERVICES_BY_SLUG } from "@/lib/services";
 export const metadata: Metadata = {
   title: "Payment Cancelled — Werrise Digital Ltd",
   description: "Your payment was not completed. You can try again at any time.",
+  robots: { index: false, follow: false },
 };
 
 interface CancelPageProps {
@@ -86,10 +87,10 @@ export default async function CancelPage({ searchParams }: CancelPageProps) {
           <p className="mt-8 text-sm text-neutral-400">
             Questions? Email{" "}
             <a
-              href="mailto:advisory@risetech.info"
+              href="mailto:support@wealwaysrise.com"
               className="underline underline-offset-2 text-neutral-600 hover:text-neutral-900"
             >
-              advisory@risetech.info
+              support@wealwaysrise.com
             </a>
           </p>
         </div>

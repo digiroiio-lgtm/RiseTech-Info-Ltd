@@ -147,3 +147,10 @@ The middleware matcher excludes `_next/static`, `_next/image`, and `favicon.ico`
 | 10 | Logging & Monitoring | ⏭ Not applicable — no dynamic routes |
 | 11 | Vercel Configuration | ⚠️ Manual: scope env vars correctly in Vercel dashboard |
 | 12 | Output Report | ✅ This document |
+
+
+## Stripe payments (25 October 2026)
+- Checkout uses Stripe-hosted Checkout (redirect), so no card data reaches this site and no CSP change is needed for Stripe.js.
+- `POST /api/checkout` looks up the price server-side, checks the request `Origin`, rate-limits per IP (best-effort, in-memory) and never trusts the `Host` header in production (`NEXT_PUBLIC_BASE_URL` is required).
+- `POST /api/stripe/webhook` verifies the `stripe-signature` header against the raw body using `STRIPE_WEBHOOK_SECRET` and only logs events (paid, async payment failed, expired, refund, dispute).
+- The success page only reports "Payment Confirmed" when the Checkout Session is `paid`.

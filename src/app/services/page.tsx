@@ -26,7 +26,7 @@ export default function ServicesPage() {
             <p className="text-lg font-light text-neutral-500 leading-relaxed max-w-2xl">
               Every engagement is a fixed-price, clearly scoped deliverable.
               You know exactly what you are purchasing before any payment is
-              made. All prices are in GBP and exclusive of VAT where applicable.
+              made. All prices are in GBP and inclusive of VAT where applicable.
             </p>
           </div>
         </section>
@@ -81,8 +81,9 @@ export default function ServicesPage() {
                 Ready to get started?
               </h2>
               <p className="text-neutral-400 text-sm max-w-lg">
-                Contact us to confirm scope and receive a formal engagement
-                confirmation before any payment is required. See our{" "}
+                Questions about scope? Contact us before you buy. Payment is
+                taken in full at checkout and work starts once it is confirmed.
+                See our{" "}
                 <Link
                   href="/billing"
                   className="underline underline-offset-2 hover:text-white transition-colors"
