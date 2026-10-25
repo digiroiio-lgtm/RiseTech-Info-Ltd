@@ -5,7 +5,7 @@ import SiteFooter from "@/components/SiteFooter";
 export const metadata: Metadata = {
   title: "Contact — RiseTech Advisory",
   description:
-    "Get in touch with RiseTech Info Ltd for advisory enquiries, support, or billing questions.",
+    "Get in touch with Werrise Digital Ltd for advisory enquiries, support, or billing questions.",
 };
 
 export default function ContactPage() {
@@ -72,19 +72,19 @@ export default function ContactPage() {
                   <span className="font-medium text-neutral-900">
                     Legal Entity:
                   </span>{" "}
-                  RISETECH INFO LTD.
+                  WERRISE DIGITAL LTD
                 </li>
                 <li>
                   <span className="font-medium text-neutral-900">
                     Company Number:
                   </span>{" "}
-                  14876900
+                  16345678
                 </li>
                 <li>
                   <span className="font-medium text-neutral-900">
                     Registered Office:
                   </span>{" "}
-                  71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, United
+                  85 Great Portland Street, London, W1W 7LT, United
                   Kingdom
                 </li>
                 <li>

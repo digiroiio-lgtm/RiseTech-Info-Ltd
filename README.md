@@ -1,6 +1,6 @@
-# RiseTech Information Ltd
+# Werrise Digital Ltd
 
-Premium consulting services landing page for RiseTech Information Ltd — a strategic advisory firm serving founders, investors, and digital businesses.
+Premium consulting services landing page for Werrise Digital Ltd — a strategic advisory firm serving founders, investors, and digital businesses.
 
 ## Tech Stack
 

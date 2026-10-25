@@ -12,7 +12,7 @@ export default function SiteFooter() {
               RiseTech Advisory
             </p>
             <p className="text-xs text-neutral-600 mt-0.5">
-              Operated by RiseTech Information Ltd
+              Operated by Werrise Digital Ltd
             </p>
             <p className="text-xs leading-relaxed mt-4 text-neutral-500">
               Advisory and strategy consulting services for founders and
@@ -75,7 +75,7 @@ export default function SiteFooter() {
         {/* Bottom bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-[11px] tracking-widest uppercase text-neutral-600">
-            &copy; {new Date().getFullYear()} RiseTech Information Ltd
+            &copy; {new Date().getFullYear()} Werrise Digital Ltd
           </p>
           <p className="text-[11px] text-neutral-700">
             Strategic Advisory &middot; Market Intelligence &middot; Growth

@@ -4,7 +4,7 @@ import LegalPage from "@/components/LegalPage";
 export const metadata: Metadata = {
   title: "Privacy Policy — RiseTech Advisory",
   description:
-    "Privacy Policy for wealwaysrise.com — how RiseTech Info Ltd collects, uses, and protects your personal data.",
+    "Privacy Policy for wealwaysrise.com — how Werrise Digital Ltd collects, uses, and protects your personal data.",
 };
 
 export default function PrivacyPage() {

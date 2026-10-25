@@ -3,8 +3,8 @@ import Link from "next/link";
 import Stripe from "stripe";
 
 export const metadata: Metadata = {
-  title: "Payment Confirmed — RiseTech Information Ltd",
-  description: "Your payment has been received. Thank you for choosing RiseTech Information Ltd.",
+  title: "Payment Confirmed — Werrise Digital Ltd",
+  description: "Your payment has been received. Thank you for choosing Werrise Digital Ltd.",
 };
 
 interface SuccessPageProps {
@@ -86,7 +86,7 @@ export default async function SuccessPage({ searchParams }: SuccessPageProps) {
                     {serviceName}
                   </p>
                   <p className="text-xs text-neutral-400 mt-1">
-                    RiseTech Information Ltd
+                    Werrise Digital Ltd
                   </p>
                 </div>
                 {amountTotal != null && (

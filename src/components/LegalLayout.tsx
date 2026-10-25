@@ -68,7 +68,7 @@ export default function LegalLayout({
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-6">
             <p className="text-xs tracking-widest uppercase">
-              © {new Date().getFullYear()} RiseTech Information Ltd
+              © {new Date().getFullYear()} Werrise Digital Ltd
             </p>
             <p className="text-xs">
               Strategic Advisory · Market Intelligence · Growth Architecture

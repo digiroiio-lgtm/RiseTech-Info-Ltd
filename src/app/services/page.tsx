@@ -4,9 +4,9 @@ import Navbar from "@/components/Navbar";
 import ServicesSection from "@/components/ServicesSection";
 
 export const metadata: Metadata = {
-  title: "Services & Pricing — RiseTech Information Ltd",
+  title: "Services & Pricing — Werrise Digital Ltd",
   description:
-    "Full list of RiseTech Information Ltd advisory, SEO, market intelligence, and startup consulting services with transparent pricing.",
+    "Full list of Werrise Digital Ltd advisory, SEO, market intelligence, and startup consulting services with transparent pricing.",
 };
 
 export default function ServicesPage() {
@@ -114,7 +114,7 @@ export default function ServicesPage() {
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-6">
             <p className="text-xs tracking-widest uppercase">
-              © {new Date().getFullYear()} RiseTech Information Ltd
+              © {new Date().getFullYear()} Werrise Digital Ltd
             </p>
             <p className="text-xs">
               Strategic Advisory · Market Intelligence · Growth Architecture

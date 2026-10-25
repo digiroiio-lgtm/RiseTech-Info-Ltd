@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import LegalLayout from "@/components/LegalLayout";
 
 export const metadata: Metadata = {
-  title: "Billing Policy — RiseTech Information Ltd",
+  title: "Billing Policy — Werrise Digital Ltd",
   description:
-    "How RiseTech Information Ltd handles billing, payments, and subscriptions.",
+    "How Werrise Digital Ltd handles billing, payments, and subscriptions.",
 };
 
 export default function BillingPage() {
   return (
     <LegalLayout title="Billing Policy" lastUpdated="8 April 2026">
       <p>
-        This Billing Policy explains how <strong>RiseTech Information Ltd</strong>{" "}
+        This Billing Policy explains how <strong>Werrise Digital Ltd</strong>{" "}
         charges for its advisory and consulting Services. By purchasing our
         Services you agree to this policy.
       </p>
@@ -111,7 +111,7 @@ export default function BillingPage() {
 
       <h2>7. Taxes</h2>
       <p>
-        RiseTech Information Ltd is registered for VAT in the United Kingdom.
+        Werrise Digital Ltd is registered for VAT in the United Kingdom.
         UK customers will be charged VAT at the prevailing rate (currently 20%)
         where applicable. VAT invoices are available on request. International
         customers outside the UK may not be subject to UK VAT depending on their

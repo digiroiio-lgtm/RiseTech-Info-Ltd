@@ -4,7 +4,7 @@ import LegalPage from "@/components/LegalPage";
 export const metadata: Metadata = {
   title: "Terms and Conditions — RiseTech Advisory",
   description:
-    "Terms and Conditions governing your use of wealwaysrise.com and services provided by RISETECH INFO LTD.",
+    "Terms and Conditions governing your use of wealwaysrise.com and services provided by WERRISE DIGITAL LTD",
 };
 
 export default function TermsPage() {
@@ -16,9 +16,9 @@ export default function TermsPage() {
         {
           heading: "1. Company Information",
           paragraphs: [
-            "Legal Entity: RISETECH INFO LTD.",
-            "Company Number: 14876900",
-            "Registered Office: 71-75 Shelton Street, Covent Garden, London, United Kingdom, WC2H 9JQ",
+            "Legal Entity: WERRISE DIGITAL LTD",
+            "Company Number: 16345678",
+            "Registered Office: 85 Great Portland Street, London, W1W 7LT, United Kingdom",
             "Website: wealwaysrise.com",
             "Support: support@wealwaysrise.com",
           ],
@@ -129,7 +129,7 @@ export default function TermsPage() {
             {
               heading: "",
               paragraphs: [
-                "remain the intellectual property of RiseTech Info Ltd unless explicitly stated otherwise.",
+                "remain the intellectual property of Werrise Digital Ltd unless explicitly stated otherwise.",
                 "Content may not be copied, redistributed, or resold without written permission.",
               ],
             },

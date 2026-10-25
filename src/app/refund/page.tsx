@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import LegalLayout from "@/components/LegalLayout";
 
 export const metadata: Metadata = {
-  title: "Refund Policy — RiseTech Information Ltd",
+  title: "Refund Policy — Werrise Digital Ltd",
   description:
-    "RiseTech Information Ltd refund and cancellation policy for advisory services.",
+    "Werrise Digital Ltd refund and cancellation policy for advisory services.",
 };
 
 export default function RefundPage() {
@@ -13,7 +13,7 @@ export default function RefundPage() {
       <p>
         This Refund Policy applies to all purchases of advisory, consulting, and
         information services (&ldquo;Services&rdquo;) from{" "}
-        <strong>RiseTech Information Ltd</strong>. Please read it carefully
+        <strong>Werrise Digital Ltd</strong>. Please read it carefully
         before completing a purchase.
       </p>
 
