@@ -11,8 +11,8 @@ const clientTypes = [
   },
   {
     icon: "◇",
-    label: "Investors",
-    description: "VCs and angels conducting market due diligence.",
+    label: "Business Teams",
+    description: "Teams conducting market due diligence.",
   },
   {
     icon: "○",

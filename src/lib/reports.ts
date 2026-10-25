@@ -87,7 +87,7 @@ export const reports: Report[] = [
       "Planning Approvals Pipeline",
       "Regulatory Impact Assessment",
       "Micro-Market Opportunity Map",
-      "Investment Recommendations",
+      "Strategic Recommendations",
     ],
   },
 ];

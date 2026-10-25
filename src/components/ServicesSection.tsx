@@ -64,7 +64,7 @@ const categories = [
     index: 3,
     name: "Startup Advisory",
     tagline:
-      "Investor-ready positioning and strategic clarity for founders at every stage.",
+      "Clear positioning and strategic clarity for founders at every stage.",
     services: [
       {
         title: "Pitch Deck Design & Review",
@@ -102,7 +102,7 @@ const categories = [
     index: 4,
     name: "Startup Diagnostics",
     tagline:
-      "Structured health checks and investor-readiness audits for early-stage startups.",
+      "Structured health checks and readiness reviews for early-stage startups.",
     services: [
       {
         title: "Startup Health Diagnostic",
@@ -112,7 +112,7 @@ const categories = [
       {
         title: "Investor Readiness Audit",
         description:
-          "Pre-investment review of your pitch deck, traction metrics, financial model, and storytelling. Delivered as a detailed investor readiness report.",
+          "A review of your pitch deck, traction metrics, financial model, and storytelling. Delivered as a detailed readiness report.",
       },
     ],
   },
@@ -125,12 +125,12 @@ const categories = [
       {
         title: "Fundraising Strategy Plan",
         description:
-          "Full investment strategy covering valuation approach, investor targeting, round structure, and fundraising narrative to position your raise for success.",
+          "Fundraising preparation covering positioning, supporting materials, target-audience research, and your fundraising narrative.",
       },
       {
         title: "VC Target List + Outreach Strategy",
         description:
-          "A curated list of 50–100 matched VCs, a tailored outreach plan, and a warm intro strategy to maximise your chances of securing a first meeting.",
+          "A curated list of 50–100 matched VCs, a tailored outreach plan, and an introduction strategy to help you prepare for first meetings.",
       },
     ],
   },
@@ -271,17 +271,17 @@ const categories = [
     index: 12,
     name: "Due Diligence Services",
     tagline:
-      "Rigorous market and competitive intelligence reports for investors and venture capital firms evaluating opportunities.",
+      "Rigorous market and competitive intelligence reports to support business and market-entry decisions.",
     services: [
       {
         title: "Startup Due Diligence Report",
         description:
-          "Comprehensive due diligence on a startup's market position, competitive landscape, unit economics, and investment risk. Designed to support investor decision-making with evidence-based analysis.",
+          "Comprehensive due diligence on a startup's market position, competitive landscape, unit economics, and business risk. Designed to support planning decisions with evidence-based analysis.",
       },
       {
         title: "Market Due Diligence",
         description:
-          "In-depth validation of a target market — covering market size, growth dynamics, customer segmentation, and demand signals to underpin investment or entry decisions.",
+          "In-depth validation of a target market — covering market size, growth dynamics, customer segmentation, and demand signals to inform market-entry decisions.",
       },
       {
         title: "Competitive Due Diligence",
@@ -289,9 +289,9 @@ const categories = [
           "Detailed competitive intelligence report mapping key players, their positioning, capabilities, and strategic vulnerabilities to assess a target's competitive moat.",
       },
       {
-        title: "Investment Opportunity Brief",
+        title: "Market Opportunity Brief",
         description:
-          "Concise investment brief covering market validation, competitor overview, unit economics, and key risk factors — structured for VC and PE review.",
+          "Concise brief covering market validation, competitor overview, unit economics, and key risk factors, structured for business planning.",
       },
     ],
   },
@@ -322,7 +322,7 @@ const categories = [
     index: 14,
     name: "M&A Intelligence",
     tagline:
-      "Acquisition targeting and market consolidation intelligence for scale-ups and investment teams.",
+      "Acquisition targeting and market consolidation intelligence for scale-ups and corporate development teams.",
     services: [
       {
         title: "Acquisition Target Analysis",
@@ -422,12 +422,12 @@ const categories = [
           "City/neighborhood demand analysis, property price trends, rental market snapshot, and area demand analysis. Deliverable: Real Estate Market Snapshot Report.",
       },
       {
-        title: "Real Estate Investment Intelligence",
+        title: "Real Estate Market Intelligence",
         description:
           "Market modelling, rental market analysis, neighborhood scoring system, comparable property benchmarking, and demand & absorption analysis. Deliverable: Market Intelligence Report.",
       },
       {
-        title: "Strategic Property Acquisition Blueprint",
+        title: "Strategic Property Market Blueprint",
         description:
           "Location comparison, market trend analysis, risk mapping, and acquisition planning support. Deliverable: Strategic Property Market Blueprint.",
       },

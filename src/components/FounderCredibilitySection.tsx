@@ -1,16 +1,29 @@
 import Link from "next/link";
 
-const team = [
+interface TeamCard {
+  initials: string;
+  name: string;
+  title: string;
+  /** Founder card: editorial layout */
+  positioning?: string;
+  description?: string[];
+  tags?: string[];
+  /** Other cards: bullet layout */
+  credentials?: string[];
+  focus?: string;
+}
+
+const team: TeamCard[] = [
   {
     initials: "OY",
-    name: "Oguz Y.",
+    name: "Oğuz Yumuk",
     title: "Founder & Managing Director",
-    credentials: [
-      "Experience in international trade strategy",
-      "Former export advisor to UKEF-backed programmes",
-      "Led market entry projects across EU, MENA & Asia",
+    positioning: "Strategic Generalist & Operator",
+    description: [
+      "Connects business strategy, technology, people and execution to turn complex challenges into practical growth opportunities.",
+      "Brings a cross-disciplinary perspective to building scalable businesses, stronger operations and commercially valuable partnerships.",
     ],
-    focus: "Export Strategy · Market Intelligence · Business Advisory",
+    tags: ["Strategy", "Technology", "People", "Execution", "Growth"],
   },
   {
     initials: "HB",
@@ -85,42 +98,86 @@ export default function FounderCredibilitySection() {
 
         {/* Team cards */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10 md:mb-16">
-          {team.map((member) => (
-            <div
-              key={member.name}
-              className="border border-neutral-800 p-6 sm:p-8 flex flex-col gap-5 sm:gap-6 hover:border-neutral-600 transition-colors duration-200"
-            >
-              {/* Avatar initials */}
-              <div className="w-12 h-12 bg-neutral-800 flex items-center justify-center">
-                <span className="text-sm font-semibold text-neutral-300 tracking-wide">
-                  {member.initials}
-                </span>
-              </div>
+          {team.map((member) =>
+            member.description ? (
+              <div
+                key={member.name}
+                className="border border-neutral-800 p-5 sm:p-6 flex flex-col gap-3 hover:border-neutral-600 transition-colors duration-200"
+              >
+                {/* Name, title and positioning */}
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 shrink-0 bg-neutral-800 flex items-center justify-center">
+                    <span className="text-xs font-semibold text-neutral-300 tracking-wide">
+                      {member.initials}
+                    </span>
+                  </div>
+                  <div>
+                    <p className="text-base font-semibold text-white">
+                      {member.name}
+                    </p>
+                    <p className="text-xs text-neutral-500 mt-0.5">
+                      {member.title}
+                    </p>
+                  </div>
+                </div>
+                <p className="text-xs font-medium tracking-wide text-neutral-300">{member.positioning}</p>
 
-              {/* Name & title */}
-              <div>
-                <p className="text-base font-semibold text-white">
-                  {member.name}
-                </p>
-                <p className="text-xs text-neutral-500 mt-0.5">{member.title}</p>
-              </div>
+                {/* Description */}
+                <div className="space-y-2 flex-1">
+                  {member.description.map((paragraph) => (
+                    <p
+                      key={paragraph}
+                      className="text-[13px] text-neutral-400 leading-[1.55]"
+                    >
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
 
-              {/* Credentials */}
-              <ul className="space-y-2 flex-1">
-                {member.credentials.map((c) => (
-                  <li key={c} className="flex items-start gap-2.5 text-xs text-neutral-400">
-                    <span className="mt-1.5 w-1 h-1 rounded-full bg-neutral-600 flex-shrink-0" />
-                    {c}
-                  </li>
-                ))}
-              </ul>
-
-              {/* Focus areas */}
-              <div className="pt-4 border-t border-neutral-800">
-                <p className="text-xs text-neutral-600">{member.focus}</p>
+                {/* Expertise tags */}
+                <div className="pt-3 border-t border-neutral-800">
+                  <p className="text-xs text-neutral-500">
+                    {member.tags?.join(" · ")}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            ) : (
+              <div
+                key={member.name}
+                className="border border-neutral-800 p-6 sm:p-8 flex flex-col gap-5 sm:gap-6 hover:border-neutral-600 transition-colors duration-200"
+              >
+                {/* Avatar initials */}
+                <div className="w-12 h-12 bg-neutral-800 flex items-center justify-center">
+                  <span className="text-sm font-semibold text-neutral-300 tracking-wide">
+                    {member.initials}
+                  </span>
+                </div>
+
+                {/* Name & title */}
+                <div>
+                  <p className="text-base font-semibold text-white">
+                    {member.name}
+                  </p>
+                  <p className="text-xs text-neutral-500 mt-0.5">{member.title}</p>
+                </div>
+
+                {/* Credentials */}
+                <ul className="space-y-2 flex-1">
+                  {member.credentials?.map((c) => (
+                    <li key={c} className="flex items-start gap-2.5 text-xs text-neutral-400">
+                      <span className="mt-1.5 w-1 h-1 rounded-full bg-neutral-600 flex-shrink-0" />
+                      {c}
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Focus areas */}
+                <div className="pt-4 border-t border-neutral-800">
+                  <p className="text-xs text-neutral-600">{member.focus}</p>
+                </div>
+              </div>
+            ),
+          )}
         </div>
 
         {/* Firm-level credentials bar */}

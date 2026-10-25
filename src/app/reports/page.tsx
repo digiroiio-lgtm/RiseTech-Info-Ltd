@@ -54,7 +54,7 @@ export default function ReportsPage() {
                 },
                 {
                   label: "Decision-Ready Format",
-                  desc: "Executive summary, key findings, and full analysis. Structured for board packs and investor decks.",
+                  desc: "Executive summary, key findings, and full analysis. Structured for board packs and internal planning.",
                 },
                 {
                   label: "Instant PDF Delivery",

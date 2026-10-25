@@ -20,16 +20,15 @@ export const teamMembers: TeamMember[] = [
   {
     id: "oy",
     initials: "OY",
-    name: "Oguz Y.",
+    name: "Oğuz Yumuk",
     title: "Founder & Managing Director",
-    roleDescriptor:
-      "Leads firm strategy, client advisory, and international market entry practice.",
-    practiceArea: "Export Strategy",
+    roleDescriptor: "Strategic Generalist & Operator",
+    practiceArea: "Client Advisory",
     region: "EMEA",
     location: "London, UK",
-    bio: "Oguz founded Werrise Digital after more than a decade structuring international trade strategies for mid-market and growth-stage businesses. He has advised over 30 companies entering EU, MENA, and Asian markets, and served as an export advisor to UKEF-backed programmes. His work sits at the intersection of commercial strategy, distribution architecture, and investor readiness.",
-    expertise: ["Export Market Entry", "Market Intelligence", "Business Advisory", "Trade Strategy"],
-    sectors: ["Export", "Manufacturing", "Consumer Goods", "FinTech"],
+    bio: "Connects business strategy, technology, people and execution to turn complex challenges into practical growth opportunities. Brings a cross-disciplinary perspective to building scalable businesses, stronger operations and commercially valuable partnerships.",
+    expertise: ["Strategy", "Technology", "People", "Execution", "Growth"],
+    sectors: ["Cross-sector"],
     tab: "executive",
   },
   {

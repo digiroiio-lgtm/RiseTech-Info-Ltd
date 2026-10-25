@@ -174,20 +174,20 @@ export const caseStudies: CaseStudy[] = [
     service: "Loyalty Platform",
   },
   {
-    slug: "vc-due-diligence",
+    slug: "market-validation-logistics-software",
     tag: "Market Intelligence",
-    client: "Growth-Stage VC Fund",
-    headline: "Investment intelligence that shaped a £6M portfolio decision",
+    client: "Technology Sector Client",
+    headline: "Independent market validation for a UK B2B logistics software launch",
     challenge:
-      "A growth-stage VC was evaluating a £6M follow-on investment in a portfolio company entering the UK B2B logistics software market. The partners needed independent market validation — they couldn't rely solely on the company's own projections.",
+      "A technology company was preparing to enter the UK B2B logistics software market. Its leadership needed independent market validation rather than relying solely on internal projections.",
     approach:
       "We delivered a comprehensive market intelligence report covering UK logistics software spend (by segment and company size), the five key competing platforms, switching cost analysis, buyer interview synthesis from 12 target customers, and a 3-year market growth projection with bull/base/bear scenarios.",
     result:
-      "The report validated the opportunity at the base case while identifying a pricing strategy gap the company had missed. The fund invested £6M with a modified term sheet incorporating the pricing recommendation. The portfolio company raised a further £14M Series B 11 months later.",
+      "The report validated the opportunity at the base case and identified a pricing strategy gap the company had not considered, which it took into account in its commercial planning.",
     metrics: [
-      { value: "£6M", label: "Investment decision supported" },
       { value: "12", label: "Buyer interviews conducted" },
-      { value: "£14M", label: "Series B raised by portfolio co." },
+      { value: "5", label: "Competing platforms profiled" },
+      { value: "3", label: "Growth scenarios modelled" },
     ],
     service: "Market Intelligence Report",
   },

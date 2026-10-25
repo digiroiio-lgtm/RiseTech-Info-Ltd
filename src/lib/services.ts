@@ -120,7 +120,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     index: 3,
     name: "Startup Advisory",
     tagline:
-      "Investor-ready positioning and strategic clarity for founders at every stage.",
+      "Clear positioning and strategic clarity for founders at every stage.",
     services: [
       {
         slug: "pitch-deck-review",
@@ -215,7 +215,7 @@ export const INFORMATION_DISCLAIMER =
 
 /** Services whose names point at investment, funding or acquisition topics. */
 export function needsInformationDisclaimer(title: string): boolean {
-  return /due diligence|investment|investor|acquisition|consolidation|fundrais|\bVC\b|real estate|property/i.test(title);
+  return /due diligence|opportunity brief|investment|investor|acquisition|consolidation|fundrais|\bVC\b|real estate|property/i.test(title);
 }
 
 export const ILLUSTRATIVE_NOTE =
