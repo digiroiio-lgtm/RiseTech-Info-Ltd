@@ -10,7 +10,7 @@ const team = [
       "Former export advisor to UKEF-backed programmes",
       "Led market entry projects across EU, MENA & Asia",
     ],
-    focus: "Export Strategy · Market Intelligence · Investor Advisory",
+    focus: "Export Strategy · Market Intelligence · Business Advisory",
   },
   {
     initials: "HB",

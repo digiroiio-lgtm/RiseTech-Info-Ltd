@@ -23,10 +23,13 @@ export default function HeroSection() {
           </h1>
 
           {/* Subheadline */}
+          <p className="text-xs sm:text-sm font-semibold tracking-[0.18em] uppercase text-neutral-500 mb-4">
+            Business Consultancy. AI &amp; Technology. Software Development.
+            Digital Growth.
+          </p>
           <p className="text-lg lg:text-xl font-light text-neutral-500 leading-relaxed max-w-2xl mb-8 md:mb-12">
-            From export growth to AI dashboards and investment intelligence —
-            we help companies scale faster with high-impact consulting and
-            systems.
+            We help ambitious companies plan, build and grow with consulting,
+            technology and digital marketing services.
           </p>
 
           {/* CTAs */}

@@ -24,6 +24,20 @@ export default function TermsPage() {
             "Website: wealwaysrise.com",
             "Customer support: support@wealwaysrise.com",
           ],
+          subsections: [
+            {
+              heading: "Proposed UK SIC Classifications",
+              paragraphs: [
+                "The business activities Werrise Digital Ltd intends to carry on are described using the following UK Standard Industrial Classification (SIC 2007) codes. They are proposed classifications and have not yet been confirmed against the Companies House register.",
+              ],
+              items: [
+                "70229: Management consultancy activities other than financial management",
+                "62020: Information technology consultancy activities",
+                "62012: Business and domestic software development",
+                "73110: Advertising agencies",
+              ],
+            },
+          ],
         },
         {
           heading: "2. Acceptance of These Terms",
@@ -37,6 +51,7 @@ export default function TermsPage() {
           heading: "3. Our Services",
           paragraphs: [
             "We provide AI-powered business solutions, digital transformation support, growth strategy, advisory and market intelligence services, including written reports and consulting deliverables.",
+            "Our services fall into four areas: business and management consultancy; AI and technology consultancy; software and digital product development; and digital marketing and growth. Fixed-price consulting packages and reports are sold at checkout. Software development and marketing work are quoted per project and agreed in writing.",
             "Each service is described on the Services page and at checkout, including its price. Services are professional consulting services and specific results are not guaranteed.",
           ],
         },
