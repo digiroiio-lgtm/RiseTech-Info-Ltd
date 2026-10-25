@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { quoteHref } from "@/lib/services";
+import { INFORMATION_DISCLAIMER, needsInformationDisclaimer, quoteHref } from "@/lib/services";
 
 interface ServiceCardProps {
   /** Present only for services that can be bought through checkout. */
@@ -32,6 +32,11 @@ export default function ServiceCard({
         <p className="text-sm text-neutral-500 leading-relaxed mb-4 sm:mb-6">
           {description}
         </p>
+        {needsInformationDisclaimer(title) && (
+          <p className="text-[11px] text-neutral-500 leading-relaxed mb-4 sm:mb-6 -mt-2">
+            {INFORMATION_DISCLAIMER}
+          </p>
+        )}
       </div>
 
       {/* Bottom */}

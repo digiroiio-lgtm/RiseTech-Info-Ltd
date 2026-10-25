@@ -138,7 +138,7 @@ export default function InsightsPageClient() {
                 Need the full report?
               </h2>
               <p className="text-sm text-neutral-400 leading-relaxed max-w-md">
-                Our premium reports go deeper — 40–55 pages of investment-grade
+                Our premium reports go deeper — 40–55 pages of in-depth
                 analysis with data, frameworks, and actionable recommendations.
               </p>
             </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { INFORMATION_DISCLAIMER } from "@/lib/services";
 import Navbar from "@/components/Navbar";
 import SiteFooter from "@/components/SiteFooter";
 import { reports } from "@/lib/reports";
@@ -7,7 +8,7 @@ import { reports } from "@/lib/reports";
 export const metadata: Metadata = {
   title: "Intelligence Reports — Werrise Digital",
   description:
-    "Investment-grade market intelligence reports for founders, operators, and investors. Deep-dive analysis, proprietary data, and strategic recommendations.",
+    "In-depth market intelligence reports for founders, operators, and business leaders. Deep-dive analysis, proprietary data, and strategic recommendations.",
 };
 
 function formatDate(iso: string) {
@@ -29,12 +30,15 @@ export default function ReportsPage() {
               Premium Intelligence
             </p>
             <h1 className="text-4xl lg:text-6xl font-light leading-tight text-white max-w-3xl mb-8">
-              Investment-grade reports. Real data. Actionable outcomes.
+              In-depth reports. Real data. Actionable outcomes.
             </h1>
             <p className="text-base text-neutral-400 leading-relaxed max-w-xl">
               Each report is 40–55 pages of proprietary analysis — market
-              sizing, competitive landscape, investment signals, and strategic
+              sizing, competitive landscape, market signals, and strategic
               recommendations built for decision-makers.
+            </p>
+            <p className="text-xs text-neutral-500 leading-relaxed max-w-xl mt-4">
+              {INFORMATION_DISCLAIMER}
             </p>
           </div>
         </div>

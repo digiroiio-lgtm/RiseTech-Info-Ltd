@@ -124,7 +124,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
         slug: "pitch-deck-review",
         title: "Pitch Deck Design & Review",
         description:
-          "Investor-grade pitch deck crafted to communicate your vision, traction, and market opportunity with precision and confidence.",
+          "Professionally designed pitch deck crafted to communicate your vision, traction, and market opportunity with precision and confidence.",
         price: "£600",
         priceGBP: 600,
         category: "Startup Advisory",
@@ -192,4 +192,12 @@ export const SUPPORT_EMAIL = "support@wealwaysrise.com";
 
 export function quoteHref(title: string): string {
   return `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent(`Quote request: ${title}`)}`;
+}
+
+export const INFORMATION_DISCLAIMER =
+  "Business and market analysis for informational purposes. This is not investment, financial, tax or legal advice and does not recommend any specific investment.";
+
+/** Services whose names point at investment, funding or acquisition topics. */
+export function needsInformationDisclaimer(title: string): boolean {
+  return /due diligence|investment|investor|acquisition|consolidation|fundrais|\bVC\b|real estate|property/i.test(title);
 }

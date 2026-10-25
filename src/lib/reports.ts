@@ -68,7 +68,7 @@ export const reports: Report[] = [
     category: "Market Intelligence",
     title: "UK Real Estate Market Intelligence Report 2026",
     description:
-      "A 52-page investment-grade analysis of the UK residential and commercial real estate market, covering demand dynamics, regional pricing trends, regulatory pipeline, and forward-looking opportunity identification.",
+      "A 52-page in-depth analysis of the UK residential and commercial real estate market, covering demand dynamics, regional pricing trends, regulatory pipeline, and forward-looking opportunity identification.",
     priceGBP: 1800,
     pages: 52,
     publishedDate: "2026-02-28",
