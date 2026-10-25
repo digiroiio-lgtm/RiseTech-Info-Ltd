@@ -9,21 +9,34 @@ export default function SiteFooter() {
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-8 pb-8 border-b border-neutral-800">
           <div className="max-w-sm">
             <p className="text-sm font-semibold tracking-[0.15em] uppercase text-white">
-              RiseTech Advisory
+              Werrise Digital Ltd
             </p>
-            <p className="text-xs text-neutral-600 mt-0.5">
+            <ul
+              aria-label="Ideas, AI, People, Growth"
+              className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] sm:text-xs font-semibold uppercase tracking-[0.18em] sm:tracking-[0.2em] text-neutral-200"
+            >
+              {["Ideas", "AI", "People", "Growth"].map((pillar, i) => (
+                <li key={pillar} className="flex items-center gap-x-3">
+                  {i !== 0 && (
+                    <span aria-hidden="true" className="h-3 w-px bg-neutral-700" />
+                  )}
+                  {pillar}
+                </li>
+              ))}
+            </ul>
+            <p className="text-xs leading-relaxed mt-4 text-neutral-400">
+              AI-powered business solutions, digital transformation and growth
+              strategy for ambitious companies.
+            </p>
+            <p className="text-xs text-neutral-500 mt-4">
               Operated by Werrise Digital Ltd
             </p>
-            <p className="text-xs text-neutral-600 mt-0.5">
+            <p className="text-xs text-neutral-500 mt-0.5">
               Company No. 16345678 &middot; 85 Great Portland Street, London,
               W1W 7LT, United Kingdom
             </p>
-            <p className="text-xs leading-relaxed mt-4 text-neutral-500">
-              Advisory and strategy consulting services for founders and
-              companies.
-            </p>
             <p className="text-xs mt-3">
-              <span className="text-neutral-600">Contact: </span>
+              <span className="text-neutral-500">Contact: </span>
               <a
                 href="mailto:support@wealwaysrise.com"
                 className="text-neutral-400 hover:text-white transition-colors duration-200"
