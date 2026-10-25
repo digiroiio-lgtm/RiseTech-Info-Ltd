@@ -152,9 +152,9 @@ export default function StartupAdvisoryCarousel() {
   };
 
   return (
-    <div className="mb-24 lg:mb-32 -mx-6 lg:-mx-8 px-6 lg:px-8 py-16 lg:py-20" style={{ backgroundColor: "#f0ede6" }}>
+    <div className="mb-12 md:mb-20 lg:mb-32 -mx-6 lg:-mx-8 px-6 lg:px-8 py-10 md:py-16 lg:py-20" style={{ backgroundColor: "#f0ede6" }}>
       {/* Header row */}
-      <div className="max-w-6xl mx-auto flex items-start justify-between mb-10">
+      <div className="max-w-6xl mx-auto flex items-start justify-between mb-6 md:mb-10">
         <div>
           <div className="flex items-baseline gap-6 mb-2">
             <span className="text-xs font-semibold tracking-[0.2em] text-neutral-400 uppercase">03</span>

@@ -5,10 +5,10 @@ const preview = caseStudies.slice(0, 3);
 
 export default function CaseStudiesPreviewSection() {
   return (
-    <section className="bg-neutral-50 py-24 lg:py-32 border-t border-neutral-100">
+    <section className="bg-neutral-50 py-14 md:py-20 lg:py-32 border-t border-neutral-100">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-16 lg:mb-20">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 sm:gap-6 mb-10 md:mb-14 lg:mb-20">
           <div>
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 mb-4">
               Case Studies
@@ -31,7 +31,7 @@ export default function CaseStudiesPreviewSection() {
             <Link
               key={cs.slug}
               href={`/case-studies#${cs.slug}`}
-              className="group bg-white border border-neutral-200 p-8 flex flex-col hover:border-neutral-900 hover:shadow-sm transition-all duration-300"
+              className="group bg-white border border-neutral-200 p-6 sm:p-8 flex flex-col hover:border-neutral-900 hover:shadow-sm transition-all duration-300"
             >
               <div className="flex items-center justify-between mb-6">
                 <span className="text-xs font-mono text-neutral-300">

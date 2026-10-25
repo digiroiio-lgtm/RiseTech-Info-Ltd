@@ -24,9 +24,9 @@ export default function ServiceCategory({
 }: ServiceCategoryProps) {
   const indexStr = String(index).padStart(2, "0");
   return (
-    <div className="mb-24 lg:mb-32">
+    <div className="mb-12 md:mb-20 lg:mb-32">
       {/* Category header */}
-      <div className="flex items-baseline gap-6 mb-2">
+      <div className="flex items-baseline gap-4 md:gap-6 mb-2">
         <span className="text-xs font-semibold tracking-[0.2em] text-neutral-400 uppercase">
           {indexStr}
         </span>
@@ -34,7 +34,7 @@ export default function ServiceCategory({
           {name}
         </h2>
       </div>
-      <div className="ml-[3.5rem] mb-10">
+      <div className="ml-[2.75rem] md:ml-[3.5rem] mb-6 md:mb-10">
         <p className="text-sm text-neutral-400 leading-relaxed">{tagline}</p>
         <div className="mt-4 h-px w-12 bg-neutral-200" />
       </div>

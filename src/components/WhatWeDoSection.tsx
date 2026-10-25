@@ -31,10 +31,10 @@ const serviceGroups = [
 
 export default function WhatWeDoSection() {
   return (
-    <section className="bg-white py-24 lg:py-32 border-t border-neutral-100">
+    <section className="bg-white py-14 md:py-20 lg:py-32 border-t border-neutral-100">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="mb-16 lg:mb-20">
+        <div className="mb-10 md:mb-14 lg:mb-20">
           <p className="text-xs font-normal tracking-[0.2em] uppercase text-neutral-400 mb-6">
             What We Do
           </p>
@@ -48,7 +48,7 @@ export default function WhatWeDoSection() {
           {serviceGroups.map((group, i) => (
             <div
               key={group.label}
-              className="bg-white p-8 flex flex-col gap-6 group hover:bg-neutral-50 transition-colors duration-300"
+              className="bg-white p-6 sm:p-8 flex flex-col gap-5 sm:gap-6 group hover:bg-neutral-50 transition-colors duration-300"
             >
               <span className="text-xs font-mono text-neutral-300">
                 {String(i + 1).padStart(2, "0")}

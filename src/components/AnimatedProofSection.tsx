@@ -221,11 +221,11 @@ export default function AnimatedProofSection() {
   return (
     <section
       style={{ background: "rgb(3,7,18)" }}
-      className="py-24 lg:py-32 overflow-hidden"
+      className="py-14 md:py-20 lg:py-32 overflow-hidden"
     >
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-16">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 sm:gap-6 mb-10 md:mb-16">
           <div>
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 mb-4">
               Proven Results

@@ -28,10 +28,10 @@ const clientTypes = [
 
 export default function ClientTypesSection() {
   return (
-    <section className="bg-neutral-50 py-24 lg:py-32 border-t border-neutral-100">
+    <section className="bg-neutral-50 py-14 md:py-20 lg:py-32 border-t border-neutral-100">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="mb-16">
+        <div className="mb-10 md:mb-16">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 mb-4">
             Who We Work With
           </p>

@@ -1,8 +1,8 @@
 export default function FeaturedService() {
   return (
-    <section className="bg-neutral-950 text-white py-24 lg:py-32">
+    <section className="bg-neutral-950 text-white py-14 md:py-20 lg:py-32">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left: copy */}
           <div>
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 mb-6">

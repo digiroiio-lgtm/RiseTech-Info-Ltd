@@ -1,6 +1,6 @@
 export default function CTASection() {
   return (
-    <section id="contact" className="bg-neutral-900 text-white py-24 lg:py-32">
+    <section id="contact" className="bg-neutral-900 text-white py-14 md:py-20 lg:py-32">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-500 mb-6">
@@ -9,7 +9,7 @@ export default function CTASection() {
           <h2 className="text-4xl lg:text-6xl font-light text-white leading-tight mb-6">
             Need Strategic Clarity?
           </h2>
-          <p className="text-lg text-neutral-400 leading-relaxed mb-12 max-w-lg">
+          <p className="text-lg text-neutral-400 leading-relaxed mb-8 md:mb-12 max-w-lg">
             Work with us to evaluate your strategy, refine your positioning, and
             accelerate growth.
           </p>
