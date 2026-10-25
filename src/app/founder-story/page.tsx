@@ -5,7 +5,7 @@ import SiteFooter from "@/components/SiteFooter";
 export const metadata: Metadata = {
   title: "Founder Story — Werrise Digital",
   description:
-    "The moment that started everything. How a song on an American highway gave birth to the philosophy behind RiseTech.",
+    "The moment that started everything. How a song on an American highway gave birth to the philosophy behind Werrise Digital.",
 };
 
 export default function FounderStoryPage() {
@@ -51,7 +51,7 @@ export default function FounderStoryPage() {
         <div className="bg-white py-12 md:py-20 lg:py-28">
           <div className="max-w-3xl mx-auto px-6 lg:px-8 space-y-6 text-neutral-700 leading-relaxed text-base lg:text-lg">
             <p>
-              Years before RiseTech was built, our team had already spent years
+              Years before Werrise Digital was built, our team had already spent years
               working across different industries — building businesses, solving
               complex problems, and helping companies grow. But the real
               inspiration behind the brand came from a moment we didn&apos;t plan.
@@ -91,12 +91,12 @@ export default function FounderStoryPage() {
               So we turned that moment into something bigger.
             </p>
             <p>
-              We built RiseTech around that philosophy — a company designed to
+              We built Werrise Digital around that philosophy — a company designed to
               help organizations navigate complexity, unlock growth opportunities,
               and move forward with clarity and confidence.
             </p>
             <p>
-              Today, RiseTech works with founders, operators, and investors
+              Today, Werrise Digital works with founders, operators, and investors
               across multiple sectors — helping them build smarter systems,
               expand into new markets, and create measurable growth.
             </p>
@@ -117,7 +117,7 @@ export default function FounderStoryPage() {
               Our Philosophy
             </p>
             <h2 className="text-3xl lg:text-4xl font-light mb-8 leading-tight">
-              RiseTech exists to help ambitious teams turn complexity into
+              Werrise Digital exists to help ambitious teams turn complexity into
               opportunity.
             </h2>
             <p className="text-neutral-400 leading-relaxed mb-8">
@@ -155,7 +155,7 @@ export default function FounderStoryPage() {
             </p>
             <blockquote className="border-l-2 border-neutral-200 pl-8 space-y-5 text-neutral-700 leading-relaxed text-base lg:text-lg">
               <p>
-                RiseTech was not built from a single idea. It was built from
+                Werrise Digital was not built from a single idea. It was built from
                 years of experience, countless projects, and a belief that the
                 right strategy can transform how companies grow.
               </p>
