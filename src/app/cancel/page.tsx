@@ -3,7 +3,7 @@ import Link from "next/link";
 import { SERVICES_BY_SLUG } from "@/lib/services";
 
 export const metadata: Metadata = {
-  title: "Payment Cancelled — RiseTech Information Ltd",
+  title: "Payment Cancelled — Werrise Digital Ltd",
   description: "Your payment was not completed. You can try again at any time.",
 };
 

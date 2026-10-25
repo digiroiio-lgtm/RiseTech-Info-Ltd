@@ -5,9 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import ThemeToggleButton from "@/components/ThemeToggleButton";
 
-const LOGO_URL =
-  "https://github.com/user-attachments/assets/3ad79727-7477-4896-8113-2afdc8917a27";
-
 const links = [
   { label: "Services", href: "/#services" },
   { label: "Digital Products", href: "/#digital-products" },
@@ -37,19 +34,22 @@ export default function Navbar() {
           onClick={() => setMenuOpen(false)}
           className="flex items-center gap-2.5 shrink-0"
         >
-          <div className="w-8 h-8 rounded-full bg-neutral-900 dark:bg-black flex items-center justify-center overflow-hidden">
-            <Image
-              src={LOGO_URL}
-              alt="RiseTech logo"
-              width={32}
-              height={32}
-              className="object-cover"
-              priority
-            />
-          </div>
-          <span className="text-sm font-semibold tracking-[0.15em] uppercase text-neutral-900 dark:text-white">
-            RiseTech
-          </span>
+          <Image
+            src="/brand/werrise-logo-light.png"
+            alt="Werrise Digital Ltd"
+            width={571}
+            height={114}
+            className="h-9 w-auto dark:hidden"
+            priority
+          />
+          <Image
+            src="/brand/werrise-logo-dark.png"
+            alt="Werrise Digital Ltd"
+            width={412}
+            height={87}
+            className="hidden h-9 w-auto dark:block"
+            priority
+          />
         </Link>
         <nav
           aria-label="Main navigation"

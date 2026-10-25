@@ -1,4 +1,4 @@
-# Security Audit Report — RiseTech Information Ltd
+# Security Audit Report — Werrise Digital Ltd
 
 **Date:** 2026-04-08  
 **Auditor:** Automated DevSecOps Agent  
