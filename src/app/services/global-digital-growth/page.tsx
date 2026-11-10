@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import GlobalGrowthForm from "@/components/GlobalGrowthForm";
 import SiteFooter from "@/components/SiteFooter";
 import { ILLUSTRATIVE_NOTE } from "@/lib/services";
+import { GG_MODULE_PAGES_BY_SLUG } from "@/lib/globalGrowthModules";
 import { SITE_URL, breadcrumbJsonLd, jsonLdString } from "@/lib/jsonLd";
 import {
   GG_CASES,
@@ -150,6 +151,14 @@ export default function GlobalDigitalGrowthPage() {
                   <p className="text-sm text-neutral-500 leading-relaxed">
                     {item.body}
                   </p>
+                  {GG_MODULE_PAGES_BY_SLUG[item.slug] && (
+                    <Link
+                      href={`${GG_PATH}/${item.slug}`}
+                      className="inline-block mt-4 text-xs font-semibold tracking-widest uppercase text-neutral-500 hover:text-neutral-900"
+                    >
+                      Learn more →
+                    </Link>
+                  )}
                 </div>
               ))}
             </div>
