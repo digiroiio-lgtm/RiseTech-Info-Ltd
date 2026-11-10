@@ -75,7 +75,7 @@ export const GG_MODULE_PAGES: GGModulePage[] = [
         a: "No. Results depend on competition, your site and search engine changes. We commit to the agreed scope and reporting, not to a specific ranking.",
       },
     ],
-    related: ["geo-seo", "lead-rfq-automation"],
+    related: ["geo-seo", "website-transformation"],
   },
   {
     slug: "geo-seo",
@@ -136,7 +136,7 @@ export const GG_MODULE_PAGES: GGModulePage[] = [
         a: "No. Results depend on competition and search engine changes. We commit to the agreed scope and reporting.",
       },
     ],
-    related: ["international-seo", "lead-rfq-automation"],
+    related: ["international-seo", "website-transformation"],
   },
   {
     slug: "lead-rfq-automation",
@@ -197,7 +197,72 @@ export const GG_MODULE_PAGES: GGModulePage[] = [
         a: "No. Automation helps you capture and follow up enquiries faster and see what works, but sales depend on many factors. We commit to the agreed scope.",
       },
     ],
-    related: ["international-seo", "geo-seo"],
+    related: ["website-transformation", "geo-seo"],
+  },
+  {
+    slug: "website-transformation",
+    name: "Website Transformation",
+    seoTitle: "Website Transformation for International Sales: Multi-Language, Fast, Built to Convert",
+    seoDescription:
+      "Website transformation for SMEs selling abroad: a multi-language structure, country landing pages, technical performance and conversion improvements, with RFQ and CRM integration.",
+    h1: "Website Transformation: a website built for international buyers",
+    summary:
+      "Website Transformation turns your existing website into a foundation for international sales. We set up a multi-language structure, country-based landing pages, technical performance and conversion improvements, and connect enquiry forms to your CRM. It is a scoped project, quoted after a free initial review, and works together with International SEO, Geo-SEO and Lead & RFQ Automation.",
+    problem: [
+      "The site was built for one market and one language.",
+      "Pages load slowly or work poorly on phones, which loses buyers before they read anything.",
+      "Visitors from other countries cannot tell that you serve them or how to request a quote.",
+    ],
+    included: [
+      {
+        title: "Multi-language website structure",
+        body: "A clear structure for country and language versions, so each market has its own pages and search engines understand them.",
+      },
+      {
+        title: "Country-based landing pages",
+        body: "Landing page architecture for your target countries, with content written for each market's buyers.",
+      },
+      {
+        title: "Performance and conversion optimisation",
+        body: "Technical performance improvements and changes that make it easier for visitors to contact you or request a quote.",
+      },
+      {
+        title: "RFQ and CRM integration",
+        body: "Enquiry forms connected to your CRM, so every request is captured with its market and source page.",
+      },
+    ],
+    whoFor: [
+      "SMEs with a website built for a single market that now want international customers",
+      "Businesses planning a redesign who want it to support several countries and languages",
+      "Exporters and B2B suppliers whose website does not generate qualified enquiries",
+    ],
+    faq: [
+      {
+        q: "What is website transformation?",
+        a: "Website transformation means changing an existing website so it can support new goals, here international sales: language and country structure, performance, conversion and enquiry handling.",
+      },
+      {
+        q: "Do I need a completely new website?",
+        a: "Not always. After the free initial review we recommend whether to improve the existing site or rebuild parts of it.",
+      },
+      {
+        q: "How much does it cost?",
+        a: "Scope depends on your current site, the number of markets and languages and the integrations needed, so it is quoted per project after the review. It is not sold through online checkout.",
+      },
+      {
+        q: "How long does it take?",
+        a: "The timeline depends on scope. We confirm it with you in writing before work starts.",
+      },
+      {
+        q: "Does it include SEO?",
+        a: "The structure and landing pages are built with international SEO in mind. Ongoing optimisation is covered by International SEO, Geo-SEO and the Global Growth Partnership.",
+      },
+      {
+        q: "Can you guarantee more international enquiries?",
+        a: "No. Results depend on your market, competition and many other factors. We commit to the agreed scope and reporting, not to a specific outcome.",
+      },
+    ],
+    related: ["international-seo", "lead-rfq-automation"],
   },
 ];
 
