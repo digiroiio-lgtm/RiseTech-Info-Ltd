@@ -121,6 +121,7 @@ export default function GlobalGrowthForm() {
       )}
       <button
         type="submit"
+        data-cta="gdg-review-submit"
         disabled={busy}
         className="w-full inline-flex items-center justify-center px-8 py-4 bg-neutral-900 text-white text-sm font-medium tracking-wide hover:bg-neutral-700 disabled:opacity-60 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-2"
       >
