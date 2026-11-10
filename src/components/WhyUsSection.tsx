@@ -33,6 +33,9 @@ export default function WhyUsSection() {
           <h2 className="text-3xl lg:text-4xl font-light text-neutral-900 max-w-xl">
             Built for leaders who need more than advice.
           </h2>
+          <p className="text-base text-neutral-600 leading-relaxed mt-6 max-w-2xl">
+            Werrise Digital&apos;s approach rests on four principles: structured strategic thinking, a founder&apos;s practical perspective, evidence from market data and competitive analysis, and clear execution roadmaps. The aim is to turn analysis into prioritised actions that a business can act on.
+          </p>
         </div>
 
         {/* Value blocks */}
@@ -43,9 +46,9 @@ export default function WhyUsSection() {
                 {String(i + 1).padStart(2, "0")}
               </span>
               <div className="w-8 h-px bg-neutral-200 mb-5 group-hover:w-12 group-hover:bg-neutral-900 transition-all duration-300" />
-              <h3 className="text-base font-semibold text-neutral-900 mb-3">
+              <p className="text-base font-semibold text-neutral-900 mb-3">
                 {v.title}
-              </h3>
+              </p>
               <p className="text-sm text-neutral-500 leading-relaxed">
                 {v.description}
               </p>

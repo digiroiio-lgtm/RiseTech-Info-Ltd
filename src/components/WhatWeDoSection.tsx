@@ -59,6 +59,9 @@ export default function WhatWeDoSection() {
           <h2 className="text-4xl sm:text-6xl lg:text-8xl font-light text-neutral-900 max-w-4xl leading-tight">
             Four service areas. One digital consultancy.
           </h2>
+          <p className="text-base text-neutral-600 leading-relaxed mt-6 max-w-2xl">
+            Werrise Digital works in four service areas: business and management consultancy, AI and technology consultancy, software and digital product development, and digital marketing and growth. Each area combines strategy with hands-on delivery, so a project can move from analysis to implementation under one agreed scope.
+          </p>
         </div>
 
         {/* Group blocks */}
@@ -72,9 +75,9 @@ export default function WhatWeDoSection() {
                 {String(i + 1).padStart(2, "0")}
               </span>
               <div>
-                <h3 className="text-base font-semibold text-neutral-900 mb-3">
+                <p className="text-base font-semibold text-neutral-900 mb-3">
                   {group.label}
-                </h3>
+                </p>
                 <p className="text-sm text-neutral-500 leading-relaxed">
                   {group.description}
                 </p>

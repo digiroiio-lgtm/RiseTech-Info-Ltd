@@ -10,6 +10,8 @@ interface ServiceCardProps {
   price?: string;
   /** Link to the service's own page, when one exists. */
   detailHref?: string;
+  /** Render the title as a paragraph instead of an h3 (cards listed under a section heading). */
+  compactTitle?: boolean;
 }
 
 const buttonClass =
@@ -21,16 +23,18 @@ export default function ServiceCard({
   description,
   price,
   detailHref,
+  compactTitle = false,
 }: ServiceCardProps) {
+  const TitleTag = compactTitle ? "p" : "h3";
   const payable = Boolean(slug && price);
   return (
     <div className="group border border-neutral-200 bg-white p-6 sm:p-8 flex flex-col justify-between hover:border-neutral-900 hover:shadow-sm transition-all duration-300">
       {/* Top */}
       <div>
         <div className="flex items-start justify-between mb-3 sm:mb-4">
-          <h3 className="text-base font-semibold text-neutral-900 leading-snug">
+          <TitleTag className="text-base font-semibold text-neutral-900 leading-snug">
             {title}
-          </h3>
+          </TitleTag>
         </div>
         <p className="text-sm text-neutral-500 leading-relaxed mb-4 sm:mb-6">
           {description}

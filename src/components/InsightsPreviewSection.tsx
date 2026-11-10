@@ -33,6 +33,9 @@ export default function InsightsPreviewSection() {
             <h2 className="text-3xl lg:text-4xl font-light text-neutral-900">
               Latest insights from Werrise Digital.
             </h2>
+            <p className="text-sm text-neutral-600 leading-relaxed mt-4 max-w-2xl">
+              Insights are short articles on market intelligence, startup strategy, growth and SEO, and investor intelligence. They are free to read and written to help founders and leadership teams make better-informed decisions. Browse the latest below or open the full library.
+            </p>
           </div>
           <Link
             href="/insights"
@@ -58,9 +61,9 @@ export default function InsightsPreviewSection() {
               </div>
 
               <div className="p-6 flex flex-col flex-1">
-                <h3 className="text-base font-semibold text-neutral-900 leading-snug mb-3 group-hover:text-neutral-700 transition-colors duration-200 flex-1">
+                <p className="text-base font-semibold text-neutral-900 leading-snug mb-3 group-hover:text-neutral-700 transition-colors duration-200 flex-1">
                   {post.title}
-                </h3>
+                </p>
                 <p className="text-sm text-neutral-500 leading-relaxed line-clamp-3 mb-6">
                   {post.excerpt}
                 </p>
