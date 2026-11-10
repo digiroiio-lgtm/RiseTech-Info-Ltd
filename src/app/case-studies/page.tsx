@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
 import { caseStudies } from "@/lib/caseStudies";
+import { BOOKING_LABEL, BOOKING_URL } from "@/lib/booking";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/case-studies" },
@@ -39,10 +40,13 @@ export default function CaseStudiesPage() {
             ))}
           </nav>
           <a
-            href="mailto:support@wealwaysrise.com"
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-cta="book-call-cases-header"
             className="inline-flex items-center px-5 py-2.5 bg-neutral-900 text-white text-xs font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200"
           >
-            Book Strategy Call
+            {BOOKING_LABEL}
           </a>
         </div>
       </header>
@@ -161,10 +165,13 @@ export default function CaseStudiesPage() {
             </h2>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="mailto:support@wealwaysrise.com"
+                href={BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-cta="book-call-cases-end"
                 className="inline-flex items-center justify-center px-8 py-4 bg-neutral-900 text-white text-sm font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200"
               >
-                Book Strategy Call
+                {BOOKING_LABEL}
               </a>
               <Link
                 href="/#services"

@@ -53,3 +53,10 @@ V=alıcıya değeri, R=ücretli teklifle ilgisi, E=teslim kolaylığı (5=kolay)
 2. Tek talep formu `/contact#enquiry`, mailto CTA'larının yerine, `cta` ve `source_page` alanlarıyla.
 3. Rehber, vaka ve makale sonuna içerik içi CTA.
 4. Lead magnet: International Readiness Checklist.
+
+## Güncelleme: randevu ve talep formu (2026-11-10)
+- Randevu: `https://calendly.com/digiroiio/30min` (30 dk, Pzt-Cum 09:00-17:00 Europe/Istanbul). Tek kaynak: `src/lib/booking.ts`.
+- "Book Strategy Call" CTA'ları artık gerçek randevuya gider (netlik ve sürtünme puanı yükselir, tahmini 9 -> 14).
+- Genel "Request Advisory" CTA'ları `/contact#enquiry` formuna gider ("Send an Enquiry"); form `enquiry_source` alanıyla hangi CTA'dan gelindiğini kaydeder.
+- Navbar: "Book a Call". Ana sayfa CTA bölümü: Send an Enquiry + Book a 30-Minute Call.
+- Ölçüm: tüm bu CTA'larda `data-cta` (`book-call-*`, `enquiry-*`). Yeniden skorlama için Vercel Analytics `cta_click` verisi kullanılacak.

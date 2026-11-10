@@ -1,3 +1,5 @@
+import { BOOKING_LABEL, BOOKING_URL } from "@/lib/booking";
+
 export default function HeroSection() {
   return (
     <section className="relative bg-white md:min-h-screen flex items-center">
@@ -41,10 +43,13 @@ export default function HeroSection() {
               Explore Services
             </a>
             <a
-              href="mailto:support@wealwaysrise.com"
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-cta="book-call-hero"
               className="inline-flex items-center justify-center px-8 py-4 border border-neutral-300 text-neutral-900 text-sm font-medium tracking-wide transition-all duration-200 hover:border-neutral-900 hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-2"
             >
-              Book Strategy Call
+              {BOOKING_LABEL}
             </a>
           </div>
 

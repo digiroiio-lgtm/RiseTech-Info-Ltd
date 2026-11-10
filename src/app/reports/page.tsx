@@ -4,6 +4,7 @@ import { INFORMATION_DISCLAIMER } from "@/lib/services";
 import Navbar from "@/components/Navbar";
 import SiteFooter from "@/components/SiteFooter";
 import { reports } from "@/lib/reports";
+import { enquiryHref } from "@/lib/booking";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/reports" },
@@ -154,12 +155,13 @@ export default function ReportsPage() {
                     >
                       Select &amp; Pay — £{report.priceGBP.toLocaleString("en-GB")}
                     </Link>
-                    <a
-                      href="mailto:support@wealwaysrise.com"
+                    <Link
+                      href={enquiryHref("reports-card")}
+                      data-cta="enquiry-reports-card"
                       className="inline-flex items-center justify-center px-6 py-3 border border-neutral-200 text-neutral-700 text-xs font-semibold tracking-wide hover:border-neutral-900 transition-colors duration-200"
                     >
                       Request Custom Report
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>
@@ -183,12 +185,13 @@ export default function ReportsPage() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 lg:justify-end">
-                <a
-                  href="mailto:support@wealwaysrise.com?subject=Custom Intelligence Report Enquiry"
+                <Link
+                  href={enquiryHref("reports-brief")}
+                  data-cta="enquiry-reports-brief"
                   className="inline-flex items-center justify-center px-8 py-4 bg-neutral-900 text-white text-xs font-semibold tracking-wide hover:bg-neutral-700 transition-colors duration-200"
                 >
                   Discuss Your Brief
-                </a>
+                </Link>
                 <Link
                   href="/insights"
                   className="inline-flex items-center justify-center px-8 py-4 border border-neutral-300 text-neutral-900 text-xs font-semibold tracking-wide hover:border-neutral-900 transition-colors duration-200"

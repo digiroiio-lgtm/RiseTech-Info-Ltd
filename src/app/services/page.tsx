@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import SiteFooter from "@/components/SiteFooter";
 import ServicesSection from "@/components/ServicesSection";
 import { DELIVERY_NOTE } from "@/lib/services";
+import { enquiryHref } from "@/lib/booking";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/services" },
@@ -132,7 +133,8 @@ export default function ServicesPage() {
               </p>
             </div>
             <Link
-              href="/contact"
+              href={enquiryHref("services-bottom")}
+              data-cta="enquiry-services-bottom"
               className="flex-shrink-0 inline-flex items-center justify-center px-8 py-4 bg-white text-neutral-900 text-sm font-medium tracking-wide hover:bg-neutral-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-900"
             >
               Request a Service

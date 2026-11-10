@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
+import { BOOKING_LABEL, BOOKING_URL, enquiryHref } from "@/lib/booking";
+import EnquiryForm from "@/components/EnquiryForm";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/contact" },
@@ -22,10 +24,11 @@ export default function ContactPage() {
             Werrise Digital
           </Link>
           <Link
-            href="/#contact"
+            href={enquiryHref("header-contact")}
+            data-cta="enquiry-header-contact"
             className="inline-flex items-center px-5 py-2.5 bg-neutral-900 text-white text-xs font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200"
           >
-            Request Advisory
+            Send an Enquiry
           </Link>
         </div>
       </header>
@@ -45,6 +48,33 @@ export default function ContactPage() {
 
         {/* Content */}
         <div className="max-w-4xl mx-auto px-6 lg:px-8 py-10 md:py-16 lg:py-24">
+          {/* Enquiry form + booking */}
+          <section id="enquiry" className="scroll-mt-20 mb-12 md:mb-20 grid md:grid-cols-5 gap-8 md:gap-12">
+            <div className="md:col-span-2">
+              <p className="text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 mb-4">
+                Send an Enquiry
+              </p>
+              <h2 className="text-2xl lg:text-3xl font-light text-neutral-900 mb-4">
+                Tell us what you need.
+              </h2>
+              <p className="text-sm text-neutral-600 leading-relaxed mb-6">
+                We reply by email. If you prefer to talk, book a 30-minute call at a time that suits you.
+              </p>
+              <a
+                href={BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-cta="book-call-contact"
+                className="inline-flex items-center px-6 py-3 border border-neutral-300 text-neutral-900 text-sm font-medium tracking-wide hover:border-neutral-900 transition-colors duration-200"
+              >
+                {BOOKING_LABEL}
+              </a>
+            </div>
+            <div className="md:col-span-3">
+              <EnquiryForm />
+            </div>
+          </section>
+
           <div className="grid md:grid-cols-2 gap-12">
             {/* General & Advisory */}
             <div>
