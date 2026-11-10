@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import SiteFooter from "@/components/SiteFooter";
 import { insights, InsightCategory } from "@/lib/insights";
 import { SITE_URL, breadcrumbJsonLd, jsonLdString } from "@/lib/jsonLd";
+import { enquiryHref } from "@/lib/booking";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -140,12 +141,13 @@ export default async function InsightPostPage({ params }: Props) {
                 >
                   Browse Premium Reports
                 </Link>
-                <a
-                  href="mailto:support@wealwaysrise.com"
+                <Link
+                  href={enquiryHref("insight-article")}
+                  data-cta="enquiry-insight-article"
                   className="inline-flex items-center justify-center px-8 py-4 border border-neutral-700 text-white text-xs font-semibold tracking-wide hover:border-white transition-colors duration-200"
                 >
-                  Request Advisory Call
-                </a>
+                  Send an Enquiry
+                </Link>
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
+import { enquiryHref } from "@/lib/booking";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/founder-story" },
@@ -22,10 +23,11 @@ export default function FounderStoryPage() {
             Werrise Digital
           </Link>
           <Link
-            href="/#contact"
+            href={enquiryHref("header-founder")}
+            data-cta="enquiry-header-founder"
             className="inline-flex items-center px-5 py-2.5 bg-neutral-900 text-white text-xs font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200"
           >
-            Request Advisory
+            Send an Enquiry
           </Link>
         </div>
       </header>
@@ -192,7 +194,8 @@ export default function FounderStoryPage() {
             </p>
             <div className="mt-10 md:mt-16">
               <Link
-                href="/#contact"
+                href={enquiryHref("founder-end")}
+                data-cta="enquiry-founder-end"
                 className="inline-flex items-center px-8 py-4 bg-white text-neutral-900 text-xs font-semibold tracking-widest uppercase hover:bg-neutral-100 transition-colors duration-200"
               >
                 Work With Us

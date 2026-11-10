@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { BOOKING_LABEL, BOOKING_URL, enquiryHref } from "@/lib/booking";
+
 export default function CTASection() {
   return (
     <section id="contact" className="bg-neutral-900 text-white py-14 md:py-20 lg:py-32">
@@ -14,17 +17,21 @@ export default function CTASection() {
             accelerate growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="mailto:support@wealwaysrise.com"
+            <Link
+              href={enquiryHref("home-cta")}
+              data-cta="enquiry-home-cta"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-neutral-900 text-sm font-medium tracking-wide hover:bg-neutral-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-900"
             >
-              Request Advisory
-            </a>
+              Send an Enquiry
+            </Link>
             <a
-              href="#services"
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-cta="book-call-home-cta"
               className="inline-flex items-center justify-center px-8 py-4 border border-neutral-700 text-white text-sm font-medium tracking-wide hover:border-neutral-400 hover:bg-neutral-800 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-900"
             >
-              Explore Services
+              {BOOKING_LABEL}
             </a>
           </div>
         </div>

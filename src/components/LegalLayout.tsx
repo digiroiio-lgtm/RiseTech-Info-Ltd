@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { enquiryHref } from "@/lib/booking";
 
 interface LegalLayoutProps {
   title: string;
@@ -39,10 +40,11 @@ export default function LegalLayout({
             ))}
           </nav>
           <Link
-            href="/#contact"
+            href={enquiryHref("header-legal")}
+            data-cta="enquiry-header-legal"
             className="inline-flex items-center px-5 py-2.5 bg-neutral-900 text-white text-xs font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200"
           >
-            Request Advisory
+            Send an Enquiry
           </Link>
         </div>
       </header>

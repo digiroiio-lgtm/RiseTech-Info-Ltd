@@ -11,6 +11,7 @@ import {
   type TeamMember,
 } from "@/lib/team";
 import SiteFooter from "@/components/SiteFooter";
+import { enquiryHref } from "@/lib/booking";
 
 // ── Initials Avatar ──────────────────────────────────────────────────────────
 
@@ -418,10 +419,11 @@ export default function TeamPageClient() {
             ))}
           </nav>
           <Link
-            href="/#contact"
+            href={enquiryHref("header-team")}
+            data-cta="enquiry-header-team"
             className="inline-flex items-center px-5 py-2.5 bg-neutral-900 text-white text-xs font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200"
           >
-            Request Advisory
+            Send an Enquiry
           </Link>
         </div>
       </header>

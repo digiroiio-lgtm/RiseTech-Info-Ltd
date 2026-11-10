@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import { insights, InsightCategory } from "@/lib/insights";
+import { enquiryHref } from "@/lib/booking";
 
 const categories: InsightCategory[] = [
   "Market Intelligence",
@@ -149,12 +150,13 @@ export default function InsightsPageClient() {
               >
                 Browse Reports
               </Link>
-              <a
-                href="mailto:support@wealwaysrise.com"
+              <Link
+                href={enquiryHref("insights-custom-report")}
+                data-cta="enquiry-insights-custom-report"
                 className="inline-flex items-center justify-center px-8 py-4 border border-neutral-700 text-white text-xs font-semibold tracking-wide hover:border-white transition-colors duration-200"
               >
                 Request Custom Report
-              </a>
+              </Link>
             </div>
           </div>
         </div>

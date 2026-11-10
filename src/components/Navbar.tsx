@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import ThemeToggleButton from "@/components/ThemeToggleButton";
+import { BOOKING_URL } from "@/lib/booking";
 
 const links = [
   { label: "Services", href: "/#services" },
@@ -68,12 +69,15 @@ export default function Navbar() {
         </nav>
         <div className="flex items-center gap-2 sm:gap-3">
           <ThemeToggleButton />
-          <Link
-            href="/#contact"
+          <a
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-cta="book-call-navbar"
             className="hidden sm:inline-flex items-center px-5 py-2.5 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 text-xs font-medium tracking-wide hover:bg-neutral-700 dark:hover:bg-neutral-200 transition-colors duration-200"
           >
-            Request Advisory
-          </Link>
+            Book a Call
+          </a>
           <button
             ref={menuButton}
             type="button"
@@ -118,13 +122,16 @@ export default function Navbar() {
             {link.label}
           </a>
         ))}
-        <Link
-          href="/#contact"
+        <a
+          href={BOOKING_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-cta="book-call-navbar-mobile"
           onClick={() => setMenuOpen(false)}
           className="inline-flex mt-2 px-5 py-3 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 text-sm"
         >
-          Request Advisory
-        </Link>
+          Book a Call
+        </a>
       </nav>
     </header>
   );
