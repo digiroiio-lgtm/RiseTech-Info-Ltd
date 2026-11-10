@@ -27,13 +27,38 @@ export default function ServicesPage() {
               What We Deliver — and What It Costs
             </h1>
             <p className="text-lg font-light text-neutral-500 leading-relaxed max-w-2xl">
-              Every engagement is a fixed-price, clearly scoped deliverable.
-              You know exactly what you are purchasing before any payment is
-              made. All prices are in GBP and inclusive of VAT where applicable.
+              The packages below are fixed-price, clearly scoped deliverables. You
+              know exactly what you are purchasing before any payment is made. All prices are in GBP and inclusive of VAT where applicable.
             </p>
             <p className="text-sm text-neutral-500 leading-relaxed max-w-2xl mt-3">
               {DELIVERY_NOTE}
             </p>
+          </div>
+        </section>
+
+        {/* Global Digital Growth (quote-based) */}
+        <section className="bg-white border-b border-neutral-100 py-8">
+          <div className="max-w-6xl mx-auto px-6 lg:px-8">
+            <Link
+              href="/services/global-digital-growth"
+              className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border border-neutral-200 p-5 sm:p-6 hover:border-neutral-900 transition-colors duration-300"
+            >
+              <span>
+                <span className="text-xs font-semibold tracking-widest uppercase text-neutral-400 mr-3">
+                  New · Quote-based
+                </span>
+                <span className="text-sm font-semibold text-neutral-900">
+                  Global Digital Growth
+                </span>
+                <span className="block sm:inline sm:ml-3 text-sm text-neutral-500">
+                  International SEO, website transformation and RFQ automation
+                  for SMEs.
+                </span>
+              </span>
+              <span className="text-xs font-semibold tracking-widest uppercase text-neutral-500 whitespace-nowrap">
+                Learn more →
+              </span>
+            </Link>
           </div>
         </section>
 

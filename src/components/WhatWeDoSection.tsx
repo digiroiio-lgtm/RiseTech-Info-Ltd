@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const serviceGroups = [
   {
     label: "Business & Management Consultancy",
@@ -88,6 +90,26 @@ export default function WhatWeDoSection() {
             </div>
           ))}
         </div>
+
+        <Link
+          href="/services/global-digital-growth"
+          className="mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3 border border-neutral-200 p-5 sm:p-6 hover:border-neutral-900 transition-colors duration-300"
+        >
+          <span>
+            <span className="text-xs font-semibold tracking-widest uppercase text-neutral-400 mr-3">
+              New
+            </span>
+            <span className="text-sm font-semibold text-neutral-900">
+              Global Digital Growth
+            </span>
+            <span className="block sm:inline sm:ml-3 text-sm text-neutral-500">
+              Turn your website into an international growth engine.
+            </span>
+          </span>
+          <span className="text-xs font-semibold tracking-widest uppercase text-neutral-500 whitespace-nowrap">
+            Learn more →
+          </span>
+        </Link>
 
         <p className="mt-6 max-w-3xl text-xs text-neutral-500 leading-relaxed">
           Fixed-price consulting packages and reports can be bought online.

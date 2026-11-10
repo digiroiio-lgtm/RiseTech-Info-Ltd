@@ -7,6 +7,7 @@ import ThemeToggleButton from "@/components/ThemeToggleButton";
 
 const links = [
   { label: "Services", href: "/#services" },
+  { label: "Global Growth", href: "/services/global-digital-growth" },
   { label: "Digital Products", href: "/#digital-products" },
   { label: "Insights", href: "/insights" },
   { label: "Reports", href: "/reports" },
