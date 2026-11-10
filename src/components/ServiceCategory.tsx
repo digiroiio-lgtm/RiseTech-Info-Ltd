@@ -1,5 +1,6 @@
 import ServiceCard from "./ServiceCard";
 import CollapsibleCategory from "./CollapsibleCategory";
+import { SERVICE_DETAILS_BY_SLUG } from "@/lib/serviceDetails";
 
 interface Service {
   slug?: string;
@@ -54,6 +55,7 @@ export default function ServiceCategory({
             title={svc.title}
             description={svc.description}
             price={svc.price}
+            detailHref={svc.slug && SERVICE_DETAILS_BY_SLUG[svc.slug] ? `/services/${svc.slug}` : undefined}
           />
         ))}
       </div>
