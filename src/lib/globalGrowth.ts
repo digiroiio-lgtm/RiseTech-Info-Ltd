@@ -19,18 +19,22 @@ export const GG_PROBLEMS = [
 
 export const GG_MODULES = [
   {
+    slug: "international-seo",
     title: "International SEO",
     body: "Country and language based organic visibility: market and keyword research, hreflang and site structure for each target market.",
   },
   {
+    slug: "geo-seo",
     title: "Geo-SEO",
     body: "Local and regional search optimisation in your target markets, so buyers in a given country or region find the right page. This is separate from GEO, which is about being cited in AI-generated answers; we cover both.",
   },
   {
+    slug: "website-transformation",
     title: "Website Transformation",
     body: "A website foundation built for international sales: multi-language structure, technical performance and conversion improvements.",
   },
   {
+    slug: "lead-rfq-automation",
     title: "Lead & RFQ Automation",
     body: "Request-for-quote forms, CRM integration and automated follow-up, so every enquiry is captured, routed and tracked.",
   },

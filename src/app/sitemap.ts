@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { insights } from "@/lib/insights";
 import { caseStudies } from "@/lib/caseStudies";
 import { SERVICE_DETAILS } from "@/lib/serviceDetails";
+import { GG_MODULE_PAGES } from "@/lib/globalGrowthModules";
 
 const BASE = "https://wealwaysrise.com";
 
@@ -43,5 +44,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${BASE}/services/${d.slug}`,
     lastModified: new Date("2026-11-10"),
   }));
-  return [...pages, ...services, ...cases, ...posts];
+  const modules = GG_MODULE_PAGES.map((m) => ({
+    url: `${BASE}/services/global-digital-growth/${m.slug}`,
+    lastModified: new Date("2026-11-10"),
+  }));
+  return [...pages, ...services, ...modules, ...cases, ...posts];
 }
