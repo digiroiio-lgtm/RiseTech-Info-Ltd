@@ -120,7 +120,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                   fixed price · GBP · incl. VAT where applicable
                 </span>
               </span>
-              <Link href={`/checkout?service=${slug}`} className={buyClass}>
+              <Link href={`/checkout?service=${slug}`} className={buyClass} data-cta={`pay-detail-${slug}`}>
                 Select &amp; Pay →
               </Link>
             </div>

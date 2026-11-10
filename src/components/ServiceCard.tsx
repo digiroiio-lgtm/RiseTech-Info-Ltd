@@ -55,7 +55,7 @@ export default function ServiceCard({
         {payable ? (
           <>
             <span className="text-xl font-light text-neutral-900">{price}</span>
-            <Link href={`/checkout?service=${slug}`} className={buttonClass}>
+            <Link href={`/checkout?service=${slug}`} className={buttonClass} data-cta={`pay-card-${slug}`}>
               Select &amp; Pay →
             </Link>
           </>

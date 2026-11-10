@@ -96,7 +96,7 @@ export default function GlobalDigitalGrowthPage() {
                 ),
               )}
             </ul>
-            <a href="#review" className={ctaClass}>
+            <a href="#review" className={ctaClass} data-cta="gdg-hero-review">
               {GG_CTA_LABEL}
             </a>
             <p className="text-sm text-neutral-500 mt-4">

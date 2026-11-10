@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import ThemeProvider from "@/components/ThemeProvider";
+import CtaTracker from "@/components/CtaTracker";
+import { Analytics } from "@vercel/analytics/next";
 import { jsonLdString, organizationJsonLd, websiteJsonLd } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
@@ -35,6 +37,8 @@ export default function RootLayout({
           }}
         />
         <ThemeProvider>{children}</ThemeProvider>
+        <Analytics />
+        <CtaTracker />
       </body>
     </html>
   );

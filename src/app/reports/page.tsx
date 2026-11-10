@@ -149,6 +149,7 @@ export default function ReportsPage() {
                     </div>
                     <Link
                       href={`/checkout?service=${report.slug}`}
+                      data-cta={`pay-report-${report.slug}`}
                       className="inline-flex items-center justify-center px-6 py-3 bg-neutral-900 text-white text-xs font-semibold tracking-wide hover:bg-neutral-700 transition-colors duration-200"
                     >
                       Select &amp; Pay — £{report.priceGBP.toLocaleString("en-GB")}

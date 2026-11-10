@@ -81,7 +81,7 @@ export default function PrivacyPage() {
         {
           heading: "7. Cookies and Similar Technologies",
           paragraphs: [
-            "We do not use advertising or analytics cookies. The Website stores a theme preference (light or dark) in your browser's local storage so it can remember your choice. It is strictly necessary for that feature and is not used to track you.",
+            "We do not use advertising or analytics cookies. We use Vercel Web Analytics, which measures page views and clicks on buttons without cookies and without tracking you across other websites. The Website stores a theme preference (light or dark) in your browser's local storage so it can remember your choice. It is strictly necessary for that feature and is not used to track you.",
             "Stripe may set its own cookies on its hosted payment page for security and fraud prevention. See Stripe's cookie policy for details.",
           ],
         },
