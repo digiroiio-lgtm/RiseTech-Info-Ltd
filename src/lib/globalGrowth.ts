@@ -1,8 +1,6 @@
 export const GG_PATH = "/services/global-digital-growth";
 
 export const GG_CTA_LABEL = "Request a Free Global Visibility Review";
-export const GG_CTA_HREF =
-  "mailto:support@wealwaysrise.com?subject=Global%20Visibility%20Review%20request&body=Full%20name%3A%0ABusiness%20email%3A%0ACompany%3A%0AWebsite%20URL%3A%0ATarget%20countries%3A";
 
 export const GG_PROBLEMS = [
   {

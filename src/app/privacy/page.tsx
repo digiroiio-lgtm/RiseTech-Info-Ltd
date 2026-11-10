@@ -29,6 +29,7 @@ export default function PrivacyPage() {
             "order details: the service you bought, price paid, order reference and date",
             "billing details: billing address and company name or VAT number if you give them",
             "payment confirmation from Stripe (for example payment status and the last four digits and brand of your card). We never receive or store your full card number",
+            "details you submit in the Global Digital Growth request form: name, business email, company name, website URL and target countries",
             "messages and files you send us when you enquire or when we deliver a service",
             "technical data such as IP address, browser type and pages requested, held in server logs",
           ],
@@ -57,6 +58,7 @@ export default function PrivacyPage() {
           paragraphs: ["We share personal data only with organisations that help us run the business:"],
           items: [
             "Stripe Payments Europe Ltd and Stripe, Inc. (payment processing, fraud prevention, receipts and invoices). Stripe acts as an independent controller for the payment data it holds; see stripe.com/privacy",
+            "Formspree, Inc. (receives and forwards the Global Digital Growth request form submissions to us)",
             "hosting, email and infrastructure providers that run the Website and our mailboxes, such as Vercel",
             "professional advisers (accountants, lawyers) and authorities where the law requires it",
             "subcontractors or specialist advisors helping to deliver a service, under confidentiality terms",
@@ -65,7 +67,7 @@ export default function PrivacyPage() {
         {
           heading: "5. International Transfers",
           paragraphs: [
-            "Some of these providers, including Stripe and Vercel, may process data outside the UK. Where they do, we rely on adequacy regulations or appropriate safeguards such as the UK International Data Transfer Addendum to the EU Standard Contractual Clauses.",
+            "Some of these providers, including Stripe, Vercel and Formspree, may process data outside the UK. Where they do, we rely on adequacy regulations or appropriate safeguards such as the UK International Data Transfer Addendum to the EU Standard Contractual Clauses.",
           ],
         },
         {

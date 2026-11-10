@@ -3,7 +3,7 @@ export const CSP_HEADER = [
   "script-src 'self' 'unsafe-inline'",
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: https:",
-  "connect-src 'self'",
+  "connect-src 'self' https://formspree.io",
   "font-src 'self'",
   "object-src 'none'",
   "base-uri 'self'",
