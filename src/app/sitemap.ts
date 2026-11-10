@@ -3,6 +3,7 @@ import { insights } from "@/lib/insights";
 import { caseStudies } from "@/lib/caseStudies";
 import { SERVICE_DETAILS } from "@/lib/serviceDetails";
 import { GG_MODULE_PAGES } from "@/lib/globalGrowthModules";
+import { GUIDES } from "@/lib/guides";
 
 const BASE = "https://wealwaysrise.com";
 
@@ -48,5 +49,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${BASE}/services/global-digital-growth/${m.slug}`,
     lastModified: new Date("2026-11-10"),
   }));
-  return [...pages, ...services, ...modules, ...cases, ...posts];
+  const guides = [
+    { url: `${BASE}/guides`, lastModified: new Date("2026-11-10") },
+    ...GUIDES.map((g) => ({
+      url: `${BASE}/guides/${g.slug}`,
+      lastModified: new Date(g.updated),
+    })),
+  ];
+  return [...pages, ...services, ...modules, ...guides, ...cases, ...posts];
 }

@@ -14,6 +14,9 @@ Fixed-price packages and reports can be bought online. Global Digital Growth, so
 - [Insights](https://wealwaysrise.com/insights): articles on market intelligence, startup strategy, growth and SEO
 - [Intelligence Reports](https://wealwaysrise.com/reports)
 
+## Guides
+- [Guides](https://wealwaysrise.com/guides): plain-language answers on multi-country URL structure, Geo-SEO vs GEO, RFQ forms and SEO audits
+
 ## Company
 - [Team](https://wealwaysrise.com/team)
 - [Founder Story](https://wealwaysrise.com/founder-story)

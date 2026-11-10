@@ -69,6 +69,12 @@ export default function SiteFooter() {
             >
               Case Studies
             </Link>
+            <Link
+              href="/guides"
+              className="text-xs text-neutral-500 hover:text-neutral-300 transition-colors duration-200"
+            >
+              Guides
+            </Link>
           </nav>
 
           {/* Legal links */}
