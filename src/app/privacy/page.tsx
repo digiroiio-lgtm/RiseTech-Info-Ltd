@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import LegalPage from "@/components/LegalPage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/privacy" },
   title: "Privacy Policy — Werrise Digital Ltd",
   description:
     "Privacy Policy for wealwaysrise.com: what personal data Werrise Digital Ltd collects, why, who receives it, how long we keep it and your UK GDPR rights.",

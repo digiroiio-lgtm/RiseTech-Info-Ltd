@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import LegalLayout from "@/components/LegalLayout";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/refund" },
   title: "Refund Policy — Werrise Digital Ltd",
   description:
     "Werrise Digital Ltd refund and cancellation policy for advisory services.",

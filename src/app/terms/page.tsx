@@ -3,6 +3,7 @@ import LegalPage from "@/components/LegalPage";
 import { INFORMATION_DISCLAIMER } from "@/lib/services";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/terms" },
   title: "Terms and Conditions — Werrise Digital Ltd",
   description:
     "Terms and Conditions for purchasing services from Werrise Digital Ltd through wealwaysrise.com: orders, payment, delivery, cancellation, liability and governing law.",

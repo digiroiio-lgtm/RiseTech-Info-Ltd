@@ -4,6 +4,7 @@ import SiteFooter from "@/components/SiteFooter";
 import InsightsPageClient from "./InsightsPageClient";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/insights" },
   title: "Insights — Werrise Digital Insights",
   description:
     "Strategic intelligence for founders, operators, and investors. Market analysis, startup strategy, growth frameworks, and investor intelligence from Werrise Digital.",
