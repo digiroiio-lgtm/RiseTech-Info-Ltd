@@ -14,6 +14,7 @@ interface ServiceCategoryProps {
   name: string;
   tagline: string;
   services: Service[];
+  compactTitles?: boolean;
 }
 
 export default function ServiceCategory({
@@ -21,6 +22,7 @@ export default function ServiceCategory({
   name,
   tagline,
   services,
+  compactTitles = false,
 }: ServiceCategoryProps) {
   const indexStr = String(index).padStart(2, "0");
   return (
@@ -55,6 +57,7 @@ export default function ServiceCategory({
             title={svc.title}
             description={svc.description}
             price={svc.price}
+            compactTitle={compactTitles}
             detailHref={svc.slug && SERVICE_DETAILS_BY_SLUG[svc.slug] ? `/services/${svc.slug}` : undefined}
           />
         ))}

@@ -522,6 +522,9 @@ export default function ServicesSection({
           <h2 className="text-3xl lg:text-4xl font-light text-neutral-900 max-w-xl">
             Strategic services for every stage of growth.
           </h2>
+          <p className="text-base text-neutral-600 leading-relaxed mt-6 max-w-2xl">
+            Our online catalogue lists fixed-price services in SEO and growth intelligence, market and business intelligence, and startup advisory. Each shows its scope and price before you pay, in GBP and including VAT where applicable. Services without a listed price, such as software development and retainers, are quoted per project.
+          </p>
         </div>
 
         {(showCheckoutLinks ? SERVICE_CATEGORIES : homepageCategories()).map((cat) =>
@@ -536,6 +539,7 @@ export default function ServicesSection({
               name={cat.name}
               tagline={cat.tagline}
               services={cat.services}
+              compactTitles={!showCheckoutLinks}
             />
           ),
         )}

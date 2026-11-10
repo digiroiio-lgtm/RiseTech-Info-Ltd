@@ -109,9 +109,9 @@ export default function FeaturedServicesSection() {
                     {svc.category}
                   </span>
                 </div>
-                <h3 className="text-base font-semibold text-neutral-900 mb-3 leading-snug">
+                <p className="text-base font-semibold text-neutral-900 mb-3 leading-snug">
                   {svc.title}
-                </h3>
+                </p>
                 <p className="text-sm text-neutral-500 leading-relaxed mb-5">
                   {svc.promise}
                 </p>

@@ -17,6 +17,9 @@ export default function CaseStudiesPreviewSection() {
             <h2 className="text-3xl lg:text-4xl font-light text-neutral-900">
               Work that speaks for itself.
             </h2>
+            <p className="text-sm text-neutral-600 leading-relaxed mt-4 max-w-2xl">
+              {`These ${caseStudies.length} case studies show how Werrise Digital has approached export growth, market intelligence, technology systems and strategy engagements. Each one sets out the challenge, the approach and the result. Results depend on many factors and are not guaranteed.`}
+            </p>
             <p className="text-xs text-neutral-500 mt-3">{ILLUSTRATIVE_NOTE}</p>
           </div>
           <Link
@@ -46,9 +49,9 @@ export default function CaseStudiesPreviewSection() {
               <p className="text-xs font-semibold tracking-wide uppercase text-neutral-400 mb-3">
                 {cs.client}
               </p>
-              <h3 className="text-base font-semibold text-neutral-900 leading-snug mb-4 flex-1">
+              <p className="text-base font-semibold text-neutral-900 leading-snug mb-4 flex-1">
                 {cs.headline}
-              </h3>
+              </p>
               {/* Key metric */}
               <div className="pt-4 border-t border-neutral-100 flex items-center gap-4">
                 <span className="text-2xl font-light text-neutral-900">

@@ -10,7 +10,7 @@ const BASE = "https://wealwaysrise.com";
 // lastModified = date the page content last changed (not the request time).
 // Update the date here when a page's content changes.
 const routes: { path: string; lastModified: string }[] = [
-  { path: "/", lastModified: "2026-10-24" },
+  { path: "/", lastModified: "2026-11-10" },
   { path: "/services", lastModified: "2026-11-10" },
   { path: "/services/global-digital-growth", lastModified: "2026-11-10" },
   { path: "/pricing", lastModified: "2026-10-25" },

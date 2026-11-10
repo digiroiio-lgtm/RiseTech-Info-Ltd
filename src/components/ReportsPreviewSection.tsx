@@ -19,6 +19,9 @@ export default function ReportsPreviewSection() {
               In-depth analysis — 40–55 pages of proprietary research,
               competitive mapping, and strategic recommendations.
             </p>
+            <p className="text-sm text-neutral-400 leading-relaxed mt-3 max-w-md">
+              Reports are priced from £1,000 to £1,800 and custom reports are quoted per brief. They are business and market analysis for informational purposes, not investment, financial, tax or legal advice.
+            </p>
             <p className="text-[11px] text-neutral-500 leading-relaxed mt-3 max-w-md">
               {INFORMATION_DISCLAIMER}
             </p>
@@ -51,9 +54,9 @@ export default function ReportsPreviewSection() {
                 <p className="text-xs font-medium text-neutral-500 mb-3">
                   {report.category}
                 </p>
-                <h3 className="text-base font-semibold text-white leading-snug mb-3">
+                <p className="text-base font-semibold text-white leading-snug mb-3">
                   {report.title}
-                </h3>
+                </p>
                 <p className="text-sm text-neutral-500 leading-relaxed line-clamp-3">
                   {report.description}
                 </p>
