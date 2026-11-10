@@ -202,7 +202,7 @@ export default function GlobalDigitalGrowthPage() {
               {GG_CASES.map((cs) => (
                 <Link
                   key={cs.slug}
-                  href={`/case-studies#${cs.slug}`}
+                  href={`/case-studies/${cs.slug}`}
                   className="group border border-neutral-200 p-6 sm:p-8 hover:border-neutral-900 transition-colors duration-300"
                 >
                   <p className="text-xs font-semibold tracking-widest uppercase text-neutral-400 mb-3">

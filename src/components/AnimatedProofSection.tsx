@@ -17,7 +17,7 @@ const allCards: ProofCard[] = [
     result: "From UK-only to three EU markets in six months",
     metric: "£1.2M",
     metricLabel: "Projected first-year EU revenue",
-    href: "/case-studies#luxury-skincare-germany",
+    href: "/case-studies/luxury-skincare-germany",
   },
   {
     logo: "EDT",
@@ -25,7 +25,7 @@ const allCards: ProofCard[] = [
     result: "Avoided a £400K pivot with a 2-week diagnostic",
     metric: "18% → 7%",
     metricLabel: "Monthly churn reduction",
-    href: "/case-studies#edtech-saas-pivot",
+    href: "/case-studies/edtech-saas-pivot",
   },
   {
     logo: "NRC",
@@ -33,7 +33,7 @@ const allCards: ProofCard[] = [
     result: "Real-time BI dashboards across 52 stores",
     metric: "22%",
     metricLabel: "Reduction in overstocking waste",
-    href: "/case-studies#retail-bi-dashboard",
+    href: "/case-studies/retail-bi-dashboard",
   },
   {
     logo: "TTM",
@@ -41,7 +41,7 @@ const allCards: ProofCard[] = [
     result: "EU export revenue scaled from €800K to €3.1M",
     metric: "€3.1M",
     metricLabel: "EU export revenue at 18 months",
-    href: "/case-studies#textile-export-eu",
+    href: "/case-studies/textile-export-eu",
   },
   {
     logo: "FNB",
@@ -49,7 +49,7 @@ const allCards: ProofCard[] = [
     result: "Six qualified Nordic distributors in eight weeks",
     metric: "3",
     metricLabel: "Distribution deals signed in 4 months",
-    href: "/case-studies#nordic-food-distributor",
+    href: "/case-studies/nordic-food-distributor",
   },
   {
     logo: "RED",
@@ -57,7 +57,7 @@ const allCards: ProofCard[] = [
     result: "Intelligence that redirected £45M allocation",
     metric: "68%",
     metricLabel: "Pre-sales on recommended project",
-    href: "/case-studies#london-real-estate-intelligence",
+    href: "/case-studies/london-real-estate-intelligence",
   },
   {
     logo: "HRS",
@@ -65,7 +65,7 @@ const allCards: ProofCard[] = [
     result: "3× organic traffic growth in 90 days",
     metric: "140%",
     metricLabel: "Increase in organic-sourced trials",
-    href: "/case-studies#hr-saas-programmatic-seo",
+    href: "/case-studies/hr-saas-programmatic-seo",
   },
   {
     logo: "FTK",
@@ -73,7 +73,7 @@ const allCards: ProofCard[] = [
     result: "GTM strategy that secured a £1.8M seed round",
     metric: "£1.8M",
     metricLabel: "Seed round closed",
-    href: "/case-studies#fintech-gtm-uk",
+    href: "/case-studies/fintech-gtm-uk",
   },
   {
     logo: "RLG",
@@ -81,7 +81,7 @@ const allCards: ProofCard[] = [
     result: "40% repeat purchase increase via loyalty platform",
     metric: "18%",
     metricLabel: "Cross-brand purchase behaviour",
-    href: "/case-studies#retail-loyalty-platform",
+    href: "/case-studies/retail-loyalty-platform",
   },
   {
     logo: "TSC",
@@ -89,7 +89,7 @@ const allCards: ProofCard[] = [
     result: "Independent market validation for a UK software launch",
     metric: "12",
     metricLabel: "Buyer interviews conducted",
-    href: "/case-studies#market-validation-logistics-software",
+    href: "/case-studies/market-validation-logistics-software",
   },
 ];
 

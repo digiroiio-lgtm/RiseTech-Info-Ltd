@@ -139,6 +139,14 @@ export default function CaseStudiesPage() {
                     </div>
                   </div>
                 </div>
+                <div className="px-6 sm:px-8 lg:px-10 pb-6 sm:pb-8">
+                  <Link
+                    href={`/case-studies/${cs.slug}`}
+                    className="text-xs font-semibold tracking-widest uppercase text-neutral-500 hover:text-neutral-900 transition-colors duration-200"
+                  >
+                    Read the full case study →
+                  </Link>
+                </div>
               </article>
             ))}
           </div>
