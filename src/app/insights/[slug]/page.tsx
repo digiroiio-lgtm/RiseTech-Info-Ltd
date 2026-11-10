@@ -4,6 +4,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import SiteFooter from "@/components/SiteFooter";
 import { insights, InsightCategory } from "@/lib/insights";
+import { SITE_URL, breadcrumbJsonLd, jsonLdString } from "@/lib/jsonLd";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -48,8 +49,30 @@ export default async function InsightPostPage({ params }: Props) {
 
   const paragraphs = post.body.split("\n\n").filter(Boolean);
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    dateModified: post.date,
+    articleSection: post.category,
+    mainEntityOfPage: `${SITE_URL}/insights/${post.slug}`,
+    author: { "@id": `${SITE_URL}/#organization` },
+    publisher: { "@id": `${SITE_URL}/#organization` },
+  };
+  const crumbs = breadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Insights", path: "/insights" },
+    { name: post.title, path: `/insights/${post.slug}` },
+  ]);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdString([articleJsonLd, crumbs]) }}
+      />
       <Navbar />
       <main className="flex-1 pt-16">
         {/* Hero */}

@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import GlobalGrowthForm from "@/components/GlobalGrowthForm";
 import SiteFooter from "@/components/SiteFooter";
 import { ILLUSTRATIVE_NOTE } from "@/lib/services";
+import { SITE_URL, breadcrumbJsonLd, jsonLdString } from "@/lib/jsonLd";
 import {
   GG_CASES,
   GG_CTA_LABEL,
@@ -42,6 +43,23 @@ const faqJsonLd = {
     acceptedAnswer: { "@type": "Answer", text: item.a },
   })),
 };
+
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Global Digital Growth",
+  serviceType: "International SEO, Geo-SEO, website transformation and RFQ automation",
+  description: DESCRIPTION,
+  url: `${SITE_URL}${GG_PATH}`,
+  provider: { "@id": `${SITE_URL}/#organization` },
+  audience: { "@type": "Audience", audienceType: "Small and medium-sized businesses" },
+};
+
+const breadcrumbs = breadcrumbJsonLd([
+  { name: "Home", path: "/" },
+  { name: "Services", path: "/services" },
+  { name: "Global Digital Growth", path: GG_PATH },
+]);
 
 const ctaClass =
   "inline-flex items-center justify-center px-8 py-4 bg-neutral-900 text-white text-sm font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-2";
@@ -298,7 +316,7 @@ export default function GlobalDigitalGrowthPage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(faqJsonLd).replace(/</g, "\\u003c"),
+            __html: jsonLdString([faqJsonLd, serviceJsonLd, breadcrumbs]),
           }}
         />
       </main>
