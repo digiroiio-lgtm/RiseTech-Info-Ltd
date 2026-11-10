@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import GlobalGrowthForm from "@/components/GlobalGrowthForm";
 import SiteFooter from "@/components/SiteFooter";
 import { ILLUSTRATIVE_NOTE } from "@/lib/services";
 import {
   GG_CASES,
-  GG_CTA_HREF,
   GG_CTA_LABEL,
   GG_FAQ,
   GG_MODELS,
@@ -77,7 +77,7 @@ export default function GlobalDigitalGrowthPage() {
                 ),
               )}
             </ul>
-            <a href={GG_CTA_HREF} className={ctaClass}>
+            <a href="#review" className={ctaClass}>
               {GG_CTA_LABEL}
             </a>
             <p className="text-sm text-neutral-500 mt-4">
@@ -271,24 +271,27 @@ export default function GlobalDigitalGrowthPage() {
           </div>
         </section>
 
-        {/* 8. CTA */}
-        <section id="review" className="bg-neutral-900 text-white py-12 md:py-16 lg:py-20">
-          <div className="max-w-6xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row sm:items-center justify-between gap-8">
+        {/* 8. CTA + request form */}
+        <section id="review" className="bg-neutral-900 text-white py-12 md:py-16 lg:py-20 scroll-mt-16">
+          <div className="max-w-6xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
             <div>
-              <h2 className="text-2xl lg:text-3xl font-light text-white mb-2">
+              <h2 className="text-2xl lg:text-3xl font-light text-white mb-3">
                 Find out where your website can win abroad.
               </h2>
-              <p className="text-neutral-400 text-sm max-w-lg">
+              <p className="text-neutral-400 text-sm max-w-lg mb-4">
                 Send us your website and up to three target countries. We
-                review them and get back to you.
+                review them and get back to you. If it is a good fit, we offer
+                a 30-minute strategy call.
+              </p>
+              <p className="text-neutral-500 text-xs max-w-lg">
+                Prefer email? Write to{" "}
+                <a href="mailto:support@wealwaysrise.com" className="underline underline-offset-2">
+                  support@wealwaysrise.com
+                </a>
+                .
               </p>
             </div>
-            <a
-              href={GG_CTA_HREF}
-              className="flex-shrink-0 inline-flex items-center justify-center px-8 py-4 bg-white text-neutral-900 text-sm font-medium tracking-wide hover:bg-neutral-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-900"
-            >
-              {GG_CTA_LABEL}
-            </a>
+            <GlobalGrowthForm />
           </div>
         </section>
 
