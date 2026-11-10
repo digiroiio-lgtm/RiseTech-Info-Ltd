@@ -8,6 +8,8 @@ interface ServiceCardProps {
   description: string;
   /** Present only together with `slug`; services without one are quote-only. */
   price?: string;
+  /** Link to the service's own page, when one exists. */
+  detailHref?: string;
 }
 
 const buttonClass =
@@ -18,6 +20,7 @@ export default function ServiceCard({
   title,
   description,
   price,
+  detailHref,
 }: ServiceCardProps) {
   const payable = Boolean(slug && price);
   return (
@@ -32,6 +35,14 @@ export default function ServiceCard({
         <p className="text-sm text-neutral-500 leading-relaxed mb-4 sm:mb-6">
           {description}
         </p>
+        {detailHref && (
+          <Link
+            href={detailHref}
+            className="inline-block text-xs font-semibold tracking-widest uppercase text-neutral-500 hover:text-neutral-900 mb-4 -mt-2"
+          >
+            Details →
+          </Link>
+        )}
         {needsInformationDisclaimer(title) && (
           <p className="text-[11px] text-neutral-500 leading-relaxed mb-4 sm:mb-6 -mt-2">
             {INFORMATION_DISCLAIMER}

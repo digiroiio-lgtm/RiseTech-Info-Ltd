@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { insights } from "@/lib/insights";
 import { caseStudies } from "@/lib/caseStudies";
+import { SERVICE_DETAILS } from "@/lib/serviceDetails";
 
 const BASE = "https://wealwaysrise.com";
 
@@ -38,5 +39,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${BASE}/case-studies/${cs.slug}`,
     lastModified: new Date("2026-11-10"),
   }));
-  return [...pages, ...cases, ...posts];
+  const services = SERVICE_DETAILS.map((d) => ({
+    url: `${BASE}/services/${d.slug}`,
+    lastModified: new Date("2026-11-10"),
+  }));
+  return [...pages, ...services, ...cases, ...posts];
 }
