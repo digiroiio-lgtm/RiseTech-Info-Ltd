@@ -156,6 +156,140 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
     relatedServices: ["seo-audit", "seo-strategy-consulting", "seo-audit-plus"],
     relatedCaseStudy: "hr-saas-programmatic-seo",
   },
+  {
+    slug: "seo-audit-plus",
+    seoTitle: "SEO Audit + Optimization: £250 Fixed Price",
+    seoDescription:
+      "SEO audit plus hands-on fixes for £250 fixed price: we audit your site, then fix the issues and implement quick-win improvements directly.",
+    eyebrow: "SEO & Growth Intelligence",
+    h1: "SEO Audit + Optimization: we find the issues and fix them",
+    summary:
+      "Our SEO Audit + Optimization costs £250, fixed price. It includes everything in the SEO Audit, plus hands-on optimizations: we fix the issues and implement quick-win improvements directly. You pay online, and we confirm the scope and timeline in writing before work starts.",
+    whoFor: [
+      "Businesses that want the problems fixed, not only listed in a report",
+      "Small teams without in-house SEO or developer time for quick wins",
+      "Sites that have never had a proper SEO review",
+      "Owners who want visible improvements before investing in a larger strategy",
+    ],
+    included: [
+      {
+        title: "Everything in the SEO Audit",
+        body: "Review of your site's technical health, on-page signals and backlink profile, with findings in plain language.",
+      },
+      {
+        title: "Hands-on optimizations",
+        body: "We implement fixes directly rather than leaving you a list of tasks.",
+      },
+      {
+        title: "Quick-win improvements",
+        body: "Changes that are fast to make and affect how your pages are found and read by search engines.",
+      },
+      {
+        title: "What is left to do",
+        body: "A clear view of larger issues that fall outside quick wins, so you can plan the next step.",
+      },
+    ],
+    process: [
+      { title: "Order", body: "Choose SEO Audit + Optimization, accept the terms and pay securely through Stripe." },
+      { title: "Scope and access confirmed", body: "We confirm the scope and timeline in writing and agree how we get access to the changes we need to make." },
+      { title: "Audit and fixes", body: "We audit your site and implement the agreed optimizations." },
+      { title: "Delivery", body: "You receive the audit and a summary of the changes made. Typical delivery is 5–15 business days from confirmation, depending on scope." },
+    ],
+    faq: [
+      {
+        q: "How much does SEO audit and optimization cost?",
+        a: "SEO Audit + Optimization costs £250, fixed price. Prices are in GBP and include VAT where applicable.",
+      },
+      {
+        q: "What is the difference from the SEO Audit?",
+        a: "The SEO Audit identifies the issues. SEO Audit + Optimization adds hands-on work: we fix the issues and implement quick-win improvements directly.",
+      },
+      {
+        q: "Which fixes are included?",
+        a: "Quick-win improvements within the scope we confirm in writing before work starts. Larger changes, such as a redesign or a content programme, are outside this package and can be quoted separately.",
+      },
+      {
+        q: "Do you need access to my website?",
+        a: "To implement fixes we need a way to make the agreed changes. We agree this with you when we confirm the scope.",
+      },
+      {
+        q: "Can you guarantee higher rankings?",
+        a: "No. Search results depend on many factors outside our control. We commit to the agreed scope, not to a specific ranking.",
+      },
+      {
+        q: "How long does it take?",
+        a: "Typical delivery is 5–15 business days from your confirmation, depending on scope.",
+      },
+    ],
+    relatedServices: ["seo-audit", "seo-strategy-consulting", "programmatic-seo-plan"],
+  },
+  {
+    slug: "seo-strategy-consulting",
+    seoTitle: "SEO Strategy & Consulting: £500 Fixed Price",
+    seoDescription:
+      "A full strategic SEO roadmap for £500 fixed price, tailored to your industry, competitors and growth objectives: keyword strategy, content planning and authority building.",
+    eyebrow: "SEO & Growth Intelligence",
+    h1: "SEO Strategy & Consulting: a roadmap built around your market",
+    summary:
+      "Our SEO Strategy & Consulting costs £500, fixed price. You get a full strategic SEO roadmap tailored to your industry, competitors and growth objectives, including keyword strategy, content planning and authority building. You pay online, and we confirm the scope and timeline in writing before work starts.",
+    whoFor: [
+      "Businesses ready to invest in organic search and wanting a plan before spending on content",
+      "Founders who need to know which keywords and topics to prioritise",
+      "Marketing teams that need a roadmap to brief writers, developers or an agency",
+      "Companies entering a competitive market and wanting to understand the competitor landscape",
+    ],
+    included: [
+      {
+        title: "Strategic SEO roadmap",
+        body: "A plan tailored to your industry, competitors and growth objectives, with priorities in a sensible order.",
+      },
+      {
+        title: "Keyword strategy",
+        body: "Which search terms to target, grouped by topic and intent, so effort goes where it matters.",
+      },
+      {
+        title: "Content planning",
+        body: "What to publish and how to organise it, so content supports your keyword strategy.",
+      },
+      {
+        title: "Authority building",
+        body: "Direction for earning the links and signals that help your site be trusted in your market.",
+      },
+    ],
+    process: [
+      { title: "Order", body: "Choose SEO Strategy & Consulting, accept the terms and pay securely through Stripe." },
+      { title: "Scope confirmed", body: "We confirm the scope and timeline with you in writing before work starts." },
+      { title: "Research and planning", body: "We analyse your industry, competitors and objectives and build the roadmap." },
+      { title: "Delivery", body: "You receive the strategy. Typical delivery is 5–15 business days from confirmation, depending on scope." },
+    ],
+    faq: [
+      {
+        q: "How much does SEO strategy consulting cost?",
+        a: "SEO Strategy & Consulting costs £500, fixed price. Prices are in GBP and include VAT where applicable.",
+      },
+      {
+        q: "What do I get?",
+        a: "A strategic SEO roadmap tailored to your industry, competitors and growth objectives, including keyword strategy, content planning and authority building.",
+      },
+      {
+        q: "Should I buy the audit first?",
+        a: "Not necessarily. An audit shows the state of your current site; the strategy shows where to go. If your site has technical problems, starting with the SEO Audit can help.",
+      },
+      {
+        q: "Do you carry out the plan?",
+        a: "This service delivers the strategy. Implementation is by your team unless we agree otherwise in writing.",
+      },
+      {
+        q: "Can you guarantee higher rankings?",
+        a: "No. Search results depend on many factors outside our control, including competitors and search engine changes. We commit to the agreed scope, not to a specific ranking.",
+      },
+      {
+        q: "How long does it take?",
+        a: "Typical delivery is 5–15 business days from your confirmation, depending on scope.",
+      },
+    ],
+    relatedServices: ["seo-audit", "seo-audit-plus", "programmatic-seo-plan"],
+  },
 ];
 
 export const SERVICE_DETAILS_BY_SLUG: Record<string, ServiceDetail> =
