@@ -6,7 +6,7 @@ import { GUIDES } from "@/lib/guides";
 import { SITE_URL, breadcrumbJsonLd, jsonLdString } from "@/lib/jsonLd";
 
 const DESCRIPTION =
-  "Plain-language guides for SMEs on international SEO, Geo-SEO and GEO, RFQ forms and SEO audits.";
+  "Plain-language guides for SMEs on international SEO, hreflang, Geo-SEO and GEO, structured data, RFQ forms, website migrations and SEO audits.";
 
 export const metadata: Metadata = {
   title: "Guides: International SEO, Geo-SEO and Lead Generation — Werrise Digital",

@@ -113,9 +113,18 @@ export default async function GuidePage({ params }: Props) {
           {g.sections.map((s) => (
             <section key={s.heading}>
               <h2 className="text-2xl font-light text-neutral-900 mb-4">{s.heading}</h2>
-              {s.paragraphs?.map((p) => (
-                <p key={p} className="text-neutral-600 leading-relaxed mb-4">{p}</p>
-              ))}
+              {s.paragraphs?.map((p) =>
+                p.startsWith("<") ? (
+                  <pre
+                    key={p}
+                    className="bg-neutral-50 border border-neutral-200 p-3 mb-3 text-xs text-neutral-800 overflow-x-auto"
+                  >
+                    <code>{p}</code>
+                  </pre>
+                ) : (
+                  <p key={p} className="text-neutral-600 leading-relaxed mb-4">{p}</p>
+                ),
+              )}
               {s.items && (
                 <ul className="space-y-2">
                   {s.items.map((item) => (

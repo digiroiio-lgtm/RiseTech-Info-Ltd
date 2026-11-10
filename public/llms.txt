@@ -15,7 +15,7 @@ Fixed-price packages and reports can be bought online. Global Digital Growth, so
 - [Intelligence Reports](https://wealwaysrise.com/reports)
 
 ## Guides
-- [Guides](https://wealwaysrise.com/guides): plain-language answers on multi-country URL structure, Geo-SEO vs GEO, RFQ forms and SEO audits
+- [Guides](https://wealwaysrise.com/guides): plain-language answers on multi-country URL structure, hreflang, keyword research for new countries, Geo-SEO vs GEO, answer-first content, structured data, RFQ forms, website migrations and SEO audits
 
 ## Company
 - [Team](https://wealwaysrise.com/team)
