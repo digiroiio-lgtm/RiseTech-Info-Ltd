@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { insights } from "@/lib/insights";
+import { caseStudies } from "@/lib/caseStudies";
 
 const BASE = "https://wealwaysrise.com";
 
@@ -12,7 +13,7 @@ const routes: { path: string; lastModified: string }[] = [
   { path: "/pricing", lastModified: "2026-10-25" },
   { path: "/reports", lastModified: "2026-10-25" },
   { path: "/insights", lastModified: "2026-10-25" },
-  { path: "/case-studies", lastModified: "2026-10-25" },
+  { path: "/case-studies", lastModified: "2026-11-10" },
   { path: "/love", lastModified: "2026-10-25" },
   { path: "/team", lastModified: "2026-10-25" },
   { path: "/founder-story", lastModified: "2026-10-25" },
@@ -33,5 +34,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${BASE}/insights/${post.slug}`,
     lastModified: new Date(post.date),
   }));
-  return [...pages, ...posts];
+  const cases = caseStudies.map((cs) => ({
+    url: `${BASE}/case-studies/${cs.slug}`,
+    lastModified: new Date("2026-11-10"),
+  }));
+  return [...pages, ...cases, ...posts];
 }

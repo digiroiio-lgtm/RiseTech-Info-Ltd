@@ -32,7 +32,7 @@ export default function CaseStudiesPreviewSection() {
           {preview.map((cs, i) => (
             <Link
               key={cs.slug}
-              href={`/case-studies#${cs.slug}`}
+              href={`/case-studies/${cs.slug}`}
               className="group bg-white border border-neutral-200 p-6 sm:p-8 flex flex-col hover:border-neutral-900 hover:shadow-sm transition-all duration-300"
             >
               <div className="flex items-center justify-between mb-6">
