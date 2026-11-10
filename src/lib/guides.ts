@@ -289,6 +289,359 @@ export const GUIDES: Guide[] = [
     ],
     relatedGuides: ["multi-country-website-url-structure", "geo-seo-vs-geo"],
   },
+  {
+    slug: "what-is-hreflang",
+    title: "What Is Hreflang? How to Set It Up for a Multi-Language Site",
+    description:
+      "Hreflang tells search engines which language or country version of a page to show. A plain-language guide with the format, the rules and the common mistakes.",
+    answer:
+      "Hreflang is an annotation that tells search engines which language or country version of a page to show to which searcher. Each version of a page lists all its alternatives, including itself, using language and region codes such as de-DE. You can add it in the page head, in HTTP headers or in your XML sitemap.",
+    published: "2026-11-10",
+    updated: "2026-11-10",
+    readTime: 5,
+    sections: [
+      {
+        heading: "When you need it",
+        paragraphs: [
+          "Use hreflang when you have the same or very similar content for different languages or countries, for example an English page for the UK and another for Ireland, or a German and a French version of a product page.",
+        ],
+      },
+      {
+        heading: "What it looks like",
+        paragraphs: [
+          "In the head of each page you list every version, with a language code and optionally a region code:",
+          '<link rel="alternate" hreflang="en-GB" href="https://example.com/en-gb/page" />',
+          '<link rel="alternate" hreflang="de-DE" href="https://example.com/de/page" />',
+          '<link rel="alternate" hreflang="x-default" href="https://example.com/page" />',
+        ],
+      },
+      {
+        heading: "The rules",
+        items: [
+          "Reciprocal: if page A points to page B, page B must point back to A.",
+          "Self-referencing: each page also lists itself.",
+          "Language first, then optional region: en, en-GB, de-DE. Region alone is not valid.",
+          "Use full, absolute URLs that match the canonical version of each page.",
+          "x-default is optional and marks the fallback page for searchers who match no listed version.",
+        ],
+      },
+      {
+        heading: "Where to put it",
+        items: [
+          "In the page head: simple for small sites.",
+          "In HTTP headers: useful for non-HTML files such as PDFs.",
+          "In the XML sitemap: easier to manage for large sites.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        items: [
+          "Missing return links, so the annotations are ignored.",
+          "Wrong codes, such as uk for the United Kingdom (the country code is GB).",
+          "Pointing to pages that redirect, return errors or are blocked from crawling.",
+          "Forgetting to update the annotations when pages are added or removed.",
+        ],
+      },
+      {
+        heading: "What hreflang does not do",
+        paragraphs: [
+          "Hreflang helps search engines choose the right version. It does not translate your content, and it does not guarantee rankings. Each version still needs content that suits its market.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Is hreflang a ranking factor?",
+        a: "Hreflang does not boost rankings by itself. It helps search engines show the right language or country version to the right searcher.",
+      },
+      {
+        q: "Do I need hreflang if I only have one language?",
+        a: "Usually not. It matters when you have several versions of similar content for different languages or countries.",
+      },
+    ],
+    relatedLinks: [
+      { label: "International SEO", href: "/services/global-digital-growth/international-seo" },
+      { label: "SEO Audit (£100)", href: "/services/seo-audit" },
+    ],
+    relatedGuides: ["multi-country-website-url-structure", "keyword-research-for-a-new-country"],
+  },
+  {
+    slug: "keyword-research-for-a-new-country",
+    title: "How to Do Keyword Research for a New Country",
+    description:
+      "Do not just translate your keywords. A step-by-step guide to researching how buyers in a new country and language actually search for what you sell.",
+    answer:
+      "Translating your existing keywords is not enough: buyers in another country often use different words, spellings and search habits. Start from the local language, check what local competitors rank for, look at the search results themselves, and have a native speaker confirm the terms before you build pages.",
+    published: "2026-11-10",
+    updated: "2026-11-10",
+    readTime: 5,
+    sections: [
+      {
+        heading: "Step 1: Define the market",
+        paragraphs: [
+          "Decide the country and language, and who the buyer is: a business buyer, a distributor or a consumer. Searches differ by role, so define this first.",
+        ],
+      },
+      {
+        heading: "Step 2: Start from the local language",
+        items: [
+          "List the products or services in the local language, with a native speaker if possible.",
+          "Include local names, spellings and units. The same product can have several names in one language.",
+          "Add the words buyers use for the problem, not only for your product.",
+        ],
+      },
+      {
+        heading: "Step 3: Look at who already ranks",
+        items: [
+          "Search the terms from that country, in that language, and note who appears.",
+          "Check which types of pages rank: product pages, guides, directories, marketplaces.",
+          "Note competitors that appear repeatedly, since they show what the market expects.",
+        ],
+      },
+      {
+        heading: "Step 4: Check intent",
+        paragraphs: [
+          "For each term, ask what the searcher wants: to learn, to compare, or to buy or request a quote. Match the page type to the intent. A buyer ready to request a quote needs a different page from someone learning the basics.",
+        ],
+      },
+      {
+        heading: "Step 5: Prioritise",
+        items: [
+          "Start with terms close to a sale and realistic to win.",
+          "Group related terms into topics, one page per topic.",
+          "Use keyword tools for rough demand, but treat their numbers as estimates.",
+        ],
+      },
+      {
+        heading: "Step 6: Validate before you build",
+        paragraphs: [
+          "Ask a native speaker whether the terms sound natural for your product and whether the pages you plan would answer the searches. This avoids building pages around words nobody uses.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Can I use my English keywords translated by a tool?",
+        a: "Translated keywords are a starting point only. Buyers often use different words and search habits, so check the terms against local search results and with a native speaker.",
+      },
+      {
+        q: "How many keywords do I need per country?",
+        a: "There is no fixed number. Start with the topics closest to a sale, and expand once those pages perform.",
+      },
+    ],
+    relatedLinks: [
+      { label: "International SEO", href: "/services/global-digital-growth/international-seo" },
+      { label: "SEO Strategy & Consulting (£500)", href: "/services/seo-strategy-consulting" },
+    ],
+    relatedGuides: ["what-is-hreflang", "multi-country-website-url-structure"],
+  },
+  {
+    slug: "seo-checklist-for-a-website-redesign",
+    title: "SEO Checklist for a Website Redesign or Migration",
+    description:
+      "A redesign can lose the search visibility you already have. A practical checklist for before, during and after a website redesign or migration.",
+    answer:
+      "To protect your search visibility in a redesign, record your current pages and rankings first, keep URLs where you can, redirect every old URL that changes to its closest new page, and check crawling, indexing and performance right after launch. Most losses come from missing redirects and forgotten pages.",
+    published: "2026-11-10",
+    updated: "2026-11-10",
+    readTime: 5,
+    sections: [
+      {
+        heading: "Before the redesign",
+        items: [
+          "Crawl the current site and save the list of URLs, titles and headings.",
+          "Record which pages bring organic visitors and enquiries today.",
+          "Decide which URLs can stay the same. The fewer that change, the lower the risk.",
+          "Keep the content that already performs, including its headings and key text.",
+        ],
+      },
+      {
+        heading: "Plan the redirects",
+        items: [
+          "Map every old URL that will change to its closest equivalent new page.",
+          "Use permanent (301) redirects, one step each, not chains.",
+          "Do not send everything to the home page: send each URL to the most relevant page.",
+        ],
+      },
+      {
+        heading: "Test before launch",
+        items: [
+          "Check the new site on a test copy that search engines cannot index.",
+          "Confirm titles, descriptions, headings, internal links and structured data carried over.",
+          "Test speed and mobile use.",
+          "Make sure the test site's block on search engines is removed at launch, and not left in place.",
+        ],
+      },
+      {
+        heading: "At launch",
+        items: [
+          "Switch on the redirects and submit the new XML sitemap.",
+          "Check the robots rules do not block important pages.",
+          "Check canonical tags point to the live URLs.",
+        ],
+      },
+      {
+        heading: "After launch",
+        items: [
+          "Crawl the live site and look for errors and broken links.",
+          "Watch indexing and traffic in your search console for the first weeks.",
+          "Fix missing redirects and lost pages quickly.",
+          "Expect some movement: small fluctuations are normal, sharp drops need investigation.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Will a redesign hurt my rankings?",
+        a: "It can, especially if URLs change without redirects or content is removed. With a plan, redirects and checks after launch, the risk is much lower. Nobody can promise no change.",
+      },
+      {
+        q: "Should I change my URLs in a redesign?",
+        a: "Only if there is a good reason. Keeping URLs reduces risk. If they must change, redirect each old URL to its closest new page.",
+      },
+    ],
+    relatedLinks: [
+      { label: "Website Transformation", href: "/services/global-digital-growth/website-transformation" },
+      { label: "SEO Audit + Optimization (£250)", href: "/services/seo-audit-plus" },
+    ],
+    relatedGuides: ["what-does-an-seo-audit-include", "what-is-hreflang"],
+  },
+  {
+    slug: "writing-answer-first-content",
+    title: "How to Write Answer-First Content for Search and AI Answers",
+    description:
+      "Answer-first content gives the direct answer early and supports it below. How to structure pages so search engines and AI tools can understand and cite them.",
+    answer:
+      "Answer-first content states the direct answer to a question in the first lines, then explains and supports it below. It helps readers, search engines and AI tools find the point quickly. Use clear headings that match real questions, plain language, consistent facts about your company and structured data where it fits.",
+    published: "2026-11-10",
+    updated: "2026-11-10",
+    readTime: 4,
+    sections: [
+      {
+        heading: "Start with the question",
+        paragraphs: [
+          "Pick one question a buyer really asks, such as how much something costs, how long it takes or what is included. Make it the topic of the page, and write it in the words buyers use.",
+        ],
+      },
+      {
+        heading: "Answer in the first lines",
+        paragraphs: [
+          "Give the direct answer in one to three sentences at the top, then continue with detail. If the answer depends on something, say what it depends on.",
+        ],
+      },
+      {
+        heading: "Structure the rest",
+        items: [
+          "Use headings that are questions or clear statements, not clever titles.",
+          "Use short paragraphs and lists for steps and options.",
+          "Add a short FAQ for the closest follow-up questions.",
+        ],
+      },
+      {
+        heading: "Be specific and honest",
+        items: [
+          "State real facts: what is included, what it costs where you publish prices, how long it takes.",
+          "Do not make claims you cannot support, and say when results vary.",
+          "Show when the page was last updated and keep it current.",
+        ],
+      },
+      {
+        heading: "Make it easy to understand who you are",
+        items: [
+          "Use the same company name, address and service descriptions across your site.",
+          "Add structured data that describes your company, services and FAQs.",
+          "Link related pages to each other, so the topic and your expertise are clear.",
+        ],
+      },
+      {
+        heading: "A note on results",
+        paragraphs: [
+          "Clear, useful content improves your chances of being found and cited. It does not guarantee rankings or citations, and search engines and AI tools change often.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Is answer-first content only for AI?",
+        a: "No. It helps readers first. Search engines and AI tools also find it easier to understand and reuse pages that state the answer clearly.",
+      },
+      {
+        q: "How long should the direct answer be?",
+        a: "One to three sentences is a good target. Put the detail below it.",
+      },
+    ],
+    relatedLinks: [
+      { label: "Geo-SEO service", href: "/services/global-digital-growth/geo-seo" },
+      { label: "SEO Strategy & Consulting (£500)", href: "/services/seo-strategy-consulting" },
+    ],
+    relatedGuides: ["geo-seo-vs-geo", "what-is-structured-data-for-smes"],
+  },
+  {
+    slug: "what-is-structured-data-for-smes",
+    title: "What Is Structured Data (Schema Markup)? A Guide for SMEs",
+    description:
+      "Structured data describes your company, services and FAQs in a format search engines and AI tools can read. What it is, which types an SME needs and what it cannot do.",
+    answer:
+      "Structured data, also called schema markup, is code added to a page that describes it in a standard format: who the company is, what the service is, what questions the page answers. It helps search engines and AI tools understand your site. It does not guarantee rankings or special results; search engines decide what to show.",
+    published: "2026-11-10",
+    updated: "2026-11-10",
+    readTime: 4,
+    sections: [
+      {
+        heading: "What it is",
+        paragraphs: [
+          "Structured data is usually added as JSON-LD, a block of data in the page that is invisible to visitors but readable by machines. It uses a shared vocabulary from schema.org.",
+        ],
+      },
+      {
+        heading: "Types an SME usually needs",
+        items: [
+          "Organization: your company name, logo, address and contact details.",
+          "WebSite: your site and its name.",
+          "Service or Product: what you sell, and the price where you publish one.",
+          "FAQPage: questions and answers that are visible on the page.",
+          "Article: guides and news, with author and dates.",
+          "BreadcrumbList: the path to the page within the site.",
+        ],
+      },
+      {
+        heading: "Rules to follow",
+        items: [
+          "Only mark up what is visible on the page: do not add FAQs or prices that readers cannot see.",
+          "Keep the data accurate and up to date, especially prices and dates.",
+          "Do not add reviews or ratings you do not have.",
+          "Test your pages with the search engines' structured data testing tools.",
+        ],
+      },
+      {
+        heading: "What it cannot do",
+        paragraphs: [
+          "Structured data does not guarantee higher rankings, rich results or AI citations. It makes your content easier to understand, which can help, but search engines and AI tools decide what to show.",
+        ],
+      },
+      {
+        heading: "Getting started",
+        paragraphs: [
+          "Begin with Organization and WebSite across the site, then add Service, FAQPage and Article on the pages that match. Keep it consistent with the visible content.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Is structured data the same as schema markup?",
+        a: "Yes. Schema markup is structured data that uses the schema.org vocabulary.",
+      },
+      {
+        q: "Does structured data improve rankings?",
+        a: "Not directly. It helps search engines and AI tools understand your pages, which can make them eligible for richer results, but nothing is guaranteed.",
+      },
+    ],
+    relatedLinks: [
+      { label: "SEO Audit (£100)", href: "/services/seo-audit" },
+      { label: "Global Digital Growth", href: "/services/global-digital-growth" },
+    ],
+    relatedGuides: ["writing-answer-first-content", "what-does-an-seo-audit-include"],
+  },
 ];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
