@@ -6,6 +6,7 @@ import SiteFooter from "@/components/SiteFooter";
 import { reports } from "@/lib/reports";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/reports" },
   title: "Intelligence Reports — Werrise Digital",
   description:
     "In-depth market intelligence reports for founders, operators, and business leaders. Deep-dive analysis, proprietary data, and strategic recommendations.",

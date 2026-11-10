@@ -3,6 +3,7 @@ import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/founder-story" },
   title: "Founder Story — Werrise Digital",
   description:
     "The moment that started everything. How a song on an American highway gave birth to the philosophy behind Werrise Digital.",

@@ -6,6 +6,7 @@ import ServicesSection from "@/components/ServicesSection";
 import { DELIVERY_NOTE } from "@/lib/services";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/services" },
   title: "Services & Pricing — Werrise Digital Ltd",
   description:
     "Full list of Werrise Digital Ltd advisory, SEO, market intelligence, and startup consulting services with transparent pricing.",

@@ -5,6 +5,7 @@ import { testimonials } from "@/lib/testimonials";
 import { ILLUSTRATIVE_NOTE } from "@/lib/services";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/love" },
   title: "Wall of Love — Werrise Digital",
   description:
     "Hear from the founders, operators, and investors who have worked with Werrise Digital.",

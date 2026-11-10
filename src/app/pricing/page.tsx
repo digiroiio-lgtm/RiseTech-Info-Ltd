@@ -5,6 +5,7 @@ import SiteFooter from "@/components/SiteFooter";
 import { DELIVERY_NOTE, SERVICE_CATEGORIES } from "@/lib/services";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/pricing" },
   title: "Pricing — Werrise Digital Ltd",
   description:
     "Transparent, fixed-price advisory and consulting services. Browse all packages and purchase securely online.",

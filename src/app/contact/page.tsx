@@ -3,6 +3,7 @@ import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/contact" },
   title: "Contact — Werrise Digital",
   description:
     "Get in touch with Werrise Digital Ltd for advisory enquiries, support, or billing questions.",

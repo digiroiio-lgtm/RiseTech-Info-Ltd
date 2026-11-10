@@ -18,6 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${post.title} — Werrise Digital Insights`,
     description: post.excerpt,
+    alternates: { canonical: `/insights/${post.slug}` },
   };
 }
 

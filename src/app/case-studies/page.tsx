@@ -5,6 +5,7 @@ import SiteFooter from "@/components/SiteFooter";
 import { caseStudies } from "@/lib/caseStudies";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/case-studies" },
   title: "Case Studies — Werrise Digital",
   description:
     "Real results from real engagements. Explore how Werrise Digital has helped founders, operators, and investors scale faster.",
