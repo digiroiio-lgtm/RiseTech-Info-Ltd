@@ -202,9 +202,9 @@ export const GG_MODULE_PAGES: GGModulePage[] = [
   {
     slug: "website-transformation",
     name: "Website Transformation",
-    seoTitle: "Website Transformation for International Sales: Multi-Language, Fast, Built to Convert",
+    seoTitle: "Website Transformation for International Sales",
     seoDescription:
-      "Website transformation for SMEs selling abroad: a multi-language structure, country landing pages, technical performance and conversion improvements, with RFQ and CRM integration.",
+      "Website transformation for SMEs selling abroad: multi-language structure, country landing pages, performance and conversion improvements, plus RFQ and CRM integration.",
     h1: "Website Transformation: a website built for international buyers",
     summary:
       "Website Transformation turns your existing website into a foundation for international sales. We set up a multi-language structure, country-based landing pages, technical performance and conversion improvements, and connect enquiry forms to your CRM. It is a scoped project, quoted after a free initial review, and works together with International SEO, Geo-SEO and Lead & RFQ Automation.",

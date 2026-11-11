@@ -56,5 +56,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(g.updated),
     })),
   ];
-  return [...pages, ...services, ...modules, ...guides, ...cases, ...posts];
+  const resources = [
+    { url: `${BASE}/resources`, lastModified: new Date("2026-11-11") },
+    { url: `${BASE}/resources/international-readiness-checklist`, lastModified: new Date("2026-11-11") },
+  ];
+  return [...pages, ...services, ...modules, ...guides, ...resources, ...cases, ...posts];
 }

@@ -47,3 +47,23 @@ export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
     })),
   };
 }
+
+export function webPageJsonLd(opts: {
+  path: string;
+  name: string;
+  description: string;
+  dateModified: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${SITE_URL}${opts.path}#webpage`,
+    url: `${SITE_URL}${opts.path}`,
+    name: opts.name,
+    description: opts.description,
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    publisher: { "@id": `${SITE_URL}/#organization` },
+    dateModified: opts.dateModified,
+    inLanguage: "en-GB",
+  };
+}

@@ -642,6 +642,337 @@ export const GUIDES: Guide[] = [
     ],
     relatedGuides: ["writing-answer-first-content", "what-does-an-seo-audit-include"],
   },
+  {
+    slug: "localise-a-b2b-website",
+    title: "How to Localise a B2B Website for a New Market",
+    description:
+      "Localisation is more than translation. A practical guide for SMEs to adapt a B2B website's content, details and offer for buyers in a new country.",
+    answer:
+      "To localise a B2B website, adapt more than the language: use the terms buyers in that market search for, show the right currency, units, certifications and contact routes, and explain how ordering, shipping and quotes work there. Have a native speaker review it, and publish only the pages you can keep up to date.",
+    published: "2026-11-11",
+    updated: "2026-11-11",
+    readTime: 5,
+    sections: [
+      {
+        heading: "Translation is only the start",
+        paragraphs: [
+          "A word-for-word translation can be correct and still not persuade. Buyers in another country may use different terms for your product, expect different proof, and ask different questions before they request a quote.",
+        ],
+      },
+      {
+        heading: "What to adapt",
+        items: [
+          "Terms and keywords: the words buyers in that market use, found through local research.",
+          "Currency, units, date formats and measurement standards.",
+          "Certifications, standards and regulations buyers there look for.",
+          "Contact details and routes: a local-language enquiry form, working hours and a booking link.",
+          "Examples and references that make sense in that market.",
+        ],
+      },
+      {
+        heading: "Explain how doing business with you works",
+        paragraphs: [
+          "Say clearly where you sell or ship, how quotes work, typical delivery times, payment terms and who to contact. Buyers abroad leave when these basics are missing.",
+        ],
+      },
+      {
+        heading: "Review with a native speaker",
+        items: [
+          "Ask a native speaker, ideally someone in your industry, to read key pages.",
+          "Check the page against the searches you want to be found for.",
+          "Fix tone and terms, not only grammar.",
+        ],
+      },
+      {
+        heading: "Keep it maintainable",
+        paragraphs: [
+          "A language version that is out of date is worse than none. Start with the pages closest to a sale, such as the main service pages and the enquiry form, and expand only when you can maintain them.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "What is the difference between translation and localisation?",
+        a: "Translation changes the language. Localisation also adapts terms, currency, units, examples, proof and contact routes so the site works for buyers in that market.",
+      },
+      {
+        q: "Do I need to localise every page?",
+        a: "No. Start with the pages closest to a sale and the enquiry form, and add more once you can keep them accurate.",
+      },
+    ],
+    relatedLinks: [
+      { label: "International SEO", href: "/services/global-digital-growth/international-seo" },
+      { label: "Website Transformation", href: "/services/global-digital-growth/website-transformation" },
+    ],
+    relatedGuides: ["keyword-research-for-a-new-country", "multi-country-website-url-structure"],
+  },
+  {
+    slug: "track-international-enquiries",
+    title: "How to Track Where Your International Enquiries Come From",
+    description:
+      "A simple setup for SMEs to see which pages, markets and channels produce enquiries: source fields in forms, a CRM record per enquiry and a monthly review.",
+    answer:
+      "To track where international enquiries come from, record the source page and market on every enquiry, send each one to a CRM or shared sheet, and review enquiries by market and page once a month. Even a simple hidden form field that stores the page the visitor came from gives you the answer.",
+    published: "2026-11-11",
+    updated: "2026-11-11",
+    readTime: 4,
+    sections: [
+      {
+        heading: "Why it matters",
+        paragraphs: [
+          "If enquiries arrive by email with no context, you cannot tell which markets, pages or campaigns work. Tracking tells you where to put more effort and what to stop.",
+        ],
+      },
+      {
+        heading: "The minimum setup",
+        items: [
+          "Use a form, not only an email address, so every enquiry has the same fields.",
+          "Add a hidden field that records the page or button the visitor came from.",
+          "Add a field for country or market, or capture it from the form.",
+          "Send each enquiry to one place: a CRM, or a shared sheet if you are starting out.",
+        ],
+      },
+      {
+        heading: "What to record for each enquiry",
+        items: [
+          "Date, name, company and country.",
+          "Source page or button.",
+          "What they asked for.",
+          "Status: new, replied, quoted, won or lost.",
+        ],
+      },
+      {
+        heading: "Link tracking for campaigns",
+        paragraphs: [
+          "If you run campaigns, add tracking parameters to the links so the source is recorded. Keep names consistent, for example the same spelling for each channel and market.",
+        ],
+      },
+      {
+        heading: "Review it monthly",
+        paragraphs: [
+          "Once a month, count enquiries by market and by source page, and note how many became quotes and sales. Keep the report simple enough that you will actually read it.",
+        ],
+      },
+      {
+        heading: "Privacy",
+        paragraphs: [
+          "Enquiry forms collect personal data. Link your privacy policy, ask for consent where required, and say who receives the data.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Do I need a CRM to track enquiries?",
+        a: "Not at the start. A shared sheet works if every enquiry is recorded with its source and status. A CRM helps once the volume grows.",
+      },
+      {
+        q: "What is the most useful single field to record?",
+        a: "The source page or button, because it shows which part of your website produced the enquiry.",
+      },
+    ],
+    relatedLinks: [
+      { label: "Lead & RFQ Automation", href: "/services/global-digital-growth/lead-rfq-automation" },
+      { label: "Send an enquiry", href: "/contact#enquiry" },
+    ],
+    relatedGuides: ["what-to-include-in-an-rfq-form", "what-is-structured-data-for-smes"],
+  },
+  {
+    slug: "country-pages-or-one-global-page",
+    title: "Country Pages or One Global Page? How to Decide",
+    description:
+      "Should you build a page per country or one global page? A practical way for SMEs to decide, based on how different the offer, language and buyers are.",
+    answer:
+      "Build a separate page for a country when its language, offer, price, regulations or buyers differ from your other markets. Use one global page when the offer and language are the same everywhere. Start with one page per priority market, and add more only when each can be written and maintained properly.",
+    published: "2026-11-11",
+    updated: "2026-11-11",
+    readTime: 4,
+    sections: [
+      {
+        heading: "The question to ask",
+        paragraphs: [
+          "Ask whether a buyer in each country needs something different from the page: a different language, price, delivery, regulation, proof or contact route. If yes, that country deserves its own page.",
+        ],
+      },
+      {
+        heading: "When one global page is enough",
+        items: [
+          "The language, offer and terms are the same in the markets you serve.",
+          "You have little content and cannot maintain several versions.",
+          "You are still testing demand and have no priority market yet.",
+        ],
+      },
+      {
+        heading: "When to build country pages",
+        items: [
+          "Different languages or local search terms.",
+          "Different prices, delivery times or regulations.",
+          "Local references or certifications that matter to buyers.",
+          "A priority market where you want to be found in local search.",
+        ],
+      },
+      {
+        heading: "Avoid thin copies",
+        paragraphs: [
+          "Do not create dozens of near-identical country pages. Each page should say something specific to that market, or it will not help buyers or search engines.",
+        ],
+      },
+      {
+        heading: "How to start",
+        items: [
+          "Pick up to three priority markets.",
+          "Write one page per market for your main service.",
+          "Add hreflang so search engines show the right version.",
+          "Measure enquiries per market before adding more pages.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "How many country pages should I start with?",
+        a: "Start with one page per priority market, up to about three, for your main service, and expand when you see enquiries and can maintain them.",
+      },
+      {
+        q: "Will country pages be treated as duplicate content?",
+        a: "Pages with genuinely different content for each market are fine. Near-identical copies add little. Use hreflang to connect versions of the same page.",
+      },
+    ],
+    relatedLinks: [
+      { label: "Geo-SEO", href: "/services/global-digital-growth/geo-seo" },
+      { label: "International SEO", href: "/services/global-digital-growth/international-seo" },
+    ],
+    relatedGuides: ["multi-country-website-url-structure", "what-is-hreflang"],
+  },
+  {
+    slug: "before-hiring-an-seo-consultant",
+    title: "What to Prepare Before Hiring an SEO Consultant",
+    description:
+      "Get more from an SEO consultant by preparing goals, access and questions first. A short checklist for SMEs, and questions to ask before you hire.",
+    answer:
+      "Before hiring an SEO consultant, define what you want to achieve and which markets matter, gather access to your website and analytics, and list your products, competitors and past SEO work. Then ask how they work, what you will receive, who does the implementation and how they report, and avoid anyone who guarantees rankings.",
+    published: "2026-11-11",
+    updated: "2026-11-11",
+    readTime: 4,
+    sections: [
+      {
+        heading: "Define the goal",
+        paragraphs: [
+          "Write down what you want: more enquiries, more traffic from a market, or a plan before a redesign. A clear goal lets you judge a proposal and measure results.",
+        ],
+      },
+      {
+        heading: "Gather what they will need",
+        items: [
+          "Access to your website, analytics and search console, with the right permissions.",
+          "A list of your main products or services and target markets.",
+          "Your main competitors.",
+          "Any past SEO work, redesigns or migrations.",
+        ],
+      },
+      {
+        heading: "Questions to ask",
+        items: [
+          "What exactly will I receive, and when?",
+          "Who implements the recommendations: you, my team or me?",
+          "How will you report progress, and on which measures?",
+          "How do you handle changes to my website?",
+          "Can you show relevant, honest examples?",
+        ],
+      },
+      {
+        heading: "Warning signs",
+        items: [
+          "Guaranteed rankings or guaranteed traffic.",
+          "Vague deliverables or no written scope.",
+          "Secret methods, or no access to your own accounts.",
+        ],
+      },
+      {
+        heading: "Start small",
+        paragraphs: [
+          "A fixed-price audit is a low-risk way to see how a consultant works before you commit to a larger project.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Should an SEO consultant guarantee rankings?",
+        a: "No. Rankings depend on many factors outside anyone's control. A good consultant commits to a clear scope and reporting, not to a specific ranking.",
+      },
+      {
+        q: "Should I start with an audit or a strategy?",
+        a: "An audit shows the state of your current site. A strategy sets out where to go. If your site has technical problems, start with the audit.",
+      },
+    ],
+    relatedLinks: [
+      { label: "SEO Audit (£100)", href: "/services/seo-audit" },
+      { label: "SEO Strategy & Consulting (£500)", href: "/services/seo-strategy-consulting" },
+    ],
+    relatedGuides: ["what-does-an-seo-audit-include", "seo-checklist-for-a-website-redesign"],
+  },
+  {
+    slug: "internal-linking-for-service-websites",
+    title: "Internal Linking for Service Websites: A Simple Plan",
+    description:
+      "Internal links help visitors and search engines find your key pages. A simple plan for service businesses: hubs, related links, anchor text and a quick audit.",
+    answer:
+      "Internal linking means linking your own pages to each other so visitors and search engines can find and understand them. For a service website, link each service page from your main navigation and from related guides and case studies, use descriptive link text, and make sure no important page is more than a few clicks from the home page.",
+    published: "2026-11-11",
+    updated: "2026-11-11",
+    readTime: 4,
+    sections: [
+      {
+        heading: "Why internal links matter",
+        paragraphs: [
+          "Internal links show search engines which pages exist and how they relate, and they guide visitors towards the pages that matter. Pages with no links pointing to them are easy to miss.",
+        ],
+      },
+      {
+        heading: "Build around hubs",
+        items: [
+          "Create a hub page for each main service area.",
+          "Link the hub to its detail pages, and each detail page back to the hub.",
+          "Link related guides and case studies to the services they support.",
+        ],
+      },
+      {
+        heading: "Use descriptive link text",
+        paragraphs: [
+          "Write link text that says where the link goes, for example 'SEO audit' rather than 'click here'. It helps readers, and it tells search engines what the target page is about.",
+        ],
+      },
+      {
+        heading: "Keep important pages close",
+        items: [
+          "Aim for key pages to be reachable within about three clicks of the home page.",
+          "Include important pages in the main navigation or footer.",
+          "Add a few relevant links inside the content, not only in menus.",
+        ],
+      },
+      {
+        heading: "A quick audit",
+        items: [
+          "Crawl your site and list pages that have few or no internal links.",
+          "Check that every page in your sitemap is linked from somewhere.",
+          "Fix broken internal links.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "How many internal links should a page have?",
+        a: "There is no fixed number. Link where it helps the reader, to relevant pages, with descriptive text, and avoid linking everything to everything.",
+      },
+      {
+        q: "Do internal links help rankings?",
+        a: "They help search engines find and understand your pages, which supports good results, but they do not guarantee rankings.",
+      },
+    ],
+    relatedLinks: [
+      { label: "SEO Audit (£100)", href: "/services/seo-audit" },
+      { label: "Services", href: "/services" },
+    ],
+    relatedGuides: ["what-does-an-seo-audit-include", "writing-answer-first-content"],
+  },
 ];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(

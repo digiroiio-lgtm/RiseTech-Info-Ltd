@@ -5,7 +5,9 @@ import GlobalGrowthForm from "@/components/GlobalGrowthForm";
 import SiteFooter from "@/components/SiteFooter";
 import { ILLUSTRATIVE_NOTE } from "@/lib/services";
 import { GG_MODULE_PAGES_BY_SLUG } from "@/lib/globalGrowthModules";
-import { SITE_URL, breadcrumbJsonLd, jsonLdString } from "@/lib/jsonLd";
+import { SITE_URL, breadcrumbJsonLd, jsonLdString, webPageJsonLd } from "@/lib/jsonLd";
+import LastUpdated from "@/components/LastUpdated";
+import { PAGE_UPDATED } from "@/lib/pageDates";
 import {
   GG_CASES,
   GG_CTA_LABEL,
@@ -103,6 +105,7 @@ export default function GlobalDigitalGrowthPage() {
               Identify your website&apos;s opportunities across three target
               markets.
             </p>
+            <LastUpdated iso={PAGE_UPDATED.globalDigitalGrowth} className="mt-3" />
           </div>
         </section>
 
@@ -325,7 +328,17 @@ export default function GlobalDigitalGrowthPage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: jsonLdString([faqJsonLd, serviceJsonLd, breadcrumbs]),
+            __html: jsonLdString([
+              faqJsonLd,
+              serviceJsonLd,
+              breadcrumbs,
+              webPageJsonLd({
+                path: GG_PATH,
+                name: TITLE,
+                description: DESCRIPTION,
+                dateModified: PAGE_UPDATED.globalDigitalGrowth,
+              }),
+            ]),
           }}
         />
       </main>

@@ -5,6 +5,9 @@ import SiteFooter from "@/components/SiteFooter";
 import ServicesSection from "@/components/ServicesSection";
 import { DELIVERY_NOTE } from "@/lib/services";
 import { enquiryHref } from "@/lib/booking";
+import LastUpdated from "@/components/LastUpdated";
+import { PAGE_UPDATED } from "@/lib/pageDates";
+import { jsonLdString, webPageJsonLd } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/services" },
@@ -16,6 +19,19 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: jsonLdString(
+            webPageJsonLd({
+              path: "/services",
+              name: "Services & Pricing — Werrise Digital",
+              description: "Fixed-price advisory, SEO, market intelligence and startup services, plus quote-based Global Digital Growth.",
+              dateModified: PAGE_UPDATED.services,
+            }),
+          ),
+        }}
+      />
       <Navbar />
       <main className="flex-1 pt-16">
         {/* Page header */}
@@ -34,6 +50,7 @@ export default function ServicesPage() {
             <p className="text-sm text-neutral-500 leading-relaxed max-w-2xl mt-3">
               {DELIVERY_NOTE}
             </p>
+            <LastUpdated iso={PAGE_UPDATED.services} className="mt-3" />
           </div>
         </section>
 
