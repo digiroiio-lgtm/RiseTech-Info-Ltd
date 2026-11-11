@@ -6,6 +6,7 @@ import SiteFooter from "@/components/SiteFooter";
 import { caseStudies } from "@/lib/caseStudies";
 import { ILLUSTRATIVE_NOTE } from "@/lib/services";
 import { SITE_URL, breadcrumbJsonLd, jsonLdString } from "@/lib/jsonLd";
+import { fitDescription, fitTitle } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -17,9 +18,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const cs = caseStudies.find((c) => c.slug === slug);
   if (!cs) return {};
-  const description = `${cs.client}: ${cs.result}`;
+  const description = fitDescription(`${cs.client}: ${cs.result}`);
   return {
-    title: `${cs.headline} — Werrise Digital Case Study`,
+    title: fitTitle(cs.headline),
     description,
     alternates: { canonical: `/case-studies/${cs.slug}` },
     openGraph: {

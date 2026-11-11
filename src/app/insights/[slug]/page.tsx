@@ -6,6 +6,7 @@ import SiteFooter from "@/components/SiteFooter";
 import { insights, InsightCategory } from "@/lib/insights";
 import { SITE_URL, breadcrumbJsonLd, jsonLdString } from "@/lib/jsonLd";
 import { enquiryHref } from "@/lib/booking";
+import { fitDescription, fitTitle } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -18,8 +19,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = insights.find((p) => p.slug === slug);
   if (!post) return {};
   return {
-    title: `${post.title} — Werrise Digital Insights`,
-    description: post.excerpt,
+    title: fitTitle(post.title),
+    description: fitDescription(post.excerpt),
     alternates: { canonical: `/insights/${post.slug}` },
   };
 }

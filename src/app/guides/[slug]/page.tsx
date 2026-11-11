@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import SiteFooter from "@/components/SiteFooter";
 import { GUIDES, GUIDES_BY_SLUG } from "@/lib/guides";
 import { SITE_URL, breadcrumbJsonLd, jsonLdString } from "@/lib/jsonLd";
+import { fitDescription, fitTitle } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -19,8 +20,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const g = GUIDES_BY_SLUG[slug];
   if (!g) return {};
   return {
-    title: `${g.title} — Werrise Digital`,
-    description: g.description,
+    title: fitTitle(g.title),
+    description: fitDescription(g.description),
     alternates: { canonical: `/guides/${g.slug}` },
     openGraph: {
       type: "article",

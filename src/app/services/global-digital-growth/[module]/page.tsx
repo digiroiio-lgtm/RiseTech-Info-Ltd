@@ -6,6 +6,7 @@ import SiteFooter from "@/components/SiteFooter";
 import { GG_CTA_LABEL, GG_MODELS_NOTE, GG_PATH } from "@/lib/globalGrowth";
 import { GG_MODULE_PAGES, GG_MODULE_PAGES_BY_SLUG } from "@/lib/globalGrowthModules";
 import { SITE_URL, breadcrumbJsonLd, jsonLdString } from "@/lib/jsonLd";
+import { fitDescription, fitTitle } from "@/lib/seo";
 
 type Props = { params: Promise<{ module: string }> };
 
@@ -19,18 +20,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { module } = await params;
   const page = GG_MODULE_PAGES_BY_SLUG[module];
   if (!page) return {};
-  const title = `${page.seoTitle} — Werrise Digital`;
+  const title = fitTitle(page.seoTitle);
+  const description = fitDescription(page.seoDescription);
   const path = `${GG_PATH}/${page.slug}`;
   return {
     title,
-    description: page.seoDescription,
+    description,
     alternates: { canonical: path },
     openGraph: {
       type: "website",
       siteName: "Werrise Digital Ltd",
       url: path,
       title,
-      description: page.seoDescription,
+      description,
     },
   };
 }
