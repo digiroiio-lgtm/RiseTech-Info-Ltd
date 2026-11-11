@@ -29,7 +29,7 @@ export default function PrivacyPage() {
             "order details: the service you bought, price paid, order reference and date",
             "billing details: billing address and company name or VAT number if you give them",
             "payment confirmation from Stripe (for example payment status and the last four digits and brand of your card). We never receive or store your full card number",
-            "details you submit in our enquiry form or the Global Digital Growth request form: name, business email, company name, your message or topic, and the website URL and target countries where requested",
+            "details you submit in our enquiry form, the Global Digital Growth request form or the checklist download form: name, business email, company name, your message or topic, and the website URL and target countries where requested",
             "messages and files you send us when you enquire or when we deliver a service",
             "technical data such as IP address, browser type and pages requested, held in server logs",
           ],

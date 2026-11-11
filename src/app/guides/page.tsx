@@ -58,6 +58,15 @@ export default function GuidesPage() {
           </div>
         </section>
         <div className="max-w-4xl mx-auto px-6 lg:px-8 py-12 md:py-16 space-y-4">
+          <Link
+            href="/resources/international-readiness-checklist"
+            data-cta="guides-index-checklist"
+            className="block border border-neutral-900 bg-neutral-50 p-6 sm:p-8"
+          >
+            <span className="text-xs font-semibold tracking-widest uppercase text-neutral-500">Free checklist</span>
+            <h2 className="text-xl font-light text-neutral-900 mt-2 mb-2">International Readiness Checklist for SMEs</h2>
+            <p className="text-sm text-neutral-600 leading-relaxed">15 points to check before you invest in winning customers abroad.</p>
+          </Link>
           {GUIDES.map((g) => (
             <Link
               key={g.slug}
