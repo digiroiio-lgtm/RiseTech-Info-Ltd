@@ -4,6 +4,9 @@ import Link from "next/link";
 import SiteFooter from "@/components/SiteFooter";
 import { caseStudies } from "@/lib/caseStudies";
 import { BOOKING_LABEL, BOOKING_URL } from "@/lib/booking";
+import LastUpdated from "@/components/LastUpdated";
+import { PAGE_UPDATED } from "@/lib/pageDates";
+import { jsonLdString, webPageJsonLd } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/case-studies" },
@@ -15,6 +18,19 @@ export const metadata: Metadata = {
 export default function CaseStudiesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: jsonLdString(
+            webPageJsonLd({
+              path: "/case-studies",
+              name: "Case Studies — Werrise Digital",
+              description: "Illustrative, anonymised case studies in export growth, market intelligence, technology systems and strategy.",
+              dateModified: PAGE_UPDATED.caseStudies,
+            }),
+          ),
+        }}
+      />
       {/* Navbar */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-neutral-100">
         <div className="max-w-6xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
@@ -68,6 +84,7 @@ export default function CaseStudiesPage() {
             <p className="text-xs text-neutral-500 max-w-xl mt-3">
               {ILLUSTRATIVE_NOTE}
             </p>
+            <LastUpdated iso={PAGE_UPDATED.caseStudies} className="mt-3" />
           </div>
         </div>
 

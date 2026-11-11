@@ -4,6 +4,8 @@ import Navbar from "@/components/Navbar";
 import SiteFooter from "@/components/SiteFooter";
 import { SITE_URL, breadcrumbJsonLd, jsonLdString } from "@/lib/jsonLd";
 import { fitDescription, fitTitle } from "@/lib/seo";
+import LastUpdated from "@/components/LastUpdated";
+import { PAGE_UPDATED } from "@/lib/pageDates";
 
 const DESCRIPTION = fitDescription(
   "Free resources for SMEs selling abroad: checklists and guides on international SEO, website structure and lead generation.",
@@ -23,6 +25,7 @@ export default function ResourcesPage() {
       name: "Resources",
       url: `${SITE_URL}/resources`,
       description: DESCRIPTION,
+      dateModified: PAGE_UPDATED.resources,
       publisher: { "@id": `${SITE_URL}/#organization` },
     },
     breadcrumbJsonLd([
@@ -42,6 +45,7 @@ export default function ResourcesPage() {
               Free resources for businesses selling abroad.
             </h1>
             <p className="text-lg font-light text-neutral-500 leading-relaxed">{DESCRIPTION}</p>
+            <LastUpdated iso={PAGE_UPDATED.resources} className="mt-3" />
           </div>
         </section>
         <div className="max-w-4xl mx-auto px-6 lg:px-8 py-12 md:py-16 space-y-4">

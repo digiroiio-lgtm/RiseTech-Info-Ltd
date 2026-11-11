@@ -4,6 +4,8 @@ import Navbar from "@/components/Navbar";
 import SiteFooter from "@/components/SiteFooter";
 import { GUIDES } from "@/lib/guides";
 import { SITE_URL, breadcrumbJsonLd, jsonLdString } from "@/lib/jsonLd";
+import LastUpdated from "@/components/LastUpdated";
+import { PAGE_UPDATED } from "@/lib/pageDates";
 
 const DESCRIPTION =
   "Plain-language guides for SMEs on international SEO, hreflang, Geo-SEO and GEO, structured data, RFQ forms, website migrations and SEO audits.";
@@ -29,6 +31,7 @@ export default function GuidesPage() {
       name: "Guides",
       url: `${SITE_URL}/guides`,
       description: DESCRIPTION,
+      dateModified: PAGE_UPDATED.guides,
       publisher: { "@id": `${SITE_URL}/#organization` },
     },
     breadcrumbJsonLd([
@@ -55,6 +58,7 @@ export default function GuidesPage() {
             <p className="text-lg font-light text-neutral-500 leading-relaxed">
               {DESCRIPTION}
             </p>
+            <LastUpdated iso={PAGE_UPDATED.guides} className="mt-3" />
           </div>
         </section>
         <div className="max-w-4xl mx-auto px-6 lg:px-8 py-12 md:py-16 space-y-4">
