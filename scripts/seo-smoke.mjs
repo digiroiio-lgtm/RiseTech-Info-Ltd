@@ -8,6 +8,7 @@
  * Exit code 1 if any check fails. Warnings never fail the run.
  */
 import { spawn } from "node:child_process";
+import { createRequire } from "node:module";
 import { setTimeout as sleep } from "node:timers/promises";
 
 const SITE = "https://wealwaysrise.com";
@@ -22,7 +23,16 @@ const warn = (url, msg) => warnings.push(`${url}  ${msg}`);
 
 let server;
 async function startServer() {
-  server = spawn("npx", ["next", "start", "-p", PORT], { stdio: "ignore" });
+  // Refuse to reuse a server that is already on the port: it could serve an old build.
+  try {
+    await fetch(`${BASE}/robots.txt`);
+    throw new Error(`Port ${PORT} is already in use. Stop that server or set SMOKE_PORT.`);
+  } catch (e) {
+    if (String(e.message).startsWith("Port ")) throw e;
+  }
+  // Start next directly (not through npx) so that killing it really stops the server.
+  const nextBin = createRequire(import.meta.url).resolve("next/dist/bin/next");
+  server = spawn(process.execPath, [nextBin, "start", "-p", PORT], { stdio: "ignore" });
   for (let i = 0; i < 40; i++) {
     try {
       const r = await fetch(`${BASE}/robots.txt`);
