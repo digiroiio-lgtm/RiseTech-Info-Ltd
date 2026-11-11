@@ -8,7 +8,7 @@ import LastUpdated from "@/components/LastUpdated";
 import { PAGE_UPDATED } from "@/lib/pageDates";
 
 const DESCRIPTION =
-  "Plain-language guides for SMEs on international SEO, hreflang, Geo-SEO and GEO, structured data, RFQ forms, website migrations and SEO audits.";
+  "Plain-language guides for SMEs on international SEO, hreflang, Geo-SEO and GEO, structured data, RFQ forms, localisation, enquiry tracking, website migrations and SEO audits.";
 
 export const metadata: Metadata = {
   title: "Guides: International SEO, Geo-SEO and Lead Generation — Werrise Digital",

@@ -15,7 +15,7 @@ Fixed-price packages and reports can be bought online. Global Digital Growth, so
 - [Intelligence Reports](https://wealwaysrise.com/reports)
 
 ## Guides
-- [Guides](https://wealwaysrise.com/guides): plain-language answers on multi-country URL structure, hreflang, keyword research for new countries, Geo-SEO vs GEO, answer-first content, structured data, RFQ forms, website migrations and SEO audits
+- [Guides](https://wealwaysrise.com/guides): plain-language answers on multi-country URL structure, hreflang, keyword research for new countries, Geo-SEO vs GEO, answer-first content, structured data, RFQ forms, website migrations, localisation, enquiry tracking, internal linking, hiring an SEO consultant and SEO audits
 
 ## Resources
 - [International Readiness Checklist](https://wealwaysrise.com/resources/international-readiness-checklist): 15-point checklist for SMEs preparing a website for customers in other countries (first 3 points free, the rest unlock with an email)
