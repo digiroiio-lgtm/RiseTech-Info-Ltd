@@ -6,6 +6,7 @@ import SiteFooter from "@/components/SiteFooter";
 import { GUIDES, GUIDES_BY_SLUG } from "@/lib/guides";
 import { SITE_URL, breadcrumbJsonLd, jsonLdString } from "@/lib/jsonLd";
 import { fitDescription, fitTitle } from "@/lib/seo";
+import InlineCta from "@/components/InlineCta";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -150,6 +151,13 @@ export default async function GuidePage({ params }: Props) {
               ))}
             </dl>
           </section>
+
+          <InlineCta
+            source={`guide-${g.slug}`.slice(0, 50)}
+            heading="Need help applying this to your business?"
+            body="Tell us about your website and the markets you want to reach. We will suggest where to start. The first Global Visibility Review is free."
+            extra={g.relatedLinks[0]}
+          />
 
           <section className="border-t border-neutral-100 pt-10">
             <p className={label}>How we can help</p>

@@ -7,6 +7,7 @@ import { caseStudies } from "@/lib/caseStudies";
 import { ILLUSTRATIVE_NOTE } from "@/lib/services";
 import { SITE_URL, breadcrumbJsonLd, jsonLdString } from "@/lib/jsonLd";
 import { fitDescription, fitTitle } from "@/lib/seo";
+import InlineCta from "@/components/InlineCta";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -133,23 +134,12 @@ export default async function CaseStudyPage({ params }: Props) {
             guaranteed.
           </p>
 
-          {/* CTA */}
-          <section className="border-t border-neutral-100 pt-10 mb-12 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
-            <div>
-              <h2 className="text-xl font-light text-neutral-900 mb-1">
-                Want a similar outcome?
-              </h2>
-              <p className="text-sm text-neutral-500">
-                Tell us about your business and we will suggest where to start.
-              </p>
-            </div>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-neutral-900 text-white text-sm font-medium tracking-wide hover:bg-neutral-700 transition-colors duration-200"
-            >
-              Contact us
-            </Link>
-          </section>
+          <InlineCta
+            source={`case-${cs.slug}`.slice(0, 50)}
+            heading="Want a similar outcome?"
+            body="Tell us about your business and we will suggest where to start. Results depend on many factors and are not guaranteed."
+            extra={{ label: "See our services", href: "/services" }}
+          />
 
           {/* Related */}
           <section>

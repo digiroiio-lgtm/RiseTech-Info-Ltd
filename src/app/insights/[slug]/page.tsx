@@ -5,8 +5,8 @@ import Navbar from "@/components/Navbar";
 import SiteFooter from "@/components/SiteFooter";
 import { insights, InsightCategory } from "@/lib/insights";
 import { SITE_URL, breadcrumbJsonLd, jsonLdString } from "@/lib/jsonLd";
-import { enquiryHref } from "@/lib/booking";
 import { fitDescription, fitTitle } from "@/lib/seo";
+import InlineCta from "@/components/InlineCta";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -121,6 +121,15 @@ export default async function InsightPostPage({ params }: Props) {
             ))}
           </div>
 
+          <div className="mt-10 md:mt-16">
+            <InlineCta
+              source={`insight-${post.slug}`.slice(0, 50)}
+              heading="Want to talk this through?"
+              body="Tell us about your business and the market you are looking at. We will suggest where to start."
+              extra={{ label: "See our services", href: "/services" }}
+            />
+          </div>
+
           {/* CTA block */}
           <div className="mt-10 md:mt-16 border-t border-neutral-100 pt-16">
             <div className="bg-neutral-950 p-6 sm:p-8 lg:p-12">
@@ -141,13 +150,6 @@ export default async function InsightPostPage({ params }: Props) {
                   className="inline-flex items-center justify-center px-8 py-4 bg-white text-neutral-900 text-xs font-semibold tracking-wide hover:bg-neutral-200 transition-colors duration-200"
                 >
                   Browse Premium Reports
-                </Link>
-                <Link
-                  href={enquiryHref("insight-article")}
-                  data-cta="enquiry-insight-article"
-                  className="inline-flex items-center justify-center px-8 py-4 border border-neutral-700 text-white text-xs font-semibold tracking-wide hover:border-white transition-colors duration-200"
-                >
-                  Send an Enquiry
                 </Link>
               </div>
             </div>
